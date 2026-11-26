@@ -1,5 +1,9 @@
 # OKS Forever Tactics
 
+## 0.7.1
+- First CurseForge release. The version shown in `/ft help` now comes from the release.
+- Releases are tagged automatically.
+
 ## 0.7.0
 - All 9 new WoW Forever dungeons: Hall of Thanes, Ruins of Lordaeron, Excavation Site, City of Dalaran, and five more, marked "new" in the list.
 - Short tank, healer and dps tactics for 217 bosses in 30 dungeons, written by us after reading the WoW Forever dungeon journal.
