@@ -57,7 +57,12 @@ local function Build()
     Anchor()
   end)
 
-  btn:SetScript("OnClick", function()
+  btn:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+  btn:SetScript("OnClick", function(_, button)
+    if button == "RightButton" then
+      if current and current.npc and ns.ShowLootWindow then ns.ShowLootWindow(current.npc) end
+      return
+    end
     if current then ns.Journal.Open(current) end
   end)
 
@@ -66,7 +71,10 @@ local function Build()
     GameTooltip:AddLine("OKS Forever Tactics")
     if current and current.npc then
       GameTooltip:AddLine("Open " .. ns.Data.npcs[current.npc].name, 1, 1, 1)
-      if ns.LootKeyDown and ns.LootKeyDown() then ns.AddLootLines(GameTooltip, current.npc) end
+      if ns.LootKeyDown and ns.LootKeyDown() then
+        ns.AddLootLines(GameTooltip, current.npc, ns.LootFullKeyDown() and 999 or nil)
+      end
+      GameTooltip:AddLine("Right click: whole loot table", 0.5, 0.5, 0.5)
     elseif current and current.instance then
       GameTooltip:AddLine("Open " .. ns.Data.instances[current.instance].name, 1, 1, 1)
       GameTooltip:AddLine("The game hides mob names in dungeons, so likely matches are listed first.", 0.7, 0.7, 0.7, true)
