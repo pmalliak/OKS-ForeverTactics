@@ -44,7 +44,7 @@ local function Build()
 
   -- Shift+drag moves the button; the offset is saved relative to TargetFrame.
   btn:SetScript("OnDragStart", function(self)
-    if IsShiftKeyDown() then self:StartMoving() end
+    if IsShiftKeyDown() and not ns.db.button.locked then self:StartMoving() end
   end)
   btn:SetScript("OnDragStop", function(self)
     self:StopMovingOrSizing()
@@ -62,14 +62,18 @@ local function Build()
 
   btn:SetScript("OnEnter", function(self)
     GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-    GameTooltip:AddLine("ForeverTactics")
+    GameTooltip:AddLine("OKS Forever Tactics")
     if current and current.npc then
       GameTooltip:AddLine("Open " .. ns.Data.npcs[current.npc].name, 1, 1, 1)
     elseif current and current.instance then
       GameTooltip:AddLine("Open " .. ns.Data.instances[current.instance].name, 1, 1, 1)
       GameTooltip:AddLine("The game hides mob names in dungeons, so likely matches are listed first.", 0.7, 0.7, 0.7, true)
     end
-    GameTooltip:AddLine("Shift+drag to move", 0.5, 0.5, 0.5)
+    if ns.db.button.locked then
+      GameTooltip:AddLine("Locked. Unlock it in /ft options to move it.", 0.5, 0.5, 0.5)
+    else
+      GameTooltip:AddLine("Hold Shift and drag to move it.", 0.5, 0.5, 0.5)
+    end
     GameTooltip:Show()
   end)
   btn:SetScript("OnLeave", function() GameTooltip:Hide() end)
@@ -109,8 +113,11 @@ local function Update()
     end
   end
 
-  btn:SetShown(current ~= nil)
+  btn:SetShown(current ~= nil and not ns.db.button.hidden)
 end
+
+ns.UpdateTargetButton = Update
+ns.AnchorTargetButton = function() if btn then Anchor() end end
 
 ns.OnEncounterChanged = Update
 
