@@ -8,6 +8,8 @@
 
 Core.lua
 Data\Data.xml
+Data\Loot.lua
 Diag.lua
+Loot.lua
 Journal.lua
 TargetButton.lua

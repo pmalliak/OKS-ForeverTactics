@@ -39,6 +39,7 @@ local function Build()
   btn:SetNormalTexture("Interface\\Icons\\INV_Misc_Book_09")
   btn:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
   btn:SetMovable(true)
+  btn.ftLootTooltip = true -- redraw the tooltip when the loot key changes
   btn:RegisterForDrag("LeftButton")
   btn:Hide()
 
@@ -65,6 +66,7 @@ local function Build()
     GameTooltip:AddLine("OKS Forever Tactics")
     if current and current.npc then
       GameTooltip:AddLine("Open " .. ns.Data.npcs[current.npc].name, 1, 1, 1)
+      if ns.LootKeyDown and ns.LootKeyDown() then ns.AddLootLines(GameTooltip, current.npc) end
     elseif current and current.instance then
       GameTooltip:AddLine("Open " .. ns.Data.instances[current.instance].name, 1, 1, 1)
       GameTooltip:AddLine("The game hides mob names in dungeons, so likely matches are listed first.", 0.7, 0.7, 0.7, true)

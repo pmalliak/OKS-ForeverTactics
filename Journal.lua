@@ -549,6 +549,34 @@ local function MakeLink()
   return b
 end
 
+local function MakeLoot()
+  local b = CreateFrame("Button", nil, detailChild)
+  b:SetSize(DETAIL_W / 2 - 4, 24)
+  b.bg = b:CreateTexture(nil, "BACKGROUND")
+  b.bg:SetAllPoints()
+  b.icon = b:CreateTexture(nil, "ARTWORK")
+  b.icon:SetSize(20, 20)
+  b.icon:SetPoint("LEFT", 4, 0)
+  b.icon:SetTexCoord(0.07, 0.93, 0.07, 0.93)
+  b.right = Text(b, "GameFontHighlightSmall", "RIGHT")
+  b.right:SetPoint("RIGHT", -6, 0)
+  b.text = Text(b, "GameFontHighlight")
+  b.text:SetPoint("LEFT", b.icon, "RIGHT", 6, 0)
+  b.text:SetPoint("RIGHT", b.right, "LEFT", -6, 0)
+  b.text:SetWordWrap(false)
+  b:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
+  b:SetScript("OnEnter", function(self)
+    if not self.itemID then return end
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    if not pcall(GameTooltip.SetItemByID, GameTooltip, self.itemID) then
+      GameTooltip:AddLine(self.itemName or "?")
+    end
+    GameTooltip:Show()
+  end)
+  b:SetScript("OnLeave", function() GameTooltip:Hide() end)
+  return b
+end
+
 local function Layout(items)
   ResetPools()
   local size = Size()
@@ -649,6 +677,21 @@ local function Layout(items)
       f:ClearAllPoints()
       f:SetPoint("TOPLEFT", 0, -y)
       y = y + h + 6
+    elseif it.loot then
+      local half = DETAIL_W / 2
+      for i, e in ipairs(it.loot) do
+        local b = Pool("loot", MakeLoot)
+        local col = (i - 1) % 2
+        b.itemID, b.itemName = e.id, e.name
+        b.bg:SetColorTexture(1, 1, 1, (math.floor((i - 1) / 2) % 2 == 0) and 0.04 or 0.0)
+        b.icon:SetTexture(ns.LootItemIcon(e.id))
+        b.text:SetText("|c" .. (ns.QUALITY_HEX[e.quality] or "ffffffff") .. e.name .. "|r")
+        b.right:SetText(e.quest and "|cffffd100quest|r" or ns.LootChanceText(e))
+        b:ClearAllPoints()
+        b:SetPoint("TOPLEFT", col * half, -y)
+        if col == 1 or i == #it.loot then y = y + 26 end
+      end
+      y = y + 4
     elseif it.link then
       local npc = ns.Data.npcs[it.link]
       local b = Pool("link", MakeLink)
@@ -756,6 +799,18 @@ local function NpcItems(id)
   end
 
   DefenseItems(out, npc)
+
+  local loot = ns.LootFor and ns.LootFor(id)
+  out[#out + 1] = { header = "Loot", icon = "Interface\\Icons\\INV_Misc_Bag_10" }
+  if loot then
+    out[#out + 1] = { loot = loot }
+    local key = ns.db and ns.db.lootKey or "ctrl"
+    local how = (key == "off") and "" or (key == "always") and " Hover a mob in the open world to see this in its tooltip."
+      or (" Hold " .. (ns.LOOT_KEY_LABEL[key] or "Ctrl") .. " over a mob in the open world to see this in its tooltip.")
+    out[#out + 1] = { note = "Drop chances from Classic server data, they may differ in Forever." .. how }
+  else
+    out[#out + 1] = { note = "No loot data for this mob yet." }
+  end
 
   local note = ns.db and ns.db.notes[id]
   if note and note ~= "" then
@@ -960,7 +1015,36 @@ local function BuildOptions()
     else b:SetPoint("LEFT", buttons[i - 1], "RIGHT", 6, 0) end
     buttons[i] = b
   end
-  p:SetScript("OnShow", paint)
+
+  local head3 = Text(p, "GameFontNormalLarge")
+  head3:SetPoint("TOPLEFT", sizeLabel, "BOTTOMLEFT", 0, -34)
+  head3:SetText("Loot in tooltips")
+  local keyLabel = Text(p, "GameFontHighlight")
+  keyLabel:SetPoint("TOPLEFT", head3, "BOTTOMLEFT", 0, -14)
+  keyLabel:SetText("Show loot while holding")
+  local keyButtons = {}
+  local function paintKeys()
+    local cur = ns.db.lootKey or "ctrl"
+    for _, b in ipairs(keyButtons) do
+      if b.key == cur then b:LockHighlight() else b:UnlockHighlight() end
+    end
+  end
+  for i, k in ipairs(ns.LOOT_KEYS) do
+    local b = Button(p, ns.LOOT_KEY_LABEL[k], 70, function()
+      ns.db.lootKey = k
+      paintKeys()
+    end)
+    b.key = k
+    if i == 1 then b:SetPoint("LEFT", keyLabel, "RIGHT", 16, 0)
+    else b:SetPoint("LEFT", keyButtons[i - 1], "RIGHT", 6, 0) end
+    keyButtons[i] = b
+  end
+  local keyNote = Text(p, "GameFontDisableSmall")
+  keyNote:SetPoint("TOPLEFT", keyLabel, "BOTTOMLEFT", 0, -12)
+  keyNote:SetWidth(600)
+  keyNote:SetText("Works on any mob in the open world. In dungeons and in combat the game hides which mob it is, so use the Loot section on its journal page. During a boss fight the book on the target frame shows the boss loot too.")
+
+  p:SetScript("OnShow", function() paint(); paintKeys() end)
 
   local help = Text(p, "GameFontDisableSmall")
   help:SetPoint("BOTTOMLEFT", 24, 18)

@@ -1,6 +1,6 @@
 std = "lua51"
 max_line_length = false
-exclude_files = { "ForeverTactics/Data/*.lua" }
+exclude_files = { "ForeverTactics/Data/*.lua", "Data/*.lua" }
 
 -- Globals we create.
 globals = {
@@ -20,4 +20,5 @@ read_globals = {
   "UIParent", "UnitAffectingCombat", "UnitClassification", "UnitExists", "UnitGUID",
   "UnitIsPlayer", "UnitLevel", "UnitName", "date", "issecretvalue", "strsplit", "strtrim",
   "unpack", "wipe", "GameTooltip", "IsShiftKeyDown", "tinsert",
+  "IsControlKeyDown", "IsAltKeyDown", "TooltipDataProcessor", "Enum", "C_Item", "GetItemIcon",
 }
