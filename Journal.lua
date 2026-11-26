@@ -134,16 +134,23 @@ local function Tip(owner, title, body)
 end
 
 -- Draw the creature's own portrait (like the target frame) from its display
--- ID. Falls back to an icon if the API is missing or fails.
-local function SetPortrait(tex, npc, fallback)
+-- ID. A mob without a known model gets no picture at all: a stand-in icon
+-- would look like the real thing. Pages that are not mobs pass an icon.
+-- Returns true when something is shown.
+local function SetPortrait(tex, npc, icon)
   tex:SetTexCoord(0, 1, 0, 1)
-  if npc and npc.displayID and SetPortraitTextureFromCreatureDisplayID then
-    if pcall(SetPortraitTextureFromCreatureDisplayID, tex, npc.displayID) then
+  if npc then
+    if npc.displayID and SetPortraitTextureFromCreatureDisplayID
+      and pcall(SetPortraitTextureFromCreatureDisplayID, tex, npc.displayID) then
+      tex:Show()
       return true
     end
+    tex:Hide()
+    return false
   end
-  tex:SetTexture(fallback)
-  return false
+  tex:SetTexture(icon)
+  tex:Show()
+  return true
 end
 
 local function Size()
@@ -275,11 +282,13 @@ local function AddRow(n, kind, opts)
   elseif kind == "npc" then
     local data = ns.Data.npcs[opts.npc]
     row.text:SetFontObject("GameFontHighlightSmall")
-    SetPortrait(row.portrait, data, KIND_ICON[data.kind])
     row.portrait:ClearAllPoints()
     row.portrait:SetPoint("LEFT", opts.indent or 14, 0)
-    row.portrait:Show()
-    row.text:SetPoint("LEFT", row.portrait, "RIGHT", 6, 0)
+    if SetPortrait(row.portrait, data) then
+      row.text:SetPoint("LEFT", row.portrait, "RIGHT", 6, 0)
+    else
+      row.text:SetPoint("LEFT", opts.indent or 14, 0)
+    end
     local c = KIND_RGB[data.kind]
     row.stripe:SetColorTexture(c[1], c[2], c[3], 0.9)
     row.stripe:Show()
@@ -647,7 +656,12 @@ local function Layout(items)
       local c = KIND_RGB[npc.kind]
       b.stripe:SetColorTexture(c[1], c[2], c[3], 0.9)
       b.bg:SetColorTexture(1, 1, 1, it.alt and 0.04 or 0.0)
-      SetPortrait(b.portrait, npc, KIND_ICON[npc.kind])
+      b.text:ClearAllPoints()
+      if SetPortrait(b.portrait, npc) then
+        b.text:SetPoint("LEFT", b.portrait, "RIGHT", 8, 0)
+      else
+        b.text:SetPoint("LEFT", 12, 0)
+      end
       b.text:SetText(C(KIND_COLOR[npc.kind], npc.name) .. (npc.tactics and "" or "  |cff666666no tactics yet|r"))
       b.right:SetText(KIND_LABEL[npc.kind] .. "   level " .. LevelText(npc.level))
       b:ClearAllPoints()
@@ -826,16 +840,26 @@ local function InstanceStats(inst)
   }
 end
 
+-- Header without a picture: hide the ring and move the name to the left.
+local function ShowPortrait(shown)
+  header.ring:SetShown(shown)
+  title:ClearAllPoints()
+  if shown then
+    title:SetPoint("TOPLEFT", portrait, "TOPRIGHT", 12, -4)
+  else
+    title:SetPoint("TOPLEFT", header, "TOPLEFT", 4, -6)
+  end
+end
+
 local function RenderDetail()
   if state.npc and ns.Data.npcs[state.npc] then
     local npc = ns.Data.npcs[state.npc]
     local inst = ns.Data.instances[npc.instance]
     title:SetText(C(KIND_COLOR[npc.kind], npc.name))
-    subtitle:SetText(Icon(KIND_ICON[npc.kind], 12) .. " " .. KIND_LABEL[npc.kind] ..
+    subtitle:SetText(C(KIND_COLOR[npc.kind], KIND_LABEL[npc.kind]) ..
       (npc.subName and ("  |cffd0d0d0<" .. npc.subName .. ">|r") or "") ..
       (inst and ("  |cff888888in " .. inst.name .. "|r") or ""))
-    local first = npc.abilities[1]
-    SetPortrait(portrait, npc, (first and AbilityIcon(first)) or KIND_ICON[npc.kind])
+    ShowPortrait(SetPortrait(portrait, npc))
     SetStats(NpcStats(npc))
     Layout(NpcItems(state.npc))
     frame.TitleText:SetText("OKS Forever Tactics: " .. npc.name)
@@ -843,14 +867,14 @@ local function RenderDetail()
     local inst = ns.Data.instances[state.instance]
     title:SetText("|cffffd100" .. inst.name .. "|r")
     subtitle:SetText("|cff888888Dungeon|r" .. (inst.forever and "  |cff40ff40new in Forever|r" or ""))
-    SetPortrait(portrait, nil, "Interface\\Icons\\INV_Misc_Key_13")
+    ShowPortrait(SetPortrait(portrait, nil, "Interface\\Icons\\INV_Misc_Key_13"))
     SetStats(InstanceStats(inst))
     Layout(InstanceItems(state.instance))
     frame.TitleText:SetText("OKS Forever Tactics: " .. inst.name)
   else
     title:SetText("|cffffd100Forever Tactics|r")
     subtitle:SetText("|cff888888Boss and trash abilities, tactics and tricks|r")
-    SetPortrait(portrait, nil, "Interface\\Icons\\INV_Misc_Book_09")
+    ShowPortrait(SetPortrait(portrait, nil, "Interface\\Icons\\INV_Misc_Book_09"))
     SetStats(nil)
     Layout({
       { text = "Pick a dungeon on the left, or type a mob's name in the search box." },
@@ -1019,6 +1043,7 @@ local function Build()
   ring:SetTexture("Interface\\Buttons\\UI-Quickslot2")
   ring:SetPoint("CENTER", portrait, "CENTER", 0, 0)
   ring:SetSize(84, 84)
+  header.ring = ring
   title = Text(header, "GameFontNormalHuge")
   title:SetPoint("TOPLEFT", portrait, "TOPRIGHT", 12, -4)
   subtitle = Text(header, "GameFontHighlight")
