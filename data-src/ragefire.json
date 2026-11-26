@@ -1,0 +1,587 @@
+{
+ "key": "ragefire",
+ "name": "Ragefire Chasm",
+ "instanceID": 389,
+ "levels": [
+  13,
+  16
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 11517,
+   "name": "Oggleflint",
+   "kind": "boss",
+   "level": [
+    16,
+    16
+   ],
+   "displayID": 11611,
+   "subName": "Ragefire Chieftain",
+   "abilities": [
+    {
+     "name": "Cleave",
+     "spellID": 15584,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-16s, then every 6-12s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 5532,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cleave in front."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1424,
+    "armor": 713,
+    "damage": "23-31",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "shackle",
+     "banish",
+     "charm",
+     "disarm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Two troggs with him. Control one, kill the other, then the boss, then the controlled one.",
+    "tank": "Face him away, he cleaves.",
+    "dps": "Control one trogg, kill the other first."
+   }
+  },
+  {
+   "id": 11520,
+   "name": "Taragaman the Hungerer",
+   "kind": "boss",
+   "level": [
+    16,
+    16
+   ],
+   "displayID": 7970,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Uppercut",
+     "spellID": 18072,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-12s, then every 7-17s"
+    },
+    {
+     "name": "Fire Nova",
+     "spellID": 11970,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-15s, then every 10-18s"
+    },
+    {
+     "name": "Uppercut",
+     "spellID": 10966,
+     "icon": "Inv_gauntlets_05",
+     "source": "wowhead-forever-journal",
+     "note": "Knockback, watch the edge."
+    },
+    {
+     "name": "Fire Nova",
+     "spellID": 8349,
+     "icon": "Spell_fire_sealoffire",
+     "source": "wowhead-forever-journal",
+     "note": "Stay out of range."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1869,
+    "armor": 713,
+    "damage": "23-31",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "shackle",
+     "banish",
+     "disarm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "On a platform over lava. Pull him away from the edges so Uppercut doesn't knock anyone into lava. Ranged at max range for Fire Nova.",
+    "tank": "Keep your back away from the platform edge.",
+    "dps": "Ranged at max range."
+   }
+  },
+  {
+   "id": 11518,
+   "name": "Jergosh the Invoker",
+   "kind": "boss",
+   "level": [
+    16,
+    16
+   ],
+   "displayID": 11429,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Immolate",
+     "spellID": 20800,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-14s, then every 7-23s"
+    },
+    {
+     "name": "Curse of Weakness",
+     "spellID": 18267,
+     "icon": "Spell_shadow_curseofmannoroth",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 8-17s"
+    },
+    {
+     "name": "Immolate",
+     "spellID": 348,
+     "icon": "Spell_fire_immolation",
+     "source": "wowhead-forever-journal",
+     "note": "Fire damage over time, can hurt."
+    },
+    {
+     "name": "Curse of Weakness",
+     "spellID": 702,
+     "icon": "Spell_shadow_curseofmannoroth",
+     "source": "wowhead-forever-journal",
+     "note": "Lower damage, harder for the tank to hold threat."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1382,
+    "mana": 1712,
+    "armor": 383,
+    "damage": "17-23",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "shackle",
+     "banish",
+     "charm",
+     "disarm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Two adds: control one, kill the other, then him. Straightforward.",
+    "tank": "Curse of Weakness makes threat harder, a curse removal helps."
+   }
+  },
+  {
+   "id": 11519,
+   "name": "Bazzalan",
+   "kind": "boss",
+   "level": [
+    16,
+    16
+   ],
+   "displayID": 2007,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sinister Strike",
+     "spellID": 14873,
+     "icon": "Spell_shadow_ritualofsacrifice",
+     "tags": [],
+     "note": "Heavy damage on the tank.",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-16s"
+    },
+    {
+     "name": "Poison",
+     "spellID": 744,
+     "icon": "Spell_nature_corrosivebreath",
+     "source": "wowhead-forever-journal",
+     "note": "Poison."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1513,
+    "armor": 713,
+    "damage": "23-31",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "shackle",
+     "banish",
+     "charm",
+     "disarm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "The add on his left can be pulled alone first. Control the other, then kill him fast, he hits the tank hard.",
+    "healer": "Focus on the tank."
+   }
+  },
+  {
+   "id": 11320,
+   "name": "Earthborer",
+   "kind": "trash",
+   "level": [
+    13,
+    14
+   ],
+   "displayID": 11010,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Earthborer Acid",
+     "spellID": 18070,
+     "icon": "Spell_nature_acid_01",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-16s, then every 5-14s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 900,
+    "armor": 642,
+    "damage": "18-27",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11321,
+   "name": "Molten Elemental",
+   "kind": "trash",
+   "level": [
+    13,
+    15
+   ],
+   "displayID": 2075,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fire Shield",
+     "spellID": 11968,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 984,
+    "armor": 846,
+    "damage": "18-29",
+    "resist": {
+     "holy": 0,
+     "fire": 22,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11319,
+   "name": "Ragefire Shaman",
+   "kind": "trash",
+   "level": [
+    13,
+    15
+   ],
+   "displayID": 11610,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 903,
+    "mana": 326,
+    "armor": 566,
+    "damage": "17-27",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11318,
+   "name": "Ragefire Trogg",
+   "kind": "trash",
+   "level": [
+    13,
+    15
+   ],
+   "displayID": 11609,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 11976,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-8s, then every 6-12s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 984,
+    "armor": 677,
+    "damage": "18-29",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11322,
+   "name": "Searing Blade Cultist",
+   "kind": "trash",
+   "level": [
+    13,
+    15
+   ],
+   "displayID": 11434,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Curse of Agony",
+     "spellID": 18266,
+     "icon": "Spell_shadow_curseofsargeras",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-11s, then every 9-19s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 903,
+    "mana": 489,
+    "armor": 566,
+    "damage": "17-27",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11323,
+   "name": "Searing Blade Enforcer",
+   "kind": "trash",
+   "level": [
+    13,
+    15
+   ],
+   "displayID": 11430,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shield Slam",
+     "spellID": 8242,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-15s, then every 7-15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 984,
+    "armor": 677,
+    "damage": "18-29",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11324,
+   "name": "Searing Blade Warlock",
+   "kind": "trash",
+   "level": [
+    13,
+    15
+   ],
+   "displayID": 11438,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shadow Bolt",
+     "spellID": 20791,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 855,
+    "mana": 1185,
+    "armor": 363,
+    "damage": "13-22",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  }
+ ]
+}

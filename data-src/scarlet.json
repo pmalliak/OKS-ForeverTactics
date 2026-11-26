@@ -1,0 +1,1955 @@
+{
+ "key": "scarlet",
+ "name": "Scarlet Monastery",
+ "instanceID": 189,
+ "levels": [
+  30,
+  42
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 3983,
+   "name": "Interrogator Vishas",
+   "kind": "boss",
+   "level": [
+    32,
+    32
+   ],
+   "displayID": 2044,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shadow Word: Pain",
+     "spellID": 14032,
+     "icon": "Spell_shadow_shadowwordpain",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-7s, then every 7-21s"
+    },
+    {
+     "name": "Immolate",
+     "spellID": 9034,
+     "icon": "Spell_fire_immolation",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5328,
+    "mana": 935,
+    "armor": 1063,
+    "damage": "42-55",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Usually comes with one humanoid. Simple, watch his damage over time spells."
+   }
+  },
+  {
+   "id": 4543,
+   "name": "Bloodmage Thalnos",
+   "kind": "boss",
+   "level": [
+    34,
+    34
+   ],
+   "displayID": 11396,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Flame Spike",
+     "spellID": 8814,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 13-21s, then every 38-58s"
+    },
+    {
+     "name": "Fire Nova",
+     "spellID": 12470,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 11-17s, then every 11-23s"
+    },
+    {
+     "name": "Flame Shock",
+     "spellID": 8053,
+     "icon": "Spell_fire_flameshock",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-24s, then every 8-16s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 9613,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 7736,
+    "mana": 2518,
+    "armor": 1121,
+    "damage": "44-58",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "silence",
+     "sleep",
+     "charm",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Mostly magic damage with area spells close to him. Ranged stay back, healer watch the tank and melee."
+   }
+  },
+  {
+   "id": 3974,
+   "name": "Houndmaster Loksey",
+   "kind": "boss",
+   "level": [
+    34,
+    34
+   ],
+   "displayID": 2040,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Battle Shout",
+     "spellID": 6192,
+     "icon": "Ability_warrior_battleshout",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9s, then every 30-38s"
+    },
+    {
+     "name": "Bloodlust",
+     "spellID": 6742,
+     "icon": "Spell_nature_bloodlust",
+     "tags": [],
+     "note": "Bloodlust at low health, save cooldowns.",
+     "source": "cmangos-classic",
+     "timing": "first after 2-5s, then every 30-38s"
+    },
+    {
+     "name": "Battle Shout",
+     "spellID": 11549,
+     "icon": "Ability_warrior_battleshout",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 7736,
+    "mana": 1007,
+    "armor": 1121,
+    "damage": "44-58",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Three elite hounds with him. Control one, tank Loksey, kill the hounds, then him. He bloodlusts at low health.",
+    "dps": "Hounds first."
+   }
+  },
+  {
+   "id": 6487,
+   "name": "Arcanist Doan",
+   "kind": "boss",
+   "level": [
+    37,
+    37
+   ],
+   "displayID": 5266,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Silence",
+     "spellID": 8988,
+     "icon": "Spell_holy_silence",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Arcane Explosion",
+     "spellID": 9433,
+     "icon": "Spell_nature_wispsplode",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Detonation",
+     "spellID": 9435,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "Detonation, run to the edges.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Arcane Bubble",
+     "spellID": 9438,
+     "icon": "Spell_holy_divineintervention",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Polymorph",
+     "spellID": 13323,
+     "icon": "Spell_nature_polymorph",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [
+    {
+     "title": "Pillars block Detonation",
+     "text": "Pull him back to the middle of the previous hall and hide behind the pillars when he detonates.",
+     "kind": "clever-use",
+     "confirmedBuild": null
+    }
+   ],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8730,
+    "mana": 8583,
+    "armor": 858,
+    "damage": "36-51",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Tank him in the middle, ranged at the edges. When he casts Detonation, everyone runs to the edges. Watch Arcane Explosion and his silence. Loot the Scarlet Key from the chest in his room, it opens the Armory and Cathedral."
+   }
+  },
+  {
+   "id": 3975,
+   "name": "Herod",
+   "kind": "boss",
+   "level": [
+    40,
+    40
+   ],
+   "displayID": 2041,
+   "subName": "The Scarlet Champion",
+   "abilities": [
+    {
+     "name": "Rushing Charge",
+     "spellID": 8260,
+     "icon": "Ability_warstomp",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "Enrage.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Whirlwind",
+     "spellID": 8989,
+     "icon": "Ability_whirlwind",
+     "tags": [],
+     "note": "Run away. Immune to magic while spinning.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 22540,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 12192,
+    "armor": 1964,
+    "damage": "70-93",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Tank him in the middle, ranged spread up the stairs. When he starts Whirlwind he is immune to magic and shreds anyone close: run away, don't tank it. When he dies, 20+ non-elite trainees rush in, group up and AoE them.",
+    "tank": "Tank him in the middle."
+   }
+  },
+  {
+   "id": 4542,
+   "name": "High Inquisitor Fairbanks",
+   "kind": "boss",
+   "level": [
+    40,
+    40
+   ],
+   "displayID": 2605,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Curse of Blood",
+     "spellID": 8282,
+     "icon": "Spell_shadow_ritualofsacrifice",
+     "tags": [],
+     "note": "Curse, remove it.",
+     "source": "cmangos-classic",
+     "timing": "first after 3-12s, then every 6-20s"
+    },
+    {
+     "name": "Dispel Magic",
+     "spellID": 15090,
+     "icon": "Spell_holy_dispelmagic",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-11s, then every 6-19s"
+    },
+    {
+     "name": "Fear",
+     "spellID": 12096,
+     "icon": "Spell_shadow_possession",
+     "tags": [],
+     "note": "Fear.",
+     "source": "cmangos-classic",
+     "timing": "first after 40s, then every 40s"
+    },
+    {
+     "name": "Sleep",
+     "spellID": 8399,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "Sleep.",
+     "source": "cmangos-classic",
+     "timing": "first after 30s, then every 30s"
+    },
+    {
+     "name": "Heal",
+     "spellID": 12039,
+     "icon": "Spell_holy_heal",
+     "tags": [],
+     "note": "Heal, interrupt.",
+     "source": "cmangos-classic",
+     "timing": "at 30% health",
+     "atHealth": 30
+    },
+    {
+     "name": "Power Word: Shield",
+     "spellID": 11647,
+     "icon": "Spell_holy_powerwordshield",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 25% health",
+     "atHealth": 25
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 6130,
+    "mana": 2566,
+    "armor": 1619,
+    "damage": "52-69",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Pull the lever in the room on the right of the cathedral to reach him. Curse of Blood can be removed by mages and druids. He also fears, sleeps and shields himself. Interrupt his heal."
+   }
+  },
+  {
+   "id": 3977,
+   "name": "High Inquisitor Whitemane",
+   "kind": "boss",
+   "level": [
+    42,
+    42
+   ],
+   "displayID": 2043,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Faerie Fire",
+     "spellID": 770,
+     "icon": "Spell_nature_faeriefire",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Hammer of Justice",
+     "spellID": 853,
+     "icon": "Spell_holy_sealofmight",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Deep Sleep",
+     "spellID": 9256,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "Group sleep.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Holy Smite",
+     "spellID": 9481,
+     "icon": "Spell_holy_holysmite",
+     "tags": [],
+     "note": "Holy Smite.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Frostbrand Attack",
+     "spellID": 10458,
+     "icon": "Spell_frost_frostbrand",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Frost Shock",
+     "spellID": 10472,
+     "icon": "Spell_frost_frostshock",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Shadow Word: Pain",
+     "spellID": 10893,
+     "icon": "Spell_shadow_shadowwordpain",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Heal",
+     "spellID": 12039,
+     "icon": "Spell_holy_heal",
+     "tags": [],
+     "note": "Heal, interrupt.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Dominate Mind",
+     "spellID": 14515,
+     "icon": "Spell_shadow_shadowworddominate",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Holy Fire",
+     "spellID": 15261,
+     "icon": "Spell_holy_searinglight",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Power Word: Shield",
+     "spellID": 22187,
+     "icon": "Spell_holy_powerwordshield",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Scarlet Resurrection",
+     "spellID": 9232,
+     "icon": "Spell_holy_resurrection",
+     "source": "wowhead-forever-journal",
+     "note": "Resurrects Mograine."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5284,
+    "mana": 6905,
+    "armor": 1841,
+    "damage": "58-77",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Comes after Mograine dies. At some health she sleeps the whole group and resurrects Mograine. Then kill her first.",
+    "dps": "Kill her first after the resurrection."
+   }
+  },
+  {
+   "id": 6488,
+   "name": "Fallen Champion",
+   "kind": "rare",
+   "level": [
+    33,
+    33
+   ],
+   "displayID": 5230,
+   "abilities": [
+    {
+     "name": "Berserker Stance",
+     "spellID": 7366,
+     "icon": "Ability_racial_avatar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 240-245s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15496,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "Cleave.",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 7-11s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 3330,
+    "armor": 1304,
+    "damage": "46-61",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare. Cleaving melee, everyone behind.",
+    "tank": "Face him away."
+   }
+  },
+  {
+   "id": 6489,
+   "name": "Ironspine",
+   "kind": "rare",
+   "level": [
+    33,
+    33
+   ],
+   "displayID": 5231,
+   "abilities": [
+    {
+     "name": "Curse of Weakness",
+     "spellID": 21007,
+     "icon": "Spell_shadow_curseofmannoroth",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 19-36s"
+    },
+    {
+     "name": "Poison Cloud",
+     "spellID": 3815,
+     "icon": "Spell_nature_regenerate",
+     "tags": [],
+     "note": "Move out.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-9s, then every 20-36s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 3330,
+    "armor": 1304,
+    "damage": "46-61",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare. Simple, but Poison Cloud hurts.",
+    "healer": "Expect a spike on Poison Cloud."
+   }
+  },
+  {
+   "id": 6490,
+   "name": "Azshir the Sleepless",
+   "kind": "rare",
+   "level": [
+    33,
+    33
+   ],
+   "displayID": 5534,
+   "abilities": [
+    {
+     "name": "Call of the Grave",
+     "spellID": 5137,
+     "icon": "Spell_shadow_chilltouch",
+     "tags": [],
+     "note": "Keeps ticking after he dies.",
+     "source": "cmangos-classic",
+     "timing": "first after 30s, then every 30s"
+    },
+    {
+     "name": "Terrify",
+     "spellID": 7399,
+     "icon": "Ability_physical_taunt",
+     "tags": [],
+     "note": "Fear.",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 20s"
+    },
+    {
+     "name": "Soul Siphon",
+     "spellID": 9373,
+     "icon": "Spell_shadow_lifedrain02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 20s",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 2784,
+    "mana": 1926,
+    "armor": 1091,
+    "damage": "174-224",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare. Has a fear, clear around him first. Call of the Grave keeps hurting after he dies.",
+    "tank": "Clear the area first."
+   }
+  },
+  {
+   "id": 4293,
+   "name": "Scarlet Scryer",
+   "kind": "trash",
+   "level": [
+    30,
+    31
+   ],
+   "displayID": 2518,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sleep",
+     "spellID": 1090,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-18s, then every 30-35s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 9613,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2550,
+    "mana": 1756,
+    "armor": 1033,
+    "damage": "193-249",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4283,
+   "name": "Scarlet Sentry",
+   "kind": "trash",
+   "level": [
+    30,
+    31
+   ],
+   "displayID": 2520,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3018,
+    "armor": 1234,
+    "damage": "42-58",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4306,
+   "name": "Scarlet Torturer",
+   "kind": "trash",
+   "level": [
+    30,
+    31
+   ],
+   "displayID": 2607,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Immolate",
+     "spellID": 9275,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3018,
+    "armor": 370,
+    "damage": "42-58",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 6426,
+   "name": "Anguished Dead",
+   "kind": "trash",
+   "level": [
+    31,
+    33
+   ],
+   "displayID": 10255,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Veil of Shadow",
+     "spellID": 7068,
+     "icon": "Spell_shadow_gathershadows",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-11s, then every 20-28s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 3330,
+    "armor": 1304,
+    "damage": "44-61",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 6427,
+   "name": "Haunting Phantasm",
+   "kind": "trash",
+   "level": [
+    32,
+    33
+   ],
+   "displayID": 4629,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Summon Illusionary Phantasm",
+     "spellID": 8986,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-16s, then every 10-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 3330,
+    "armor": 1304,
+    "damage": "45-61",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4296,
+   "name": "Scarlet Adept",
+   "kind": "trash",
+   "level": [
+    33,
+    34
+   ],
+   "displayID": 5726,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Holy Smite",
+     "spellID": 9734,
+     "icon": "Spell_holy_holysmite",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2901,
+    "mana": 2014,
+    "armor": 1121,
+    "damage": "43-58",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4287,
+   "name": "Scarlet Gallant",
+   "kind": "trash",
+   "level": [
+    33,
+    34
+   ],
+   "displayID": 2463,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Crusader Strike",
+     "spellID": 14517,
+     "icon": "Spell_holy_holysmite",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-11s"
+    },
+    {
+     "name": "Hammer of Justice",
+     "spellID": 5589,
+     "icon": "Spell_holy_sealofmight",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 13-23s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2901,
+    "mana": 2014,
+    "armor": 1121,
+    "damage": "43-58",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4304,
+   "name": "Scarlet Tracking Hound",
+   "kind": "trash",
+   "level": [
+    33,
+    34
+   ],
+   "displayID": 2709,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Dash",
+     "spellID": 1850,
+     "icon": "Ability_druid_dash",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 3330,
+    "armor": 1304,
+    "damage": "34-46",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4288,
+   "name": "Scarlet Beastmaster",
+   "kind": "trash",
+   "level": [
+    34,
+    35
+   ],
+   "displayID": 2497,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Exploding Shot",
+     "spellID": 7896,
+     "icon": "Spell_fire_fireball02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-12s, then every 11-18s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 6660,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3660,
+    "armor": 1373,
+    "damage": "47-64",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4299,
+   "name": "Scarlet Chaplain",
+   "kind": "trash",
+   "level": [
+    34,
+    36
+   ],
+   "displayID": 2501,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Power Word: Shield",
+     "spellID": 6066,
+     "icon": "Spell_holy_powerwordshield",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-6s, then every 40-51s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3027,
+    "mana": 2134,
+    "armor": 1149,
+    "damage": "44-60",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4291,
+   "name": "Scarlet Diviner",
+   "kind": "trash",
+   "level": [
+    34,
+    35
+   ],
+   "displayID": 2507,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fireball",
+     "spellID": 9053,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3027,
+    "mana": 2134,
+    "armor": 1149,
+    "damage": "44-60",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4297,
+   "name": "Scarlet Conjuror",
+   "kind": "trash",
+   "level": [
+    35,
+    36
+   ],
+   "displayID": 2503,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fireball",
+     "spellID": 9053,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2805,
+    "mana": 5526,
+    "armor": 803,
+    "damage": "34-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4540,
+   "name": "Scarlet Monk",
+   "kind": "trash",
+   "level": [
+    35,
+    36
+   ],
+   "displayID": 2603,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Kick",
+     "spellID": 11978,
+     "icon": "Ability_kick",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-12s, then every 4-13s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3831,
+    "armor": 370,
+    "damage": "44-59",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4286,
+   "name": "Scarlet Soldier",
+   "kind": "trash",
+   "level": [
+    35,
+    36
+   ],
+   "displayID": 2522,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Improved Blocking",
+     "spellID": 3639,
+     "icon": "Spell_fire_firearmor",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-7s, then every 11-22s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3831,
+    "armor": 2220,
+    "damage": "49-66",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4289,
+   "name": "Scarlet Evoker",
+   "kind": "trash",
+   "level": [
+    36,
+    37
+   ],
+   "displayID": 2509,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Flamestrike",
+     "spellID": 20296,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 14s, then every 23-28s"
+    },
+    {
+     "name": "Fireball",
+     "spellID": 9053,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2910,
+    "mana": 5722,
+    "armor": 858,
+    "damage": "35-51",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4290,
+   "name": "Scarlet Guardsman",
+   "kind": "trash",
+   "level": [
+    36,
+    37
+   ],
+   "displayID": 2511,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Defensive Stance",
+     "spellID": 7164,
+     "icon": "Ability_warrior_defensivestance",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 180-190s"
+    },
+    {
+     "name": "Disarm",
+     "spellID": 6713,
+     "icon": "Ability_warrior_disarm",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-14s, then every 14-25s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4008,
+    "armor": 1593,
+    "damage": "70-95",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4292,
+   "name": "Scarlet Protector",
+   "kind": "trash",
+   "level": [
+    36,
+    37
+   ],
+   "displayID": 2476,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Devotion Aura",
+     "spellID": 8258,
+     "icon": "Spell_holy_devotionaura",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 240-250s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3279,
+    "mana": 2284,
+    "armor": 1988,
+    "damage": "46-63",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4298,
+   "name": "Scarlet Defender",
+   "kind": "trash",
+   "level": [
+    37,
+    38
+   ],
+   "displayID": 2462,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Defensive Stance",
+     "spellID": 7164,
+     "icon": "Ability_warrior_defensivestance",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-7s, then every 180-186s"
+    },
+    {
+     "name": "Shield Bash",
+     "spellID": 11972,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-15s, then every 10-18s"
+    },
+    {
+     "name": "Improved Blocking",
+     "spellID": 3639,
+     "icon": "Spell_fire_firearmor",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-13s, then every 8-19s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4185,
+    "armor": 2564,
+    "damage": "51-70",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4295,
+   "name": "Scarlet Myrmidon",
+   "kind": "trash",
+   "level": [
+    37,
+    38
+   ],
+   "displayID": 2514,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 120-125s",
+     "atHealth": 30
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4185,
+    "armor": 1709,
+    "damage": "51-70",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4294,
+   "name": "Scarlet Sorcerer",
+   "kind": "trash",
+   "level": [
+    37,
+    38
+   ],
+   "displayID": 2524,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Slow",
+     "spellID": 6146,
+     "icon": "Spell_nature_slow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 18-36s, then every 17-50s"
+    },
+    {
+     "name": "Frostbolt",
+     "spellID": 9672,
+     "icon": "Spell_frost_frostbolt02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3012,
+    "mana": 5950,
+    "armor": 915,
+    "damage": "36-52",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4301,
+   "name": "Scarlet Centurion",
+   "kind": "trash",
+   "level": [
+    38,
+    39
+   ],
+   "displayID": 2499,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Battle Shout",
+     "spellID": 9128,
+     "icon": "Ability_warrior_battleshout",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-13s, then every 12-25s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4377,
+    "armor": 1834,
+    "damage": "53-72",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4300,
+   "name": "Scarlet Wizard",
+   "kind": "trash",
+   "level": [
+    38,
+    39
+   ],
+   "displayID": 2525,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fire Shield III",
+     "spellID": 2601,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-5s, then every 17-28s"
+    },
+    {
+     "name": "Arcane Explosion",
+     "spellID": 8439,
+     "icon": "Spell_nature_wispsplode",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-8 yards away, every 3-5s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3640,
+    "mana": 6150,
+    "armor": 974,
+    "damage": "37-54",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4303,
+   "name": "Scarlet Abbot",
+   "kind": "trash",
+   "level": [
+    39,
+    40
+   ],
+   "displayID": 2492,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Renew",
+     "spellID": 8362,
+     "icon": "Spell_holy_renew",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 24-30s",
+     "atHealth": 50
+    },
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 120-125s",
+     "atHealth": 30
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3678,
+    "mana": 2566,
+    "armor": 1619,
+    "damage": "51-69",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4302,
+   "name": "Scarlet Champion",
+   "kind": "trash",
+   "level": [
+    39,
+    40
+   ],
+   "displayID": 2460,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Holy Strike",
+     "spellID": 17143,
+     "icon": "Ability_thunderbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-14s, then every 18-27s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3678,
+    "mana": 2566,
+    "armor": 1619,
+    "damage": "51-69",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 3976,
+   "name": "Scarlet Commander Mograine",
+   "kind": "trash",
+   "level": [
+    42,
+    42
+   ],
+   "displayID": 2042,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Divine Shield",
+     "spellID": 1020,
+     "icon": "Spell_holy_divineintervention",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Hammer of Justice",
+     "spellID": 5589,
+     "icon": "Spell_holy_sealofmight",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Retribution Aura",
+     "spellID": 8990,
+     "icon": "Spell_holy_auraoflight",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Lay on Hands",
+     "spellID": 9257,
+     "icon": "Spell_holy_layonhands",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Crusader Strike",
+     "spellID": 14518,
+     "icon": "Spell_holy_holysmite",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Hammer of Justice",
+     "spellID": 853,
+     "icon": "Spell_holy_sealofmight",
+     "source": "wowhead-forever-journal",
+     "note": "Stun."
+    },
+    {
+     "name": "Divine Shield",
+     "spellID": 642,
+     "icon": "Spell_holy_divineintervention",
+     "source": "wowhead-forever-journal",
+     "note": "Bubble."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5945,
+    "mana": 2762,
+    "armor": 1841,
+    "damage": "64-85",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Mograine first (stuns, bubble). Whitemane then comes out, puts the whole group to sleep at some point and resurrects Mograine, healing both. Tank Mograine, burn Whitemane, then finish Mograine. Don't kill Whitemane before she resurrects him or Mograine can't be looted.",
+    "dps": "After the resurrection, kill Whitemane first."
+   }
+  }
+ ]
+}

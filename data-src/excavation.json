@@ -1,0 +1,308 @@
+{
+ "key": "excavation",
+ "name": "Excavation Site: Wetlands",
+ "instanceID": null,
+ "instanceNames": [
+  "Excavation Site: Wetlands",
+  "Excavation Site: Wetlands"
+ ],
+ "forever": true,
+ "bossesConfirmed": true,
+ "levels": [
+  24,
+  29
+ ],
+ "summary": "On top of Whelgar's Excavation Site in the Wetlands. Raptors overran the camp, and there is titan activity nearby.",
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 260322,
+   "name": "Saltspine",
+   "kind": "boss",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [
+    {
+     "name": "Tendon Rip",
+     "spellID": 3604,
+     "icon": "Ability_criticalstrike",
+     "source": "wowhead-forever-journal",
+     "note": "Slows the tank's movement, no effect on the fight."
+    },
+    {
+     "name": "Dust Storm",
+     "spellID": 1316382,
+     "icon": "Spell_shadow_mindsteal",
+     "source": "wowhead-forever-journal",
+     "note": "Hits within 10 yards, lowers hit chance by 25%. Stay out."
+    },
+    {
+     "name": "Fatal Bite",
+     "spellID": 16495,
+     "icon": "Ability_backstab",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "tactics": {
+    "general": "Easy if the nearby mobs are cleared. Dust Storm hits everyone within 10 yards and lowers hit chance, so casters stay out of melee.",
+    "healer": "Stay more than 10 yards away.",
+    "dps": "Ranged stay more than 10 yards away."
+   },
+   "displayID": 11542
+  },
+  {
+   "id": 260325,
+   "name": "Shadetooth",
+   "kind": "boss",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [
+    {
+     "name": "Terrifying Roar",
+     "spellID": 14100,
+     "icon": "Ability_devour",
+     "source": "wowhead-forever-journal",
+     "note": "5 second fear, not dispellable. Ranged and healer stay back."
+    },
+    {
+     "name": "Enrage",
+     "spellID": 1284435,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "source": "wowhead-forever-journal",
+     "note": "At 30% he hits harder and faster. Stuns and slows still work."
+    },
+    {
+     "name": "Rend",
+     "spellID": 12054,
+     "icon": "Ability_gouge",
+     "source": "wowhead-forever-journal",
+     "note": "Rend on the tank."
+    },
+    {
+     "name": "Rend",
+     "spellID": 13445,
+     "icon": "Ability_gouge",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "tactics": {
+    "general": "Hard if you rush it. Two Thicket Hunters come with him, crowd control them or kill one at a time while the other is controlled. Fight him in the crocodile cove on the left after clearing it, so fears don't send people into raptors in the grass. Hunters can't swim, so don't use the water by the previous boss or he resets. He can be stunned and slowed, which helps a lot during his enrage at 30%.",
+    "tank": "Clear the crocodile cove on the left and tank him there.",
+    "healer": "Stay back from his fear. Remove Infected Wound fast.",
+    "dps": "Control or kill the Thicket Hunters first. Ranged stay back from the fear."
+   },
+   "displayID": 734731
+  },
+  {
+   "id": 260326,
+   "name": "Relic Guardian",
+   "kind": "boss",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [
+    {
+     "name": "Thunderclap",
+     "spellID": 8078,
+     "icon": "Spell_nature_thunderclap",
+     "source": "wowhead-forever-journal",
+     "note": "Hits and slows everyone within 10 yards."
+    },
+    {
+     "name": "Arcing Smash",
+     "spellID": 8374,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cone in front of him, keep the group behind."
+    },
+    {
+     "name": "Knock Away",
+     "spellID": 10101,
+     "icon": "Inv_gauntlets_05",
+     "source": "wowhead-forever-journal",
+     "note": "Knocks the tank back."
+    },
+    {
+     "name": "War Stomp",
+     "spellID": 11876,
+     "icon": "Ability_bullrush",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Stasis",
+     "spellID": 1284450,
+     "icon": "Inv_trinket_80_titan02c",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   },
+   "tactics": {
+    "general": "Start by pressing the Archival Panel to the right of the inactive boss. A gear check: big health and big tank damage. Thunderclap hits within 10 yards, the tank gets knocked back and sometimes stunned for 5 seconds. He can be stunned and slowed, so use control often, and you can kite around the structures with a slow.",
+    "tank": "Face him away from the group (cone). Expect knockbacks and short stuns.",
+    "healer": "Stay more than 10 yards away.",
+    "dps": "Ranged stay more than 10 yards away."
+   },
+   "displayID": 8399
+  },
+  {
+   "id": 260800,
+   "name": "Thicket Lurker",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 260801,
+   "name": "Thicket Hunter",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 260802,
+   "name": "Thicket Matriarch",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 260810,
+   "name": "Highland Snapper",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 271732,
+   "name": "Thicket Stalker",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 271749,
+   "name": "Oil Slime",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 271750,
+   "name": "Tar Ooze",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 274715,
+   "name": "Marsh Skulker",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 275044,
+   "name": "Dragonmaw Warder",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid"
+   }
+  },
+  {
+   "id": 275045,
+   "name": "Dragonmaw Saboteur",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid"
+   }
+  },
+  {
+   "id": 275046,
+   "name": "Dragonmaw Thaumaturgist",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid"
+   }
+  },
+  {
+   "id": 275049,
+   "name": "Captive Fire Elemental",
+   "kind": "trash",
+   "level": [
+    24,
+    29
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+# CurseForge packager: zips this repo as Interface/AddOns/ForeverTactics on every pushed tag.
+# Tags like v1.0.0 become releases, v1.0.0-beta1 betas, v1.0.0-alpha1 alphas.
+package-as: ForeverTactics
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - tools
+  - data-src
+  - docs
+  - CLAUDE.md
+  - HANDOFF.md
+  - .luacheckrc
+  - .github

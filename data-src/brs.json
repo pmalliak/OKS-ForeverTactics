@@ -1,0 +1,4196 @@
+{
+ "key": "brs",
+ "name": "Blackrock Spire",
+ "instanceID": 229,
+ "levels": [
+  54,
+  62
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 9196,
+   "name": "Highlord Omokk",
+   "kind": "boss",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 11565,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "Enrage.",
+     "source": "cmangos-classic",
+     "timing": "at 20% health",
+     "atHealth": 20
+    },
+    {
+     "name": "Knock Away",
+     "spellID": 10101,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "Knockback.",
+     "source": "cmangos-classic",
+     "timing": "first after 12s, then every 18s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 5532,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cleave."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 23688,
+    "armor": 3489,
+    "damage": "163-216",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Two ogres with him. Control one, tank Omokk away from the group with your back to a wall (knockback). Either kill Omokk first with both adds controlled, or kill one add then him. He enrages and hits hard.",
+    "tank": "Back to a wall."
+   }
+  },
+  {
+   "id": 9236,
+   "name": "Shadow Hunter Vosh'gajin",
+   "kind": "boss",
+   "level": [
+    58,
+    58
+   ],
+   "displayID": 9732,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Curse of Blood",
+     "spellID": 16098,
+     "icon": "Spell_shadow_ritualofsacrifice",
+     "tags": [],
+     "note": "Curse of Blood, remove.",
+     "source": "cmangos-classic",
+     "timing": "first after 2-3s, then every 45s"
+    },
+    {
+     "name": "Hex",
+     "spellID": 16708,
+     "icon": "Spell_nature_polymorph",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8s, then every 15s"
+    },
+    {
+     "name": "Hex",
+     "spellID": 16097,
+     "icon": "Spell_nature_polymorph",
+     "source": "wowhead-forever-journal",
+     "note": "Hex."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 20673,
+    "mana": 2289,
+    "armor": 2788,
+    "damage": "60-80",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Two Blackhand Priests with her. Control one, pull her away from the group because her Hex can hit several players. Kill the priests first, then her. Remove Curse of Blood."
+   }
+  },
+  {
+   "id": 9237,
+   "name": "War Master Voone",
+   "kind": "boss",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 9733,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Pummel",
+     "spellID": 15615,
+     "icon": "Inv_gauntlets_04",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 32s, then every 16s"
+    },
+    {
+     "name": "Uppercut",
+     "spellID": 10966,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "Uppercut, knockback.",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 14s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15284,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 14s, then every 12s"
+    },
+    {
+     "name": "Mortal Strike",
+     "spellID": 15708,
+     "icon": "Ability_warrior_savageblow",
+     "tags": [],
+     "note": "Mortal Strike.",
+     "source": "cmangos-classic",
+     "timing": "first after 12s, then every 10s"
+    },
+    {
+     "name": "Snap Kick",
+     "spellID": 15618,
+     "icon": "Ability_kick",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8s, then every 6s"
+    },
+    {
+     "name": "Throw Axe",
+     "spellID": 16075,
+     "icon": "Inv_axe_08",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1s, then every 8s"
+    },
+    {
+     "name": "Thrash",
+     "spellID": 3391,
+     "icon": "Ability_ghoulfrenzy",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15754,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 28710,
+    "armor": 3435,
+    "damage": "100-132",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "No guards but hits very hard. Wait for threat. Tank him against a wall.",
+    "tank": "Back to a wall."
+   }
+  },
+  {
+   "id": 10596,
+   "name": "Mother Smolderweb",
+   "kind": "boss",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 9929,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Mother's Milk",
+     "spellID": 16468,
+     "icon": "Ability_creature_poison_02",
+     "tags": [],
+     "note": "Needed for a quest. Nearby spiders drop a cure.",
+     "source": "cmangos-classic",
+     "timing": "first after 10-20s, then every 12s"
+    },
+    {
+     "name": "Crystallize",
+     "spellID": 16104,
+     "icon": "Spell_shadow_teleport",
+     "tags": [],
+     "note": "Cone stun, face her away.",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 15s"
+    },
+    {
+     "name": "Summon Spire Spiderling",
+     "spellID": 16103,
+     "icon": "Spell_frost_frostshock",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 23688,
+    "armor": 3489,
+    "damage": "76-101",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Crystallize is a cone stun, face her away. Mother's Milk stuns her target and people next to them."
+   }
+  },
+  {
+   "id": 10584,
+   "name": "Urok Doomhowl",
+   "kind": "boss",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 11583,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Intimidating Roar",
+     "spellID": 16508,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "Fear.",
+     "source": "cmangos-classic",
+     "timing": "first after 10-20s, then every 21-28s"
+    },
+    {
+     "name": "Rend",
+     "spellID": 16509,
+     "icon": "Ability_gouge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-14s, then every 17-21s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 15580,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-9s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 19536,
+    "mana": 2434,
+    "armor": 3075,
+    "damage": "116-154",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Waves of elite ogres come first. Every 30 seconds you can click the pike on the tribute pile while targeting an ogre to kill it outright. Use that plus control. After about ten ogres Urok arrives: warrior-like, with a fear. Let the tank get threat."
+   }
+  },
+  {
+   "id": 9736,
+   "name": "Quartermaster Zigris",
+   "kind": "boss",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 9738,
+   "subName": "Bloodaxe Legion",
+   "abilities": [
+    {
+     "name": "Drink Healing Potion",
+     "spellID": 15504,
+     "icon": "Spell_holy_heal",
+     "tags": [],
+     "note": "Net.",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 35-40s",
+     "atHealth": 50
+    },
+    {
+     "name": "Stun Bomb",
+     "spellID": 16497,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "Stun bomb.",
+     "source": "cmangos-classic",
+     "timing": "first after 15-20s, then every 20-30s"
+    },
+    {
+     "name": "Hooked Net",
+     "spellID": 15609,
+     "icon": "Ability_ensnare",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 15-20s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 16496,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-35 yards away, every 2-3s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 23688,
+    "armor": 3489,
+    "damage": "102-135",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Throws a stun bomb that hits players around, spread a bit. Hooked Net roots a player, freedom effects and Escape Artist help."
+   }
+  },
+  {
+   "id": 10268,
+   "name": "Gizrul the Slavener",
+   "kind": "boss",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 9564,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "Enrage.",
+     "source": "cmangos-classic",
+     "timing": "at 20% health, repeats every 120s",
+     "atHealth": 20
+    },
+    {
+     "name": "Infected Bite",
+     "spellID": 16128,
+     "icon": "Spell_shadow_callofbone",
+     "tags": [],
+     "note": "Infected Bite.",
+     "source": "cmangos-classic",
+     "timing": "first after 15-20s, then every 10-20s"
+    },
+    {
+     "name": "Fatal Bite",
+     "spellID": 16495,
+     "icon": "Ability_backstab",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10s, then every 10s"
+    },
+    {
+     "name": "Fatal Bite",
+     "spellID": 20539,
+     "icon": "Ability_backstab",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 30520,
+    "armor": 3791,
+    "damage": "104-138",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Arrives soon after Halycon. Hits hard, Fatal Bite heals him, Infected Bite is a nature damage over time. Let the tank build threat."
+   }
+  },
+  {
+   "id": 10220,
+   "name": "Halycon",
+   "kind": "boss",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 9567,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Rend",
+     "spellID": 13738,
+     "icon": "Ability_gouge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-10s, then every 12-14s"
+    },
+    {
+     "name": "Thrash",
+     "spellID": 3391,
+     "icon": "Ability_ghoulfrenzy",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Rend",
+     "spellID": 13443,
+     "icon": "Ability_gouge",
+     "source": "wowhead-forever-journal",
+     "note": "Rend."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 23688,
+    "armor": 3489,
+    "damage": "56-74",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Comes with worg pups, kill them, then her. Low damage. Right after she dies, recover fast: Gizrul runs in soon."
+   }
+  },
+  {
+   "id": 9568,
+   "name": "Overlord Wyrmthalak",
+   "kind": "boss",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 8711,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sweeping Slam",
+     "spellID": 12887,
+     "icon": "Ability_devour",
+     "tags": [],
+     "note": "Cone in front.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15663,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Demoralizing Shout",
+     "spellID": 16244,
+     "icon": "Ability_warrior_warcry",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 19983,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cleave."
+    },
+    {
+     "name": "Demoralizing Shout",
+     "spellID": 23511,
+     "icon": "Ability_warrior_warcry",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 33572,
+    "armor": 3791,
+    "damage": "104-138",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Face him away with your back to a wall. At 50% he calls adds: control them and burn him, then the adds.",
+    "tank": "Face him away, back to a wall. Grab any uncontrolled adds at 50%.",
+    "healer": "Move near the tank when the adds appear, your healing pulls them.",
+    "dps": "Control the adds at 50%."
+   }
+  },
+  {
+   "id": 9816,
+   "name": "Pyroguard Emberseer",
+   "kind": "boss",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 2172,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fire Shield",
+     "spellID": 13376,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Emberseer Despawn",
+     "spellID": 16078,
+     "icon": "Temp",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Fire Nova",
+     "spellID": 16079,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "Fire nova, casters and healers stay 10+ yards away.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Flame Buffet",
+     "spellID": 16536,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 24416,
+    "armor": 3791,
+    "damage": "103-137",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "charm",
+     "bleed",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Click the Blackrock Altar to start. AoE down the low-health Incarcerators. Tank Emberseer away from the group for his fire nova."
+   }
+  },
+  {
+   "id": 10264,
+   "name": "Solakar Flamewreath",
+   "kind": "boss",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 9581,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "War Stomp",
+     "spellID": 16727,
+     "icon": "Ability_bullrush",
+     "tags": [],
+     "note": "War Stomp, ranged and healers stay back.",
+     "source": "cmangos-classic",
+     "timing": "first after 12-15s, then every 14-16s"
+    },
+    {
+     "name": "Disturb Rookery Egg (FAST)",
+     "spellID": 16556,
+     "icon": "Temp",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2s, then every 8s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 24416,
+    "armor": 3791,
+    "damage": "103-137",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Hug the north wall to reach Father Flame at the far end, clear the dragonspawn, click Father Flame. Waves come: kill Rookery Hatchers first (they break eggs), mages and warlocks handle whelps, tanks hold Rookery Guardians on the east wall. Then Solakar: tank him on the wall, ranged stay back from his War Stomp."
+   }
+  },
+  {
+   "id": 10429,
+   "name": "Warchief Rend Blackhand",
+   "kind": "boss",
+   "level": [
+    62,
+    62
+   ],
+   "displayID": 9778,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 20% health",
+     "atHealth": 20
+    },
+    {
+     "name": "Whirlwind",
+     "spellID": 13736,
+     "icon": "Ability_whirlwind",
+     "tags": [],
+     "note": "Whirlwind, melee step away.",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 18s"
+    },
+    {
+     "name": "Mortal Strike",
+     "spellID": 15708,
+     "icon": "Ability_warrior_savageblow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9s, then every 16s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15284,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5s, then every 10s"
+    },
+    {
+     "name": "Thunderclap",
+     "spellID": 15588,
+     "icon": "Spell_nature_thunderclap",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 20569,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cleave."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 32370,
+    "armor": 4391,
+    "damage": "129-171",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "charm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Drops off Gyth at 20%. Kill after Gyth. Melee move out of his Whirlwind, avoid the cleave."
+   }
+  },
+  {
+   "id": 10430,
+   "name": "The Beast",
+   "kind": "boss",
+   "level": [
+    62,
+    62
+   ],
+   "displayID": 10193,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Terrifying Roar",
+     "spellID": 14100,
+     "icon": "Ability_devour",
+     "tags": [],
+     "note": "Fear.",
+     "source": "cmangos-classic",
+     "timing": "first after 7-13s, then every 20s"
+    },
+    {
+     "name": "Flamebreak",
+     "spellID": 16785,
+     "icon": "Spell_holy_excorcism_02",
+     "tags": [],
+     "note": "Flamebreak, knockback.",
+     "source": "cmangos-classic",
+     "timing": "first after 12-18s, then every 10s"
+    },
+    {
+     "name": "Berserker Charge",
+     "spellID": 16636,
+     "icon": "Ability_warrior_charge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 8-12s"
+    },
+    {
+     "name": "Fireball",
+     "spellID": 16788,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-40 yards away, every 8-10s"
+    },
+    {
+     "name": "Immolate",
+     "spellID": 15570,
+     "icon": "Spell_fire_immolation",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Fire Blast",
+     "spellID": 16144,
+     "icon": "Spell_fire_fireball",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 80925,
+    "armor": 4391,
+    "damage": "107-143",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "charm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Charges a random player, then returns to the top threat target, so the tank must stay on top. Fears players near him. Flamebreak does fire damage and knocks back.",
+    "tank": "Back to a wall.",
+    "healer": "Spread at max range.",
+    "dps": "Ranged spread at max range."
+   }
+  },
+  {
+   "id": 10363,
+   "name": "General Drakkisath",
+   "kind": "boss",
+   "level": [
+    62,
+    62
+   ],
+   "displayID": 10115,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Rage",
+     "spellID": 16789,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 45-55s, then every 45-55s"
+    },
+    {
+     "name": "Pierce Armor",
+     "spellID": 12097,
+     "icon": "Spell_shadow_vampiricaura",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 30-40s, then every 35s"
+    },
+    {
+     "name": "Conflagration",
+     "spellID": 16805,
+     "icon": "Spell_fire_incinerate",
+     "tags": [],
+     "note": "Burst plus 10 seconds of control, then damages nearby players. Off-tank takes over if it hits the main tank.",
+     "source": "cmangos-classic",
+     "timing": "first after 15-35s, then every 22-55s"
+    },
+    {
+     "name": "Thunderclap",
+     "spellID": 15548,
+     "icon": "Spell_nature_thunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 17s, then every 15-35s"
+    },
+    {
+     "name": "Flamestrike",
+     "spellID": 16419,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-19s, then every 17-30s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15284,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8s, then every 8s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 20569,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cleave."
+    },
+    {
+     "name": "Flame Breath",
+     "spellID": 9573,
+     "icon": "Spell_fire_fire",
+     "source": "wowhead-forever-journal",
+     "note": "Flame Breath."
+    },
+    {
+     "name": "Thunderclap",
+     "spellID": 8078,
+     "icon": "Spell_nature_thunderclap",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [
+    {
+     "title": "Hunter kite",
+     "text": "A hunter pulls Drakkisath back into the Beast's room and feigns death, buying time for the tanks to kill his guards first.",
+     "kind": "clever-use",
+     "confirmedBuild": null
+    }
+   ],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 80925,
+    "armor": 4391,
+    "damage": "107-143",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "charm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Hardest boss here because of his Chromatic Elite Guards. Either tank everything in place and cleave the guards down (warlock fear on one helps), or have a hunter kite him back toward the Beast's room and feign death while tanks kill the guards. Face him away for Flame Breath."
+   }
+  },
+  {
+   "id": 10339,
+   "name": "Gyth",
+   "kind": "boss",
+   "level": [
+    62,
+    62
+   ],
+   "displayID": 9806,
+   "abilities": [
+    {
+     "name": "Freeze",
+     "spellID": 18798,
+     "icon": "Spell_frost_glacier",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Corrosive Acid Breath",
+     "spellID": 20667,
+     "icon": "Spell_nature_acid_01",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Flame Breath",
+     "spellID": 9573,
+     "icon": "Spell_fire_fire",
+     "source": "wowhead-forever-journal",
+     "note": "Flame breath."
+    }
+   ],
+   "tricks": [],
+   "subName": "Rend Blackhand's Mount",
+   "stats": {
+    "type": "Dragonkin",
+    "health": 32370,
+    "armor": 4391,
+    "damage": "107-143",
+    "resist": {
+     "holy": 0,
+     "fire": 210,
+     "nature": 210,
+     "frost": 210,
+     "shadow": 210,
+     "arcane": 210
+    },
+    "immune": [
+     "fear",
+     "root",
+     "silence",
+     "polymorph",
+     "charm",
+     "disarm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Rend gauntlet: survive seven or eight waves of orcs and dragonspawn, then Rend arrives on Gyth. Main tank faces Gyth away for his breath. At 20% Rend falls off: off-tank takes Rend to the side. Kill Gyth, then Rend.",
+    "tank": "Face Gyth away. Off-tank grabs Rend when he drops.",
+    "healer": "Long fight, save mana.",
+    "dps": "Gyth before Rend."
+   }
+  },
+  {
+   "id": 16080,
+   "name": "Mor Grayhoof",
+   "kind": "boss",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 15997,
+   "abilities": [
+    {
+     "name": "Moonfire",
+     "spellID": 27737,
+     "icon": "Spell_nature_starfall",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 16-19s",
+     "phases": [
+      1
+     ]
+    },
+    {
+     "name": "Healing Touch",
+     "spellID": 27527,
+     "icon": "Spell_nature_healingtouch",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-13s, then every 38-42s",
+     "phases": [
+      1
+     ]
+    },
+    {
+     "name": "Rejuvenation",
+     "spellID": 27532,
+     "icon": "Spell_nature_rejuvenation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-13s, then every 38-42s",
+     "phases": [
+      1
+     ]
+    },
+    {
+     "name": "Hurricane",
+     "spellID": 27530,
+     "icon": "Spell_nature_cyclone",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 16-18s, then every 48-52s",
+     "phases": [
+      1
+     ]
+    },
+    {
+     "name": "Bear Form",
+     "spellID": 27543,
+     "icon": "Ability_racial_bearform",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 80% health",
+     "atHealth": 80,
+     "phases": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "name": "Demoralizing Roar",
+     "spellID": 27551,
+     "icon": "Ability_druid_demoralizingroar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 35-40s",
+     "phases": [
+      2
+     ]
+    },
+    {
+     "name": "Swipe",
+     "spellID": 27554,
+     "icon": "Inv_misc_monsterclaw_03",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 2-4s",
+     "phases": [
+      2
+     ]
+    },
+    {
+     "name": "Maul",
+     "spellID": 27553,
+     "icon": "Ability_druid_maul",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 2-4s",
+     "phases": [
+      2
+     ]
+    },
+    {
+     "name": "Cat Form",
+     "spellID": 27545,
+     "icon": "Ability_racial_bearform",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health",
+     "atHealth": 50,
+     "phases": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "name": "Shred",
+     "spellID": 27555,
+     "icon": "Ability_druid_disembowel",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 2-3s",
+     "phases": [
+      3
+     ]
+    },
+    {
+     "name": "Rake",
+     "spellID": 27556,
+     "icon": "Ability_druid_disembowel",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 2-3s",
+     "phases": [
+      3
+     ]
+    },
+    {
+     "name": "Ferocious Bite",
+     "spellID": 27557,
+     "icon": "Ability_druid_ferociousbite",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 2-3s",
+     "phases": [
+      3
+     ]
+    },
+    {
+     "name": "Faerie Dragon Form",
+     "spellID": 27546,
+     "icon": "Spell_nature_forceofnature",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 25% health",
+     "atHealth": 25,
+     "phases": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "name": "Reflection",
+     "spellID": 27564,
+     "icon": "Spell_shadow_teleport",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-8s, then every 12-15s",
+     "phases": [
+      4
+     ]
+    },
+    {
+     "name": "Chain Lightning",
+     "spellID": 27567,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-5s, then every 15-18s",
+     "phases": [
+      4
+     ]
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 46398,
+    "mana": 36510,
+    "armor": 3075,
+    "damage": "93-128",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "phases": [
+    {
+     "id": 0,
+     "name": "Phase 1"
+    },
+    {
+     "id": 1,
+     "name": "Phase 2"
+    },
+    {
+     "id": 2,
+     "name": "Phase 3",
+     "note": "Starts at 80% health."
+    },
+    {
+     "id": 3,
+     "name": "Phase 4",
+     "note": "Starts at 50% health."
+    },
+    {
+     "id": 4,
+     "name": "Phase 5",
+     "note": "Starts at 25% health."
+    }
+   ],
+   "tactics": {
+    "general": "Summoned in Voone's room with a quest brazier."
+   }
+  },
+  {
+   "id": 9219,
+   "name": "Spirestone Butcher",
+   "kind": "rare",
+   "level": [
+    57,
+    57
+   ],
+   "displayID": 11574,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 16704,
+    "armor": 3380,
+    "damage": "98-130",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare. No special abilities."
+   }
+  },
+  {
+   "id": 9218,
+   "name": "Spirestone Battle Lord",
+   "kind": "rare",
+   "level": [
+    58,
+    58
+   ],
+   "displayID": 11576,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 17226,
+    "armor": 3435,
+    "damage": "120-159",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare, with two casters. Kill or control the casters first."
+   }
+  },
+  {
+   "id": 9217,
+   "name": "Spirestone Lord Magus",
+   "kind": "rare",
+   "level": [
+    58,
+    58
+   ],
+   "displayID": 11578,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Bloodlust",
+     "spellID": 6742,
+     "icon": "Spell_nature_bloodlust",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 30-35s",
+     "atHealth": 30
+    },
+    {
+     "name": "Polymorph",
+     "spellID": 13323,
+     "icon": "Spell_nature_polymorph",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-12s, then every 14-19s"
+    },
+    {
+     "name": "Arcane Bolt",
+     "spellID": 15230,
+     "icon": "Spell_arcane_starfire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 13782,
+    "mana": 13734,
+    "armor": 2788,
+    "damage": "93-123",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9596,
+   "name": "Bannok Grimaxe",
+   "kind": "rare",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 9668,
+   "subName": "Firebrand Legion Champion",
+   "abilities": [
+    {
+     "name": "Mortal Strike",
+     "spellID": 13737,
+     "icon": "Ability_warrior_savageblow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 7-11s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8883,
+    "armor": 3489,
+    "damage": "122-162",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare. No special abilities."
+   }
+  },
+  {
+   "id": 9718,
+   "name": "Ghok Bashguud",
+   "kind": "rare",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 11809,
+   "subName": "Bloodaxe Champion",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health",
+     "atHealth": 30
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8883,
+    "armor": 3489,
+    "damage": "102-135",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10509,
+   "name": "Jed Runewatcher",
+   "kind": "rare",
+   "level": [
+    59,
+    59
+   ],
+   "displayID": 9686,
+   "subName": "Blackhand Legion",
+   "abilities": [
+    {
+     "name": "Shield Charge",
+     "spellID": 15749,
+     "icon": "Ability_warrior_charge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10s, then every 5-15s"
+    },
+    {
+     "name": "Shield Bash",
+     "spellID": 11972,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-12s, then every 12-17s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 14516,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 6-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8883,
+    "armor": 3489,
+    "damage": "101-135",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare. Easy, tank him on a wall, group at range."
+   }
+  },
+  {
+   "id": 10376,
+   "name": "Crystal Fang",
+   "kind": "rare",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 9755,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Summon Spire Spiderling",
+     "spellID": 16416,
+     "icon": "Spell_frost_frostshock",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 9156,
+    "armor": 3791,
+    "damage": "77-103",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare. Clear the spiders around first, then easy."
+   }
+  },
+  {
+   "id": 9045,
+   "name": "Scarshield Acolyte",
+   "kind": "trash",
+   "level": [
+    54,
+    55
+   ],
+   "displayID": 8898,
+   "subName": "Scarshield Legion",
+   "abilities": [
+    {
+     "name": "Heal",
+     "spellID": 12039,
+     "icon": "Spell_holy_heal",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 75% health",
+     "atHealth": 75
+    },
+    {
+     "name": "Shadow Word: Pain",
+     "spellID": 14032,
+     "icon": "Spell_shadow_shadowwordpain",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-16s, then every 22-34s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6273,
+    "mana": 2117,
+    "armor": 2654,
+    "damage": "86-116",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9097,
+   "name": "Scarshield Legionnaire",
+   "kind": "trash",
+   "level": [
+    54,
+    55
+   ],
+   "displayID": 9629,
+   "subName": "Scarshield Legion",
+   "abilities": [
+    {
+     "name": "Shield Bash",
+     "spellID": 11972,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 14-20s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15496,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-12s, then every 8-22s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 7842,
+    "armor": 3271,
+    "damage": "92-125",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9098,
+   "name": "Scarshield Spellbinder",
+   "kind": "trash",
+   "level": [
+    54,
+    55
+   ],
+   "displayID": 9618,
+   "subName": "Scarshield Legion",
+   "abilities": [
+    {
+     "name": "Arcane Bolt",
+     "spellID": 13748,
+     "icon": "Spell_arcane_starfire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6273,
+    "mana": 4234,
+    "armor": 2654,
+    "damage": "86-116",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9257,
+   "name": "Scarshield Warlock",
+   "kind": "trash",
+   "level": [
+    54,
+    55
+   ],
+   "displayID": 9609,
+   "subName": "Scarshield Legion",
+   "abilities": [
+    {
+     "name": "Scarshield Portal",
+     "spellID": 15125,
+     "icon": "Spell_arcane_teleportorgrimmar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-20s, then every 60-75s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12471,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6273,
+    "mana": 2117,
+    "armor": 2654,
+    "damage": "86-116",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9199,
+   "name": "Spirestone Enforcer",
+   "kind": "trash",
+   "level": [
+    54,
+    55
+   ],
+   "displayID": 11577,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 14516,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-15s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 13070,
+    "armor": 3271,
+    "damage": "92-125",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9201,
+   "name": "Spirestone Ogre Magus",
+   "kind": "trash",
+   "level": [
+    54,
+    55
+   ],
+   "displayID": 11562,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Bloodlust",
+     "spellID": 6742,
+     "icon": "Spell_nature_bloodlust",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 40% health, repeats every 30-35s",
+     "atHealth": 40
+    },
+    {
+     "name": "Slow",
+     "spellID": 13747,
+     "icon": "Spell_nature_slow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-9s, then every 20-30s"
+    },
+    {
+     "name": "Arcane Bolt",
+     "spellID": 15979,
+     "icon": "Spell_arcane_starfire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 10455,
+    "mana": 10585,
+    "armor": 2654,
+    "damage": "86-116",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9258,
+   "name": "Scarshield Raider",
+   "kind": "trash",
+   "level": [
+    55,
+    56
+   ],
+   "displayID": 9637,
+   "subName": "Scarshield Legion",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 11976,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 6-9s"
+    },
+    {
+     "name": "Hooked Net",
+     "spellID": 14030,
+     "icon": "Ability_ensnare",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 12-18s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8097,
+    "armor": 3327,
+    "damage": "92-127",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9267,
+   "name": "Smolderthorn Axe Thrower",
+   "kind": "trash",
+   "level": [
+    55,
+    56
+   ],
+   "displayID": 9674,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Knockdown",
+     "spellID": 11428,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-14s, then every 11-15s"
+    },
+    {
+     "name": "Throw",
+     "spellID": 15795,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8097,
+    "armor": 3327,
+    "damage": "94-127",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9239,
+   "name": "Smolderthorn Mystic",
+   "kind": "trash",
+   "level": [
+    55,
+    56
+   ],
+   "displayID": 9709,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Chain Lightning",
+     "spellID": 16006,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6477,
+    "mana": 2163,
+    "armor": 2699,
+    "damage": "87-118",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9240,
+   "name": "Smolderthorn Shadow Priest",
+   "kind": "trash",
+   "level": [
+    55,
+    56
+   ],
+   "displayID": 9728,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Dispel Magic",
+     "spellID": 15090,
+     "icon": "Spell_holy_dispelmagic",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10s, then every 10s"
+    },
+    {
+     "name": "Hex",
+     "spellID": 11641,
+     "icon": "Spell_nature_polymorph",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 20s"
+    },
+    {
+     "name": "Mana Burn",
+     "spellID": 15800,
+     "icon": "Spell_shadow_manaburn",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-8s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6477,
+    "mana": 2163,
+    "armor": 2699,
+    "damage": "87-118",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9198,
+   "name": "Spirestone Mystic",
+   "kind": "trash",
+   "level": [
+    55,
+    56
+   ],
+   "displayID": 11579,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Chain Lightning",
+     "spellID": 15659,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-10s, then every 5-15s"
+    },
+    {
+     "name": "Forked Lightning",
+     "spellID": 8435,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5s, then every 10-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 10795,
+    "mana": 10815,
+    "armor": 2699,
+    "damage": "87-118",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9200,
+   "name": "Spirestone Reaver",
+   "kind": "trash",
+   "level": [
+    55,
+    56
+   ],
+   "displayID": 11581,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "War Stomp",
+     "spellID": 11876,
+     "icon": "Ability_bullrush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15-20s, then every 20-25s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15284,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 3-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 13495,
+    "armor": 3327,
+    "damage": "92-127",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9261,
+   "name": "Firebrand Darkweaver",
+   "kind": "trash",
+   "level": [
+    56,
+    57
+   ],
+   "displayID": 9644,
+   "subName": "Firebrand Legion",
+   "abilities": [
+    {
+     "name": "Shadow Bolt Volley",
+     "spellID": 14887,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-15s, then every 12-15s"
+    },
+    {
+     "name": "Dispel Magic",
+     "spellID": 15090,
+     "icon": "Spell_holy_dispelmagic",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-14s, then every 9-14s"
+    },
+    {
+     "name": "Mark of Flames",
+     "spellID": 15128,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-6s, then every 30-45s (50% chance)"
+    },
+    {
+     "name": "Curse of the Firebrand",
+     "spellID": 16071,
+     "icon": "Ability_creature_cursed_03",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-4s, then every 12-15s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12471,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6681,
+    "mana": 2241,
+    "armor": 2744,
+    "damage": "89-121",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9259,
+   "name": "Firebrand Grunt",
+   "kind": "trash",
+   "level": [
+    56,
+    57
+   ],
+   "displayID": 9664,
+   "subName": "Firebrand Legion",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 120s",
+     "atHealth": 30
+    },
+    {
+     "name": "Mark of Flames",
+     "spellID": 15128,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 30s"
+    },
+    {
+     "name": "Mortal Strike",
+     "spellID": 13737,
+     "icon": "Ability_warrior_savageblow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5s, then every 6-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8352,
+    "armor": 3380,
+    "damage": "96-130",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9262,
+   "name": "Firebrand Invoker",
+   "kind": "trash",
+   "level": [
+    56,
+    57
+   ],
+   "displayID": 9648,
+   "subName": "Firebrand Legion",
+   "abilities": [
+    {
+     "name": "Flamestrike",
+     "spellID": 12468,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-16s, then every 14-18s"
+    },
+    {
+     "name": "Fire Nova",
+     "spellID": 12470,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-10s, then every 11-14s"
+    },
+    {
+     "name": "Mark of Flames",
+     "spellID": 15128,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-6s, then every 30-45s (50% chance)"
+    },
+    {
+     "name": "Fireball",
+     "spellID": 15242,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6681,
+    "mana": 3361,
+    "armor": 2744,
+    "damage": "89-121",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9241,
+   "name": "Smolderthorn Headhunter",
+   "kind": "trash",
+   "level": [
+    56,
+    57
+   ],
+   "displayID": 9682,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Pierce Armor",
+     "spellID": 6016,
+     "icon": "Spell_shadow_vampiricaura",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 22-26s"
+    },
+    {
+     "name": "Impale",
+     "spellID": 16001,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 9-13s"
+    },
+    {
+     "name": "Throw",
+     "spellID": 15795,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8352,
+    "armor": 3380,
+    "damage": "96-130",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9269,
+   "name": "Smolderthorn Seer",
+   "kind": "trash",
+   "level": [
+    56,
+    57
+   ],
+   "displayID": 9715,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shrink",
+     "spellID": 15802,
+     "icon": "Spell_shadow_antishadow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-6s, then every 12-15s"
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 15801,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6681,
+    "mana": 2241,
+    "armor": 2744,
+    "damage": "89-121",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9265,
+   "name": "Smolderthorn Shadow Hunter",
+   "kind": "trash",
+   "level": [
+    56,
+    57
+   ],
+   "displayID": 9724,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Gouge",
+     "spellID": 12540,
+     "icon": "Ability_gouge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 12-15s"
+    },
+    {
+     "name": "Kick",
+     "spellID": 15614,
+     "icon": "Ability_kick",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10s, then every 6-12s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6681,
+    "mana": 2241,
+    "armor": 2744,
+    "damage": "89-121",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9266,
+   "name": "Smolderthorn Witch Doctor",
+   "kind": "trash",
+   "level": [
+    56,
+    57
+   ],
+   "displayID": 9719,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Flame Buffet Totem",
+     "spellID": 15867,
+     "icon": "Spell_fire_searingtotem",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15-20s, then every 20s"
+    },
+    {
+     "name": "Superior Healing Ward",
+     "spellID": 15869,
+     "icon": "Spell_holy_layonhands",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-12s, then every 10-15s"
+    },
+    {
+     "name": "Elemental Protection Totem",
+     "spellID": 8262,
+     "icon": "Spell_nature_nullward",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-8s, then every 10-15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6681,
+    "mana": 2241,
+    "armor": 2744,
+    "damage": "89-121",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9692,
+   "name": "Bloodaxe Raider",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 9602,
+   "subName": "Bloodaxe Legion",
+   "abilities": [
+    {
+     "name": "Cleave",
+     "spellID": 15284,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-7s, then every 7-11s"
+    },
+    {
+     "name": "Sunder Armor",
+     "spellID": 15572,
+     "icon": "Ability_warrior_sunder",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-9s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8613,
+    "armor": 3435,
+    "damage": "98-132",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9717,
+   "name": "Bloodaxe Summoner",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 9613,
+   "subName": "Bloodaxe Legion",
+   "abilities": [
+    {
+     "name": "Summon",
+     "spellID": 15734,
+     "icon": "Spell_arcane_blink",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-12s, then every 25-30s (75% chance)"
+    },
+    {
+     "name": "Frost Nova",
+     "spellID": 15532,
+     "icon": "Spell_frost_frostnova",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-9s, then every 13-18s (90% chance)"
+    },
+    {
+     "name": "Arcane Missiles",
+     "spellID": 15790,
+     "icon": "Spell_nature_starfall",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 10-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6891,
+    "mana": 2289,
+    "armor": 2788,
+    "damage": "91-123",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9716,
+   "name": "Bloodaxe Warmonger",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 9617,
+   "subName": "Bloodaxe Legion",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health",
+     "atHealth": 30
+    },
+    {
+     "name": "Uppercut",
+     "spellID": 10966,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 9-13s (80% chance)"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8613,
+    "armor": 3435,
+    "damage": "120-162",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9263,
+   "name": "Firebrand Dreadweaver",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 9652,
+   "subName": "Firebrand Legion",
+   "abilities": [
+    {
+     "name": "Mark of Flames",
+     "spellID": 15128,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 30s"
+    },
+    {
+     "name": "Plague Cloud",
+     "spellID": 15728,
+     "icon": "Spell_shadow_callofbone",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-15s, then every 10-20s"
+    },
+    {
+     "name": "Curse of the Firebrand",
+     "spellID": 16071,
+     "icon": "Ability_creature_cursed_03",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-4s, then every 12-15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6891,
+    "mana": 2289,
+    "armor": 2788,
+    "damage": "91-123",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9260,
+   "name": "Firebrand Legionnaire",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 9660,
+   "subName": "Firebrand Legion",
+   "abilities": [
+    {
+     "name": "Mark of Flames",
+     "spellID": 15128,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 30s"
+    },
+    {
+     "name": "Improved Blocking",
+     "spellID": 3248,
+     "icon": "Spell_fire_firearmor",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-5s, then every 10-15s"
+    },
+    {
+     "name": "Shield Bash",
+     "spellID": 11972,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 6-12s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8613,
+    "armor": 5152,
+    "damage": "98-132",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9264,
+   "name": "Firebrand Pyromancer",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 9656,
+   "subName": "Firebrand Legion",
+   "abilities": [
+    {
+     "name": "Mark of Flames",
+     "spellID": 15128,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 30s"
+    },
+    {
+     "name": "Flame Shock",
+     "spellID": 15096,
+     "icon": "Spell_fire_flameshock",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-4s, then every 5-8s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6891,
+    "mana": 2289,
+    "armor": 2788,
+    "damage": "75-101",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9268,
+   "name": "Smolderthorn Berserker",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 7803,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 120s",
+     "atHealth": 30
+    },
+    {
+     "name": "Strike",
+     "spellID": 13446,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-5s, then every 4-6s"
+    },
+    {
+     "name": "Mortal Strike",
+     "spellID": 17547,
+     "icon": "Ability_warrior_savageblow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-9s, then every 6-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8613,
+    "armor": 3435,
+    "damage": "98-132",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10374,
+   "name": "Spire Spider",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 9755,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Crystallize",
+     "spellID": 16104,
+     "icon": "Spell_shadow_teleport",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15s, then every 15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 8613,
+    "armor": 3435,
+    "damage": "73-99",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9197,
+   "name": "Spirestone Battle Mage",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 11543,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Chain Lightning",
+     "spellID": 15305,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-10s, then every 5-15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 11485,
+    "mana": 11445,
+    "armor": 2788,
+    "damage": "91-123",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9216,
+   "name": "Spirestone Warlord",
+   "kind": "trash",
+   "level": [
+    57,
+    58
+   ],
+   "displayID": 11582,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 120s",
+     "atHealth": 30
+    },
+    {
+     "name": "Empower Will",
+     "spellID": 16171,
+     "icon": "Ability_warrior_battleshout",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 20s, then every 20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 14355,
+    "armor": 3435,
+    "damage": "117-159",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9693,
+   "name": "Bloodaxe Evoker",
+   "kind": "trash",
+   "level": [
+    58,
+    59
+   ],
+   "displayID": 9625,
+   "subName": "Bloodaxe Legion",
+   "abilities": [
+    {
+     "name": "Flamecrack",
+     "spellID": 15743,
+     "icon": "Spell_fire_fire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-14s, then every 25-30s (75% chance)"
+    },
+    {
+     "name": "Blast Wave",
+     "spellID": 15744,
+     "icon": "Spell_holy_excorcism_02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-9s, then every 15-20s (80% chance)"
+    },
+    {
+     "name": "Arcane Bolt",
+     "spellID": 13748,
+     "icon": "Spell_arcane_starfire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 7107,
+    "mana": 2369,
+    "armor": 2832,
+    "damage": "93-125",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9583,
+   "name": "Bloodaxe Veteran",
+   "kind": "trash",
+   "level": [
+    58,
+    59
+   ],
+   "displayID": 9633,
+   "subName": "Bloodaxe Legion",
+   "abilities": [
+    {
+     "name": "Snap Kick",
+     "spellID": 15618,
+     "icon": "Ability_kick",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12s, then every 15s (80% chance)"
+    },
+    {
+     "name": "Pummel",
+     "spellID": 15615,
+     "icon": "Inv_gauntlets_04",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5s, then every 9s (90% chance)"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 8883,
+    "armor": 3489,
+    "damage": "82-111",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9096,
+   "name": "Rage Talon Dragonspawn",
+   "kind": "trash",
+   "level": [
+    58,
+    59
+   ],
+   "displayID": 2554,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 120s",
+     "atHealth": 30
+    },
+    {
+     "name": "Fixate",
+     "spellID": 12021,
+     "icon": "Spell_shadow_charm",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-17s, then every 20-34s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 15580,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-13s, then every 7-14s"
+    },
+    {
+     "name": "Sunder Armor",
+     "spellID": 15572,
+     "icon": "Ability_warrior_sunder",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-9s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 14805,
+    "armor": 3489,
+    "damage": "99-135",
+    "resist": {
+     "holy": 0,
+     "fire": 150,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10083,
+   "name": "Rage Talon Flamescale",
+   "kind": "trash",
+   "level": [
+    58,
+    59
+   ],
+   "displayID": 8249,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fireball Volley",
+     "spellID": 15285,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-24s, then every 6-18s"
+    },
+    {
+     "name": "Fire Nova",
+     "spellID": 12470,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-15s, then every 11-22s"
+    },
+    {
+     "name": "Flamestrike",
+     "spellID": 16102,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-15s, then every 23-32s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 7107,
+    "mana": 2369,
+    "armor": 2832,
+    "damage": "92-125",
+    "resist": {
+     "holy": 0,
+     "fire": 150,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 9817,
+   "name": "Blackhand Dreadweaver",
+   "kind": "trash",
+   "level": [
+    59,
+    60
+   ],
+   "displayID": 9670,
+   "subName": "Blackhand Legion",
+   "abilities": [
+    {
+     "name": "Veil of Shadow",
+     "spellID": 7068,
+     "icon": "Spell_shadow_gathershadows",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-21s, then every 22-29s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12739,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 7326,
+    "mana": 2434,
+    "armor": 3075,
+    "damage": "94-128",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9818,
+   "name": "Blackhand Summoner",
+   "kind": "trash",
+   "level": [
+    59,
+    60
+   ],
+   "displayID": 9849,
+   "subName": "Blackhand Legion",
+   "abilities": [
+    {
+     "name": "Frost Nova",
+     "spellID": 15532,
+     "icon": "Spell_frost_frostnova",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 11s, then every 13-17s"
+    },
+    {
+     "name": "Summoning Portal",
+     "spellID": 16136,
+     "icon": "Spell_arcane_teleportorgrimmar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15-25s, then every 20s"
+    },
+    {
+     "name": "Summoning Portal",
+     "spellID": 16139,
+     "icon": "Spell_arcane_teleportorgrimmar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-16s, then every 20s"
+    },
+    {
+     "name": "Fireball",
+     "spellID": 12466,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 5-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 7326,
+    "mana": 2434,
+    "armor": 3075,
+    "damage": "94-128",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 9819,
+   "name": "Blackhand Veteran",
+   "kind": "trash",
+   "level": [
+    59,
+    60
+   ],
+   "displayID": 9686,
+   "subName": "Blackhand Legion",
+   "abilities": [
+    {
+     "name": "Shield Bash",
+     "spellID": 11972,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-20s, then every 6-12s"
+    },
+    {
+     "name": "Shield Charge",
+     "spellID": 15749,
+     "icon": "Ability_warrior_charge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 10-20s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 14516,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-5s, then every 14-23s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 9156,
+    "armor": 3791,
+    "damage": "101-137",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 10814,
+   "name": "Chromatic Elite Guard",
+   "kind": "trash",
+   "level": [
+    59,
+    60
+   ],
+   "displayID": 10116,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Mortal Strike",
+     "spellID": 15708,
+     "icon": "Ability_warrior_savageblow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-13s, then every 13s"
+    },
+    {
+     "name": "Knockdown",
+     "spellID": 16790,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-15s, then every 11-26s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 15580,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-21s, then every 9s (80% chance)"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 24416,
+    "armor": 3791,
+    "damage": "101-137",
+    "resist": {
+     "holy": 0,
+     "fire": 220,
+     "nature": 220,
+     "frost": 220,
+     "shadow": 220,
+     "arcane": 220
+    },
+    "immune": [
+     "fear",
+     "polymorph",
+     "charm",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10318,
+   "name": "Blackhand Assassin",
+   "kind": "trash",
+   "level": [
+    60,
+    61
+   ],
+   "displayID": 9691,
+   "subName": "Blackhand Legion",
+   "abilities": [
+    {
+     "name": "Gouge",
+     "spellID": 12540,
+     "icon": "Ability_gouge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 13-22s"
+    },
+    {
+     "name": "Slice and Dice",
+     "spellID": 6434,
+     "icon": "Ability_rogue_slicedice",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-33s, then every 60s"
+    },
+    {
+     "name": "Backstab",
+     "spellID": 15582,
+     "icon": "Ability_backstab",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 2-5s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 15720,
+    "armor": 2046,
+    "damage": "103-161",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10317,
+   "name": "Blackhand Elite",
+   "kind": "trash",
+   "level": [
+    60,
+    61
+   ],
+   "displayID": 9734,
+   "subName": "Blackhand Legion",
+   "abilities": [
+    {
+     "name": "Head Crack",
+     "spellID": 16172,
+     "icon": "Ability_thunderbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 16-33s, then every 25-30s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 15580,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 13-17s, then every 9-29s"
+    },
+    {
+     "name": "Backhand",
+     "spellID": 6253,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-23s, then every 11-28s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 15720,
+    "armor": 4091,
+    "damage": "119-161",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10319,
+   "name": "Blackhand Iron Guard",
+   "kind": "trash",
+   "level": [
+    60,
+    61
+   ],
+   "displayID": 9696,
+   "subName": "Blackhand Legion",
+   "abilities": [
+    {
+     "name": "Shield Slam",
+     "spellID": 15655,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 7-18s"
+    },
+    {
+     "name": "Shield Wall",
+     "spellID": 15062,
+     "icon": "Ability_warrior_shieldwall",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-30s, then every 20-40s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 12576,
+    "armor": 8182,
+    "damage": "103-140",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10762,
+   "name": "Blackhand Thug",
+   "kind": "trash",
+   "level": [
+    60,
+    60
+   ],
+   "displayID": 10172,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 15260,
+    "armor": 3791,
+    "damage": "103-137",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10366,
+   "name": "Rage Talon Dragon Guard",
+   "kind": "trash",
+   "level": [
+    60,
+    61
+   ],
+   "displayID": 9753,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shield Slam",
+     "spellID": 15655,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-10s, then every 11-20s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15284,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 14-20s, then every 12-25s"
+    },
+    {
+     "name": "Sunder Armor",
+     "spellID": 16145,
+     "icon": "Ability_warrior_sunder",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-9s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 18864,
+    "armor": 6136,
+    "damage": "103-140",
+    "resist": {
+     "holy": 0,
+     "fire": 150,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10372,
+   "name": "Rage Talon Fire Tongue",
+   "kind": "trash",
+   "level": [
+    60,
+    61
+   ],
+   "displayID": 8309,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fire Nova",
+     "spellID": 16635,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-18s, then every 14-21s"
+    },
+    {
+     "name": "Fire Blast",
+     "spellID": 16144,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-10s, then every 4-12s"
+    },
+    {
+     "name": "Flame Buffet",
+     "spellID": 16168,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-6s, then every 4-14s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 18864,
+    "armor": 4091,
+    "damage": "103-140",
+    "resist": {
+     "holy": 0,
+     "fire": 150,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10899,
+   "name": "Goraluk Anvilcrack",
+   "kind": "trash",
+   "level": [
+    61,
+    61
+   ],
+   "displayID": 10222,
+   "subName": "Blackhand Legion Armorsmith",
+   "abilities": [
+    {
+     "name": "Backhand",
+     "spellID": 6253,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10s, then every 10s"
+    },
+    {
+     "name": "Head Crack",
+     "spellID": 16172,
+     "icon": "Ability_thunderbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 20s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 15580,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-7s, then every 4-6s"
+    },
+    {
+     "name": "Head Crack",
+     "spellID": 3148,
+     "icon": "Ability_thunderbolt",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Heroic Strike",
+     "spellID": 25710,
+     "icon": "Ability_rogue_ambush",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 12576,
+    "armor": 4091,
+    "damage": "105-140",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Basic. Tank him on a wall away from the group."
+   }
+  },
+  {
+   "id": 10371,
+   "name": "Rage Talon Captain",
+   "kind": "trash",
+   "level": [
+    62,
+    62
+   ],
+   "displayID": 8310,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Knock Away",
+     "spellID": 10101,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 14-33s, then every 16-22s"
+    },
+    {
+     "name": "Mortal Strike",
+     "spellID": 15708,
+     "icon": "Ability_warrior_savageblow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-11s, then every 7-32s"
+    },
+    {
+     "name": "Arcing Smash",
+     "spellID": 16169,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-20s, then every 4-14s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 19422,
+    "armor": 4391,
+    "damage": "107-143",
+    "resist": {
+     "holy": 0,
+     "fire": 150,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  }
+ ]
+}

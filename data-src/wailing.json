@@ -1,0 +1,946 @@
+{
+ "key": "wailing",
+ "name": "Wailing Caverns",
+ "instanceID": 43,
+ "levels": [
+  17,
+  21
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 3671,
+   "name": "Lady Anacondra",
+   "kind": "boss",
+   "level": [
+    20,
+    20
+   ],
+   "displayID": 4313,
+   "subName": "Fanglord",
+   "abilities": [
+    {
+     "name": "Sleep",
+     "spellID": 700,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "Interrupt it, it can land on the tank or healer.",
+     "source": "cmangos-classic",
+     "timing": "first after 8-12s, then every 12-25s"
+    },
+    {
+     "name": "Thorns Aura",
+     "spellID": 8148,
+     "icon": "Spell_nature_thorns",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1s, then every 75-90s"
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    },
+    {
+     "name": "Healing Touch",
+     "spellID": 5187,
+     "icon": "Spell_nature_healingtouch",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2165,
+    "mana": 490,
+    "armor": 712,
+    "damage": "27-36",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "tactics": {
+    "general": "Sleep can hit anyone, tank and healer too. Interrupt every Sleep. If another Druid of the Fang joins, control it at once, two sleepers wipe groups.",
+    "dps": "Interrupt Sleep."
+   }
+  },
+  {
+   "id": 3669,
+   "name": "Lord Cobrahn",
+   "kind": "boss",
+   "level": [
+    20,
+    20
+   ],
+   "displayID": 4213,
+   "subName": "Fanglord",
+   "abilities": [
+    {
+     "name": "Cobrahn Serpent Form",
+     "spellID": 7965,
+     "icon": "Spell_nature_guardianward",
+     "tags": [],
+     "note": "Turns into a serpent: more damage, faster attacks.",
+     "source": "cmangos-classic",
+     "timing": "at 30% health",
+     "atHealth": 30,
+     "phases": [
+      0,
+      1
+     ]
+    },
+    {
+     "name": "Druid's Slumber",
+     "spellID": 8040,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "Interrupt it, it can land on anyone.",
+     "source": "cmangos-classic",
+     "timing": "first after 10s, then every 13-20s",
+     "phases": [
+      1
+     ]
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s",
+     "phases": [
+      0,
+      1
+     ]
+    },
+    {
+     "name": "Healing Touch",
+     "spellID": 5188,
+     "icon": "Spell_nature_healingtouch",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2165,
+    "mana": 490,
+    "armor": 712,
+    "damage": "27-36",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "phases": [
+    {
+     "id": 0,
+     "name": "Phase 1"
+    },
+    {
+     "id": 1,
+     "name": "Phase 2",
+     "note": "Starts at 30% health."
+    }
+   ],
+   "tactics": {
+    "general": "Three non-elite pythons first, AoE them. Interrupt Sleep. He later turns into a serpent and hits much harder and faster.",
+    "healer": "Damage goes up a lot when he becomes a serpent.",
+    "dps": "Pythons first. Interrupt Sleep."
+   }
+  },
+  {
+   "id": 3653,
+   "name": "Kresh",
+   "kind": "boss",
+   "level": [
+    20,
+    20
+   ],
+   "displayID": 5126,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Bite",
+     "spellID": 17256,
+     "icon": "Ability_racial_cannibalize",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Shell Shield",
+     "spellID": 26064,
+     "icon": "Ability_hunter_pet_turtle",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Dazed",
+     "spellID": 13496,
+     "icon": "Spell_frost_stun",
+     "source": "wowhead-forever-journal",
+     "note": "Dazes his target."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1452,
+    "armor": 4260,
+    "damage": "29-39",
+    "resist": {
+     "holy": 0,
+     "fire": 60,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Simple. High armor and damage, can drag on with lots of melee."
+   }
+  },
+  {
+   "id": 3670,
+   "name": "Lord Pythas",
+   "kind": "boss",
+   "level": [
+    21,
+    21
+   ],
+   "displayID": 4214,
+   "subName": "Fanglord",
+   "abilities": [
+    {
+     "name": "Sleep",
+     "spellID": 700,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "Interrupt it.",
+     "source": "cmangos-classic",
+     "timing": "first after 8-12s, then every 12-20s"
+    },
+    {
+     "name": "Thunderclap",
+     "spellID": 8147,
+     "icon": "Spell_nature_thunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 12-15s"
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    },
+    {
+     "name": "Healing Touch",
+     "spellID": 5187,
+     "icon": "Spell_nature_healingtouch",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2320,
+    "mana": 510,
+    "armor": 740,
+    "damage": "28-38",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Comes with a Druid of the Fang and a Deviate Shambler. Control the Druid, kill the Shambler first, but keep someone on Pythas to interrupt Sleep.",
+    "dps": "Control the Druid, kill the Shambler, interrupt Sleep."
+   }
+  },
+  {
+   "id": 3674,
+   "name": "Skum",
+   "kind": "boss",
+   "level": [
+    21,
+    21
+   ],
+   "displayID": 4203,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Chained Bolt",
+     "spellID": 6254,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "Chains between up to three close players, spread out.",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 4-7s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 3908,
+    "armor": 888,
+    "damage": "31-40",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Optional, simple. Chained Bolt jumps between melee standing close together, so melee spread a bit."
+   }
+  },
+  {
+   "id": 3673,
+   "name": "Lord Serpentis",
+   "kind": "boss",
+   "level": [
+    21,
+    21
+   ],
+   "displayID": 4215,
+   "subName": "Fanglord",
+   "abilities": [
+    {
+     "name": "Sleep",
+     "spellID": 700,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "Interrupt it.",
+     "source": "cmangos-classic",
+     "timing": "first after 3-6s, then every 10-19s"
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    },
+    {
+     "name": "Healing Touch",
+     "spellID": 5187,
+     "icon": "Spell_nature_healingtouch",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2784,
+    "mana": 1530,
+    "armor": 740,
+    "damage": "28-38",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Last Druid lord, no trash with him. Interrupt Sleep and it's easy.",
+    "dps": "Interrupt Sleep."
+   }
+  },
+  {
+   "id": 5775,
+   "name": "Verdan the Everliving",
+   "kind": "boss",
+   "level": [
+    21,
+    21
+   ],
+   "displayID": 4256,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Grasping Vines",
+     "spellID": 8142,
+     "icon": "Spell_nature_earthquake",
+     "tags": [],
+     "note": "Knockdown, root and damage over time near him.",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-8 yards away, every 13-16s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 4168,
+    "armor": 888,
+    "damage": "53-71",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Roots and knocks down everyone within 10 yards with damage. Ranged stay at max range. Kill him to open the waterfall shortcut.",
+    "healer": "Stay back from the root.",
+    "dps": "Ranged stay back."
+   }
+  },
+  {
+   "id": 3654,
+   "name": "Mutanus the Devourer",
+   "kind": "boss",
+   "level": [
+    22,
+    22
+   ],
+   "displayID": 4088,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Naralex's Nightmare",
+     "spellID": 7967,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "15 second sleep, magic.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-11s, then every 25-36s"
+    },
+    {
+     "name": "Terrify",
+     "spellID": 7399,
+     "icon": "Ability_physical_taunt",
+     "tags": [],
+     "note": "Short magic fear.",
+     "source": "cmangos-classic",
+     "timing": "first after 15-21s, then every 18-24s"
+    },
+    {
+     "name": "Thundercrack",
+     "spellID": 8150,
+     "icon": "Spell_nature_thunderclap",
+     "tags": [],
+     "note": "Heavy damage and a stun near him.",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 10-16s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4496,
+    "armor": 922,
+    "damage": "32-42",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Naralex event after all four Druid lords die. Escort the Disciple to the ritual stone, kill two waves of adds, then Mutanus comes to kill the Disciple. If the Disciple dies or you wipe, the event fails until reset. Thundercrack hurts a lot near him. Bring ranged and extra healing.",
+    "healer": "Stay back from Thundercrack.",
+    "dps": "Ranged stay back. Protect the Disciple."
+   }
+  },
+  {
+   "id": 5912,
+   "name": "Deviate Faerie Dragon",
+   "kind": "rare",
+   "level": [
+    20,
+    20
+   ],
+   "displayID": 1267,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 1452,
+    "armor": 852,
+    "damage": "29-39",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 3640,
+   "name": "Evolving Ectoplasm",
+   "kind": "trash",
+   "level": [
+    17,
+    18
+   ],
+   "displayID": 1751,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 1251,
+    "armor": 782,
+    "damage": "25-34",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5048,
+   "name": "Deviate Adder",
+   "kind": "trash",
+   "level": [
+    18,
+    19
+   ],
+   "displayID": 4317,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Poison",
+     "spellID": 744,
+     "icon": "Spell_nature_corrosivebreath",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1347,
+    "armor": 817,
+    "damage": "26-37",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 3637,
+   "name": "Deviate Guardian",
+   "kind": "trash",
+   "level": [
+    18,
+    19
+   ],
+   "displayID": 755,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1347,
+    "armor": 817,
+    "damage": "26-37",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 3636,
+   "name": "Deviate Ravager",
+   "kind": "trash",
+   "level": [
+    18,
+    19
+   ],
+   "displayID": 1747,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1347,
+    "armor": 817,
+    "damage": "26-37",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5761,
+   "name": "Deviate Shambler",
+   "kind": "trash",
+   "level": [
+    19,
+    20
+   ],
+   "displayID": 1084,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Wild Regeneration",
+     "spellID": 7948,
+     "icon": "Spell_nature_rejuvenation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 18-21s",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 1299,
+    "mana": 490,
+    "armor": 712,
+    "damage": "26-36",
+    "resist": {
+     "holy": 0,
+     "fire": 100,
+     "nature": 100,
+     "frost": 100,
+     "shadow": 100,
+     "arcane": 100
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5755,
+   "name": "Deviate Viper",
+   "kind": "trash",
+   "level": [
+    19,
+    20
+   ],
+   "displayID": 4312,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Localized Toxin",
+     "spellID": 7947,
+     "icon": "Spell_nature_corrosivebreath",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 10-16s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1210,
+    "armor": 852,
+    "damage": "29-39",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 3840,
+   "name": "Druid of the Fang",
+   "kind": "trash",
+   "level": [
+    19,
+    20
+   ],
+   "displayID": 4211,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Serpent Form",
+     "spellID": 8041,
+     "icon": "Ability_racial_bearform",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 20-25s",
+     "atHealth": 50,
+     "phases": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "name": "Druid's Slumber",
+     "spellID": 8040,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-11s, then every 10-20s",
+     "phases": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s",
+     "phases": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1299,
+    "mana": 980,
+    "armor": 712,
+    "damage": "26-36",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 40,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "phases": [
+    {
+     "id": 0,
+     "name": "Phase 1"
+    },
+    {
+     "id": 1,
+     "name": "Phase 2",
+     "note": "Starts at 50% health."
+    },
+    {
+     "id": 2,
+     "name": "Phase 3"
+    }
+   ]
+  },
+  {
+   "id": 5056,
+   "name": "Deviate Dreadfang",
+   "kind": "trash",
+   "level": [
+    20,
+    21
+   ],
+   "displayID": 3006,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Terrify",
+     "spellID": 7399,
+     "icon": "Ability_physical_taunt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 9-15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1563,
+    "armor": 888,
+    "damage": "29-40",
+    "resist": {
+     "holy": 0,
+     "fire": 2,
+     "nature": 2,
+     "frost": 2,
+     "shadow": 2,
+     "arcane": 2
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5756,
+   "name": "Deviate Venomwing",
+   "kind": "trash",
+   "level": [
+    20,
+    21
+   ],
+   "displayID": 2706,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Toxic Spit",
+     "spellID": 7951,
+     "icon": "Spell_nature_corrosivebreath",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 4-6s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1563,
+    "armor": 888,
+    "damage": "29-40",
+    "resist": {
+     "holy": 0,
+     "fire": 2,
+     "nature": 2,
+     "frost": 2,
+     "shadow": 2,
+     "arcane": 2
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  }
+ ]
+}

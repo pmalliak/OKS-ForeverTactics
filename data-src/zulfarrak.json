@@ -1,0 +1,1286 @@
+{
+ "key": "zulfarrak",
+ "name": "Zul'Farrak",
+ "instanceID": 209,
+ "levels": [
+  30,
+  48
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 7795,
+   "name": "Hydromancer Velratha",
+   "kind": "boss",
+   "level": [
+    46,
+    46
+   ],
+   "displayID": 6685,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Healing Wave",
+     "spellID": 12491,
+     "icon": "Spell_nature_magicimmunity",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 10-22s",
+     "atHealth": 50
+    },
+    {
+     "name": "Ward of Zum'rah",
+     "spellID": 11086,
+     "icon": "Spell_totem_wardofdraining",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 17-19s, then every 13-28s"
+    },
+    {
+     "name": "Shadow Bolt Volley",
+     "spellID": 15245,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "Interrupt.",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 17-22s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12739,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 4-5s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4029,
+    "mana": 7846,
+    "armor": 1406,
+    "damage": "55-76",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Patrols a room full of elite Sandfury. Pull her alone or you likely wipe. Interrupt her casts.",
+    "tank": "Pull her alone."
+   }
+  },
+  {
+   "id": 7273,
+   "name": "Gahz'rilla",
+   "kind": "boss",
+   "level": [
+    46,
+    46
+   ],
+   "displayID": 7271,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Freeze Solid",
+     "spellID": 11836,
+     "icon": "Spell_frost_glacier",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-22s, then every 23-34s"
+    },
+    {
+     "name": "Gahz'rilla Slam",
+     "spellID": 11902,
+     "icon": "Ability_devour",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 28-31s, then every 17-29s"
+    },
+    {
+     "name": "Icicle",
+     "spellID": 11131,
+     "icon": "Spell_frost_frostbolt02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-36s, then every 8-28s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 19190,
+    "armor": 2780,
+    "damage": "77-102",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Summoned with the Mallet of Zul'Farrak on the gong by the water. Clear the room first. Tank with your back to a wall and stack on the tank so nobody gets thrown into the air.",
+    "tank": "Clear first, back to a wall."
+   }
+  },
+  {
+   "id": 8127,
+   "name": "Antu'sul",
+   "kind": "boss",
+   "level": [
+    48,
+    48
+   ],
+   "displayID": 7353,
+   "subName": "Overseer of Sul",
+   "abilities": [
+    {
+     "name": "Earthgrab Totem",
+     "spellID": 8376,
+     "icon": "Spell_nature_naturetouchdecay",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12s, then every 13-22s"
+    },
+    {
+     "name": "Healing Ward",
+     "spellID": 11899,
+     "icon": "Spell_holy_layonhands",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12s, then every 13-22s"
+    },
+    {
+     "name": "Antu'sul's Minion",
+     "spellID": 11894,
+     "icon": "Temp",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 25% health",
+     "atHealth": 25
+    },
+    {
+     "name": "Healing Wave of Antu'sul",
+     "spellID": 11895,
+     "icon": "Spell_holy_heal02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 20% health",
+     "atHealth": 20
+    },
+    {
+     "name": "Flash Heal",
+     "spellID": 10915,
+     "icon": "Spell_holy_flashheal",
+     "source": "wowhead-forever-journal",
+     "note": "Heal, interrupt."
+    },
+    {
+     "name": "Chain Lightning",
+     "spellID": 2860,
+     "icon": "Spell_nature_chainlightning",
+     "source": "wowhead-forever-journal",
+     "note": "Chain Lightning, spread."
+    },
+    {
+     "name": "Earth Shock",
+     "spellID": 10413,
+     "icon": "Spell_nature_earthshock",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 13200,
+    "mana": 13560,
+    "armor": 2344,
+    "damage": "75-99",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Summons extra mobs during the fight, AoE them first. Interrupt healing, kill totems. Busy fight, everyone has a job.",
+    "dps": "Adds and totems before the boss."
+   }
+  },
+  {
+   "id": 7272,
+   "name": "Theka the Martyr",
+   "kind": "boss",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 6696,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fevered Plague",
+     "spellID": 8600,
+     "icon": "Spell_nature_nullifydisease",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 16-19s, then every 11-23s"
+    },
+    {
+     "name": "Theka Transform",
+     "spellID": 11089,
+     "icon": "Spell_shadow_antishadow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health",
+     "atHealth": 30
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 9595,
+    "armor": 2780,
+    "damage": "96-128",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Quest mini-boss in the scarab room. At 30% he is immune to physical and shadow damage for 30 seconds and scarabs join. Kill him first, then the scarabs. Mages shine here."
+   }
+  },
+  {
+   "id": 7271,
+   "name": "Witch Doctor Zum'rah",
+   "kind": "boss",
+   "level": [
+    46,
+    46
+   ],
+   "displayID": 6434,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Ward of Zum'rah",
+     "spellID": 11086,
+     "icon": "Spell_totem_wardofdraining",
+     "tags": [],
+     "note": "Ward, kill it fast.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Healing Wave",
+     "spellID": 12491,
+     "icon": "Spell_nature_magicimmunity",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12739,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Shadow Bolt Volley",
+     "spellID": 15245,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "Interrupt.",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 10745,
+    "mana": 6348,
+    "armor": 2255,
+    "damage": "71-95",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Heavy on the healer. Interrupt Shadow Bolt Volley. He raises zombies from graves, kill them right away. Kill his totem too.",
+    "dps": "Zombies and totem first."
+   }
+  },
+  {
+   "id": 7796,
+   "name": "Nekrum Gutchewer",
+   "kind": "boss",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 6690,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fevered Plague",
+     "spellID": 8600,
+     "icon": "Spell_nature_nullifydisease",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-16s, then every 17-22s"
+    },
+    {
+     "name": "Psychic Scream",
+     "spellID": 13704,
+     "icon": "Spell_shadow_psychicscream",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 5757,
+    "armor": 2780,
+    "damage": "96-128",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Last wave of the stairs event with Sezz'ziz. Kill Nekrum first (lower level, fewer misses), keep interrupting Sezz'ziz's heal.",
+    "dps": "Nekrum first."
+   }
+  },
+  {
+   "id": 7275,
+   "name": "Shadowpriest Sezz'ziz",
+   "kind": "boss",
+   "level": [
+    47,
+    47
+   ],
+   "displayID": 6441,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Psychic Scream",
+     "spellID": 13704,
+     "icon": "Spell_shadow_psychicscream",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 11-16s, then every 22-33s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 15537,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 3-4s"
+    },
+    {
+     "name": "Renew",
+     "spellID": 8362,
+     "icon": "Spell_holy_renew",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Heal",
+     "spellID": 12039,
+     "icon": "Spell_holy_heal",
+     "source": "wowhead-forever-journal",
+     "note": "Heal, interrupt."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 7960,
+    "mana": 3280,
+    "armor": 2300,
+    "damage": "73-97",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "tactics": {
+    "general": "Interrupt his heal while you kill Nekrum first."
+   }
+  },
+  {
+   "id": 7267,
+   "name": "Chief Ukorz Sandscalp",
+   "kind": "boss",
+   "level": [
+    48,
+    48
+   ],
+   "displayID": 6439,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Summon Sandfury Slave",
+     "spellID": 11904,
+     "icon": "Temp",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health",
+     "atHealth": 30
+    },
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 60% health, repeats every 120-125s",
+     "atHealth": 60
+    },
+    {
+     "name": "Berserker Stance",
+     "spellID": 7366,
+     "icon": "Ability_racial_avatar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 240-245s"
+    },
+    {
+     "name": "Wide Slash",
+     "spellID": 11837,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-16s, then every 7-25s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15496,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "Cleave.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-21s, then every 9-19s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 14434,
+    "armor": 2888,
+    "damage": "80-106",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sap",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Comes with Ruuzlu. Face both away, melee stay behind them for the cleave. Kill Ruuzlu first.",
+    "tank": "Face both away from the group.",
+    "dps": "Ruuzlu first."
+   }
+  },
+  {
+   "id": 7604,
+   "name": "Sergeant Bly",
+   "kind": "boss",
+   "level": [
+    45,
+    45
+   ],
+   "displayID": 6433,
+   "abilities": [
+    {
+     "name": "Revenge",
+     "spellID": 12170,
+     "icon": "Ability_warrior_revenge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-10s, then every 8-10s"
+    },
+    {
+     "name": "Shield Bash",
+     "spellID": 11972,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 13-15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 18480,
+    "armor": 2725,
+    "damage": "75-100",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "With Oro and Murta. Oro does area damage, Murta heals. Kill them before Bly.",
+    "dps": "Oro and Murta first."
+   }
+  },
+  {
+   "id": 10081,
+   "name": "Dustwraith",
+   "kind": "rare",
+   "level": [
+    45,
+    45
+   ],
+   "displayID": 9292,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sinister Strike",
+     "spellID": 15667,
+     "icon": "Spell_shadow_ritualofsacrifice",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 4-7s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5544,
+    "armor": 2725,
+    "damage": "75-100",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10080,
+   "name": "Sandarr Dunereaver",
+   "kind": "rare",
+   "level": [
+    45,
+    45
+   ],
+   "displayID": 9291,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 11976,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 16-26s"
+    },
+    {
+     "name": "Demoralizing Shout",
+     "spellID": 13730,
+     "icon": "Ability_warrior_warcry",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-12s, then every 14-36s"
+    },
+    {
+     "name": "Pummel",
+     "spellID": 12555,
+     "icon": "Inv_gauntlets_04",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-20s, then every 15-25s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5544,
+    "armor": 2725,
+    "damage": "75-100",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10082,
+   "name": "Zerillis",
+   "kind": "rare",
+   "level": [
+    45,
+    45
+   ],
+   "displayID": 9293,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Net",
+     "spellID": 6533,
+     "icon": "Ability_ensnare",
+     "tags": [],
+     "note": "Net.",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-20 yards away, every 12-25s"
+    },
+    {
+     "name": "Frost Shot",
+     "spellID": 12551,
+     "icon": "Spell_ice_magicdamage",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-11s, then every 5-18s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 15547,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5544,
+    "armor": 2725,
+    "damage": "75-100",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "tactics": {
+    "general": "Rare. Pull him straight into melee (break line of sight if needed). Simple."
+   }
+  },
+  {
+   "id": 8130,
+   "name": "Sul'lithuz Hatchling",
+   "kind": "trash",
+   "level": [
+    30,
+    35
+   ],
+   "displayID": 1073,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 3660,
+    "armor": 1373,
+    "damage": "42-64",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7608,
+   "name": "Murta Grimgut",
+   "kind": "trash",
+   "level": [
+    44,
+    44
+   ],
+   "displayID": 6438,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Power Word: Shield",
+     "spellID": 11974,
+     "icon": "Spell_holy_powerwordshield",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 52s"
+    },
+    {
+     "name": "Holy Smite",
+     "spellID": 9734,
+     "icon": "Spell_holy_holysmite",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 4-5s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4991,
+    "mana": 1483,
+    "armor": 2082,
+    "damage": "67-88",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7606,
+   "name": "Oro Eyegouge",
+   "kind": "trash",
+   "level": [
+    44,
+    44
+   ],
+   "displayID": 6432,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Curse of Weakness",
+     "spellID": 12741,
+     "icon": "Spell_shadow_curseofmannoroth",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-26s, then every 53s"
+    },
+    {
+     "name": "Immolate",
+     "spellID": 11962,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-20s, then every 42-56s"
+    },
+    {
+     "name": "Rain of Fire",
+     "spellID": 11990,
+     "icon": "Spell_shadow_rainoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-10s, then every 32s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 9613,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 4-5s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4364,
+    "mana": 3680,
+    "armor": 1304,
+    "damage": "51-71",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7605,
+   "name": "Raven",
+   "kind": "trash",
+   "level": [
+    44,
+    44
+   ],
+   "displayID": 6435,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Gouge",
+     "spellID": 12540,
+     "icon": "Ability_gouge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 8-19s"
+    },
+    {
+     "name": "Backstab",
+     "spellID": 7159,
+     "icon": "Ability_backstab",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 18-21s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6237,
+    "armor": 51,
+    "damage": "57-76",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7268,
+   "name": "Sandfury Guardian",
+   "kind": "trash",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 4305,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Poison",
+     "spellID": 744,
+     "icon": "Spell_nature_corrosivebreath",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Thrash",
+     "spellID": 3391,
+     "icon": "Ability_ghoulfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 5757,
+    "armor": 2780,
+    "damage": "64-87",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7246,
+   "name": "Sandfury Shadowhunter",
+   "kind": "trash",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 6425,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Hex",
+     "spellID": 11641,
+     "icon": "Spell_nature_polymorph",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 13-28s, then every 25-42s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 15547,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4605,
+    "mana": 3174,
+    "armor": 2255,
+    "damage": "70-95",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 8095,
+   "name": "Sul'lithuz Sandcrawler",
+   "kind": "trash",
+   "level": [
+    45,
+    47
+   ],
+   "displayID": 7345,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Petrify",
+     "spellID": 11020,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-20s, then every 28-39s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 5970,
+    "armor": 2835,
+    "damage": "75-104",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7797,
+   "name": "Ruuzlu",
+   "kind": "trash",
+   "level": [
+    46,
+    46
+   ],
+   "displayID": 6687,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Berserker Stance",
+     "spellID": 7366,
+     "icon": "Ability_racial_avatar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 240s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15496,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "Cleave.",
+     "source": "cmangos-classic",
+     "timing": "first after 8-13s, then every 7-18s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 9595,
+    "armor": 2780,
+    "damage": "100-133",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sap",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Kill him before Chief Ukorz. Face him away, he cleaves.",
+    "tank": "Face him away.",
+    "dps": "Kill him first."
+   }
+  },
+  {
+   "id": 7274,
+   "name": "Sandfury Executioner",
+   "kind": "trash",
+   "level": [
+    46,
+    46
+   ],
+   "displayID": 6440,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Berserker Stance",
+     "spellID": 7366,
+     "icon": "Ability_racial_avatar",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 244s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 15496,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-13s, then every 8-23s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 9595,
+    "armor": 2780,
+    "damage": "100-133",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 8120,
+   "name": "Sul'lithuz Abomination",
+   "kind": "trash",
+   "level": [
+    47,
+    47
+   ],
+   "displayID": 7345,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Petrify",
+     "spellID": 11020,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 13-16s, then every 20-39s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 3980,
+    "armor": 2835,
+    "damage": "79-105",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  }
+ ]
+}

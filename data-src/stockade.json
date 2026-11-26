@@ -1,0 +1,714 @@
+{
+ "key": "stockade",
+ "name": "Stormwind Stockade",
+ "instanceID": 34,
+ "levels": [
+  23,
+  29
+ ],
+ "summary": "Small prison dungeon under Stormwind. Riot quests from the guard at the entrance. The hallways connect in a loop, so fleeing mobs can bring friends.",
+ "tricks": [
+  {
+   "title": "Use the corners",
+   "text": "The hallways have sharp corners. Pull with a ranged attack and step back behind the corner so casters have to walk to the tank.",
+   "kind": "clever-use",
+   "confirmedBuild": null
+  },
+  {
+   "title": "Stop runners",
+   "text": "Humanoids here flee at low health and pull more mobs from the cells. Save a stun, snare or burst for the last 15%.",
+   "kind": "clever-use",
+   "confirmedBuild": null
+  }
+ ],
+ "npcs": [
+  {
+   "id": 1696,
+   "name": "Targorr the Dread",
+   "kind": "boss",
+   "encounterID": 2756,
+   "level": [
+    24,
+    24
+   ],
+   "abilities": [
+    {
+     "name": "Thrash",
+     "spellID": 3391,
+     "icon": "Ability_GhoulFrenzy",
+     "tags": [
+      "tank"
+     ],
+     "note": "Sometimes gets extra melee swings in a row, so tank damage comes in spikes.",
+     "source": "wowhead-forever",
+     "timing": "always active"
+    },
+    {
+     "name": "Enrage",
+     "spellID": 8599,
+     "icon": "Spell_Shadow_UnholyFrenzy",
+     "tags": [
+      "tank",
+      "healer"
+     ],
+     "note": "Attacks faster when low on health.",
+     "source": "wowhead-forever",
+     "timing": "at 30% health",
+     "atHealth": 30
+    }
+   ],
+   "tactics": {
+    "general": "Simple tank and spank. Clear the nearby cells first so nothing joins.",
+    "tank": "Use a defensive cooldown at 30% when he enrages.",
+    "healer": "Keep the tank topped up, damage comes in bursts.",
+    "dps": "Burn him after 30%, he enrages there and hits much faster."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1953,
+    "healthSource": "wowhead-forever",
+    "armor": 992,
+    "damage": "34-46",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "displayID": 517,
+   "subName": "NULL"
+  },
+  {
+   "id": 1666,
+   "name": "Kam Deepfury",
+   "kind": "boss",
+   "level": [
+    27,
+    27
+   ],
+   "abilities": [
+    {
+     "name": "Shield Slam",
+     "spellID": 8242,
+     "icon": "Ability_Warrior_ShieldBash",
+     "tags": [
+      "tank"
+     ],
+     "note": "Shield hit on his current target.",
+     "source": "wowhead-forever",
+     "timing": "when its target is in melee range, every 9-25s"
+    },
+    {
+     "name": "Defensive Stance",
+     "spellID": 7164,
+     "icon": "Ability_Warrior_DefensiveStance",
+     "tags": [],
+     "note": "Takes less damage, so the fight is a bit longer.",
+     "source": "wowhead-forever",
+     "timing": "once, 1-6s into the fight"
+    },
+    {
+     "name": "Improved Blocking",
+     "spellID": 3419,
+     "icon": "Spell_Fire_FireArmor",
+     "tags": [],
+     "note": "Blocks more often for a while.",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tactics": {
+    "general": "Warrior style boss with low damage. Needed for the Kam Deepfury quest (bring his head back).",
+    "tank": "Easy fight, keep him faced away from the group.",
+    "healer": "Low pressure.",
+    "dps": "Full damage from the start."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2400,
+    "healthSource": "wowhead-forever",
+    "armor": 1097,
+    "damage": "38-51",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 825,
+   "subName": "NULL"
+  },
+  {
+   "id": 1717,
+   "name": "Hamhock",
+   "kind": "boss",
+   "level": [
+    28,
+    28
+   ],
+   "abilities": [
+    {
+     "name": "Chain Lightning",
+     "spellID": 421,
+     "icon": "Spell_Nature_ChainLightning",
+     "tags": [
+      "interrupt",
+      "spread"
+     ],
+     "note": "Lightning that jumps between nearby players.",
+     "source": "wowhead-forever",
+     "timing": "first after 6-8s, then every 13-19s"
+    },
+    {
+     "name": "Bloodlust",
+     "spellID": 6742,
+     "icon": "Spell_Nature_Bloodlust",
+     "tags": [
+      "purge"
+     ],
+     "note": "Buffs himself or an ally to attack faster.",
+     "source": "wowhead-forever",
+     "timing": "first after 6-10s, then every 10s"
+    }
+   ],
+   "tactics": {
+    "general": "Interrupt Chain Lightning and stand apart so it jumps less.",
+    "tank": "Pull him away from the cell door so ranged can spread out.",
+    "healer": "Watch for group damage if a lightning cast gets through.",
+    "dps": "Shamans and priests can remove Bloodlust if you have Purge or Dispel."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2196,
+    "healthSource": "wowhead-forever",
+    "mana": 756,
+    "armor": 946,
+    "damage": "37-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "displayID": 3250,
+   "subName": "NULL"
+  },
+  {
+   "id": 1716,
+   "name": "Bazil Thredd",
+   "kind": "boss",
+   "level": [
+    29,
+    29
+   ],
+   "abilities": [
+    {
+     "name": "Smoke Bomb",
+     "spellID": 7964,
+     "icon": "Ability_Hibernation",
+     "tags": [
+      "avoid"
+     ],
+     "note": "Throws a bomb that stuns everyone near it.",
+     "source": "wowhead-forever",
+     "timing": "first after 8-11s, then every 15-26s"
+    },
+    {
+     "name": "Battle Shout",
+     "spellID": 9128,
+     "icon": "Ability_Warrior_BattleShout",
+     "tags": [],
+     "note": "Buffs the attack power of nearby allies.",
+     "source": "wowhead-forever",
+     "timing": "first after 8-10s, then every 26-30s"
+    }
+   ],
+   "tactics": {
+    "general": "Final quest target for The Stockade Riots. Battle Shout buffs his guards, so pull carefully.",
+    "tank": "Get the adds off the healer first, then focus Bazil.",
+    "healer": "Stand back so the smoke bomb is less likely to catch you.",
+    "dps": "Kill the adds first if they are on the healer."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2715,
+    "healthSource": "wowhead-forever",
+    "armor": 1165,
+    "damage": "41-54",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 1621,
+   "subName": "NULL"
+  },
+  {
+   "id": 1663,
+   "name": "Dextren Ward",
+   "kind": "boss",
+   "level": [
+    26,
+    26
+   ],
+   "abilities": [
+    {
+     "name": "Intimidating Shout",
+     "spellID": 19134,
+     "icon": "Ability_GolemThunderClap",
+     "tags": [
+      "fear"
+     ],
+     "note": "Fears nearby players for a few seconds.",
+     "source": "wowhead-forever",
+     "timing": "first after 7-10s, then every 14-22s"
+    },
+    {
+     "name": "Strike",
+     "spellID": 11976,
+     "icon": "Ability_Rogue_Ambush",
+     "tags": [
+      "tank"
+     ],
+     "note": "Strong melee hit.",
+     "source": "wowhead-forever",
+     "timing": "first after 5-7s, then every 10-22s"
+    },
+    {
+     "name": "Battle Stance",
+     "spellID": 7165,
+     "icon": "Ability_Warrior_OffensiveStance",
+     "tags": [],
+     "note": "Warrior stance, no effect on the group.",
+     "source": "wowhead-forever",
+     "timing": "always active"
+    },
+    {
+     "name": "Intimidating Shout",
+     "spellID": 5246,
+     "icon": "Ability_golemthunderclap",
+     "source": "wowhead-forever-journal",
+     "note": "Fear within 10 yards, ranged stay back."
+    }
+   ],
+   "tactics": {
+    "general": "Fear can send players running into other cells. Fight him away from uncleared rooms.",
+    "tank": "Clear the area around him first.",
+    "healer": "Expect a short gap in healing when you are feared.",
+    "dps": "Fear Ward or Tremor Totem helps if you have them."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2250,
+    "healthSource": "wowhead-forever",
+    "armor": 1061,
+    "damage": "37-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 2149,
+   "subName": "NULL"
+  },
+  {
+   "id": 1720,
+   "name": "Bruegal Ironknuckle",
+   "kind": "rare",
+   "level": [
+    26,
+    26
+   ],
+   "abilities": [],
+   "tactics": {
+    "general": "Rare spawn, not always up. No special mechanics, worth killing for his drops."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2250,
+    "healthSource": "wowhead-forever",
+    "armor": 1061,
+    "damage": "37-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 2142,
+   "subName": "NULL"
+  },
+  {
+   "id": 1707,
+   "name": "Defias Captive",
+   "kind": "trash",
+   "level": [
+    23,
+    24
+   ],
+   "abilities": [
+    {
+     "name": "Infected Wound",
+     "spellID": 3427,
+     "icon": "Spell_Nature_NullifyDisease",
+     "tags": [
+      "dispel:disease"
+     ],
+     "note": "Disease on the tank. Cure Disease or Purify removes it.",
+     "source": "wowhead-forever",
+     "timing": "first after 2-14s, then every 1-10s"
+    },
+    {
+     "name": "Backstab",
+     "spellID": 7159,
+     "icon": "Ability_backstab",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 2-7s"
+    }
+   ],
+   "tactics": {
+    "general": "Melee that spreads a disease on the tank. Dispel it if you can."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1953,
+    "healthSource": "wowhead-forever",
+    "armor": 957,
+    "damage": "33-44",
+    "resist": {
+     "holy": 0,
+     "fire": 10,
+     "nature": 10,
+     "frost": 10,
+     "shadow": 10,
+     "arcane": 10
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 2144,
+   "subName": "NULL"
+  },
+  {
+   "id": 1706,
+   "name": "Defias Prisoner",
+   "kind": "trash",
+   "level": [
+    23,
+    24
+   ],
+   "abilities": [
+    {
+     "name": "Kick",
+     "spellID": 1766,
+     "icon": "Ability_Kick",
+     "tags": [
+      "interrupt"
+     ],
+     "note": "Interrupts spellcasting. Casters should not stand in melee range.",
+     "source": "wowhead-forever",
+     "timing": "first after 1-15s, then every 10-15s"
+    },
+    {
+     "name": "Disarm",
+     "spellID": 6713,
+     "icon": "Ability_Warrior_Disarm",
+     "tags": [
+      "tank"
+     ],
+     "note": "Removes the tank's weapon for a few seconds.",
+     "source": "wowhead-forever",
+     "timing": "first after 6-22s, then every 10-17s"
+    }
+   ],
+   "tactics": {
+    "general": "Weak melee with Kick and Disarm. Keep casters out of melee range."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1953,
+    "healthSource": "wowhead-forever",
+    "armor": 992,
+    "damage": "33-46",
+    "resist": {
+     "holy": 0,
+     "fire": 10,
+     "nature": 10,
+     "frost": 10,
+     "shadow": 10,
+     "arcane": 10
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 2148,
+   "subName": "NULL"
+  },
+  {
+   "id": 1711,
+   "name": "Defias Convict",
+   "kind": "trash",
+   "level": [
+    24,
+    25
+   ],
+   "abilities": [
+    {
+     "name": "Backhand",
+     "spellID": 6253,
+     "icon": "INV_Gauntlets_05",
+     "tags": [
+      "tank"
+     ],
+     "note": "Short stun on the tank.",
+     "source": "wowhead-forever",
+     "timing": "first after 0-8s, then every 10-14s"
+    }
+   ],
+   "tactics": {
+    "general": "Melee with a short stun. Flees at low health, so finish it or stun it."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2097,
+    "healthSource": "wowhead-forever",
+    "armor": 1026,
+    "damage": "34-48",
+    "resist": {
+     "holy": 0,
+     "fire": 10,
+     "nature": 10,
+     "frost": 10,
+     "shadow": 10,
+     "arcane": 10
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 2145,
+   "subName": "NULL"
+  },
+  {
+   "id": 1708,
+   "name": "Defias Inmate",
+   "kind": "trash",
+   "level": [
+    24,
+    25
+   ],
+   "abilities": [
+    {
+     "name": "Rend",
+     "spellID": 6547,
+     "icon": "Ability_Gouge",
+     "tags": [
+      "bleed"
+     ],
+     "note": "Bleed on the tank.",
+     "source": "wowhead-forever",
+     "timing": "first after 2-12s, then every 14-36s"
+    },
+    {
+     "name": "Battle Stance",
+     "spellID": 7165,
+     "icon": "Ability_Warrior_OffensiveStance",
+     "tags": [],
+     "note": "Warrior stance, no effect on the group.",
+     "source": "wowhead-forever",
+     "timing": "always active"
+    }
+   ],
+   "tactics": {
+    "general": "Melee. Kill first if the tank is taking too much."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2097,
+    "healthSource": "wowhead-forever",
+    "armor": 1026,
+    "damage": "34-48",
+    "resist": {
+     "holy": 0,
+     "fire": 10,
+     "nature": 10,
+     "frost": 10,
+     "shadow": 10,
+     "arcane": 10
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 2146,
+   "subName": "NULL"
+  },
+  {
+   "id": 1715,
+   "name": "Defias Insurgent",
+   "kind": "trash",
+   "level": [
+    25,
+    26
+   ],
+   "abilities": [
+    {
+     "name": "Battle Shout",
+     "spellID": 9128,
+     "icon": "Ability_Warrior_BattleShout",
+     "tags": [],
+     "note": "Buffs the attack power of its pack.",
+     "source": "wowhead-forever",
+     "timing": "first after 7-23s, then every 20-39s"
+    },
+    {
+     "name": "Demoralizing Shout",
+     "spellID": 13730,
+     "icon": "Ability_Warrior_WarCry",
+     "tags": [
+      "tank"
+     ],
+     "note": "Lowers your melee attack power.",
+     "source": "wowhead-forever",
+     "timing": "first after 9-31s, then every 20-25s"
+    }
+   ],
+   "tactics": {
+    "general": "Kill it early in a pack, the shouts make the whole pull harder."
+   },
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2250,
+    "healthSource": "wowhead-forever",
+    "armor": 1061,
+    "damage": "36-49",
+    "resist": {
+     "holy": 0,
+     "fire": 10,
+     "nature": 10,
+     "frost": 10,
+     "shadow": 10,
+     "arcane": 10
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "displayID": 2147,
+   "subName": "NULL"
+  }
+ ]
+}

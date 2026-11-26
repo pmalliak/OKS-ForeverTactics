@@ -1,0 +1,722 @@
+{
+ "key": "shaper",
+ "name": "The Shaper's Terrace",
+ "instanceID": null,
+ "instanceNames": [
+  "The Shaper's Terrace",
+  "Shaper's Terrace"
+ ],
+ "forever": true,
+ "bossesConfirmed": false,
+ "levels": [
+  58,
+  60
+ ],
+ "summary": "Old titan facility in the hills of Un'Goro Crater, near Marshal's Refuge.",
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 253201,
+   "name": "Titanosaur",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [
+    {
+     "name": "Mighty Blow",
+     "spellID": 1294312,
+     "icon": "Inv_gauntlets_05",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Terrifying Roar",
+     "spellID": 1294313,
+     "icon": "Ability_devour",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "displayID": 748644
+  },
+  {
+   "id": 261812,
+   "name": "Thunderhoof",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [
+    {
+     "name": "Lightning Cloud",
+     "spellID": 6535,
+     "icon": "Spell_nature_callstorm",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Thunderclap",
+     "spellID": 8078,
+     "icon": "Spell_nature_thunderclap",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Shock",
+     "spellID": 12553,
+     "icon": "Spell_nature_wispheal",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Chain Lightning",
+     "spellID": 1310513,
+     "icon": "Spell_nature_chainlightning",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "displayID": 739797
+  },
+  {
+   "id": 261813,
+   "name": "Venomridge",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [
+    {
+     "name": "Tendon Rip",
+     "spellID": 3604,
+     "icon": "Ability_criticalstrike",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Poison Bolt Volley",
+     "spellID": 1310365,
+     "icon": "Spell_nature_corrosivebreath",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "displayID": 25082
+  },
+  {
+   "id": 261974,
+   "name": "Cinder",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [
+    {
+     "name": "Roar",
+     "spellID": 1310251,
+     "icon": "Trade_engineering",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Radiating Heat",
+     "spellID": 1310267,
+     "icon": "Spell_fire_immolation",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Conflagration",
+     "spellID": 1310512,
+     "icon": "Spell_fire_incinerate",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "displayID": 29877
+  },
+  {
+   "id": 262081,
+   "name": "Bolt",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [
+    {
+     "name": "Thunderclap",
+     "spellID": 15588,
+     "icon": "Spell_nature_thunderclap",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Chain Lightning",
+     "spellID": 1310513,
+     "icon": "Spell_nature_chainlightning",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "displayID": 20788
+  },
+  {
+   "id": 262297,
+   "name": "Snowtalon",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 272561,
+   "name": "Vitrix",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 261809,
+   "name": "Nanaya",
+   "kind": "boss",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Giant"
+   }
+  },
+  {
+   "id": 261993,
+   "name": "King Op",
+   "kind": "rare",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 253214,
+   "name": "Ravasaur Hunter",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 253215,
+   "name": "Ravasaur Matriarch",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 261749,
+   "name": "Devilsaur",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 261750,
+   "name": "Tyranosaur",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 261770,
+   "name": "Azurepetal Trapper",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 261771,
+   "name": "Diemetradon",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 261773,
+   "name": "Tar Lurker",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 261774,
+   "name": "Azurepetal Flayer",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 261779,
+   "name": "Tar Walker",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 261780,
+   "name": "Quickpetal Lasher",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 261781,
+   "name": "Tar Crawler",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 261782,
+   "name": "Tar Hunter",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 261783,
+   "name": "Thunderstomp Stegodon",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 261784,
+   "name": "Spiked Stegodon",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 261785,
+   "name": "Plated Stegodon",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 261786,
+   "name": "Ironhide Ravasaur",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 261934,
+   "name": "Ravasaur Stalker",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 261968,
+   "name": "Azurepetal Sporecaller",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 262114,
+   "name": "Ravasaur Trapper",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262115,
+   "name": "Ravasaur Assassin",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262117,
+   "name": "Stegodon Young",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 262127,
+   "name": "Direhorn Matriarch",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   }
+  },
+  {
+   "id": 262164,
+   "name": "Emerald Flayer",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262166,
+   "name": "Emerald Overgrowth",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262168,
+   "name": "Emerald Harvester",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262188,
+   "name": "Emberleaf Flayer",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262190,
+   "name": "Emberleaf Germinator",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262191,
+   "name": "Emberleaf Scorcher",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262197,
+   "name": "Quickpetal Flayer",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262299,
+   "name": "Eastgrotto Gorilla",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262300,
+   "name": "Eastgrotto Dweller",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262301,
+   "name": "Eastgrotto Silverback",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262682,
+   "name": "Creeping Sludge",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 262684,
+   "name": "Seeping Slime",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 272317,
+   "name": "Stone Guardian",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 272318,
+   "name": "Living Blaze",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 272319,
+   "name": "Scorching Elemental",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 272320,
+   "name": "Purified Horror",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  },
+  {
+   "id": 272321,
+   "name": "Noxious Flayer",
+   "kind": "trash",
+   "level": [
+    58,
+    60
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1368 @@
+{
+ "key": "sunken",
+ "name": "Sunken Temple",
+ "instanceID": 109,
+ "levels": [
+  48,
+  55
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 8580,
+   "name": "Atal'alarion",
+   "kind": "boss",
+   "level": [
+    50,
+    50
+   ],
+   "displayID": 7873,
+   "subName": "Guardian of the Idol",
+   "abilities": [
+    {
+     "name": "Sweeping Slam",
+     "spellID": 12887,
+     "icon": "Ability_devour",
+     "tags": [],
+     "note": "Cone in front, face him away.",
+     "source": "cmangos-classic",
+     "timing": "first after 10-20s, then every 22-42s"
+    },
+    {
+     "name": "Ground Tremor",
+     "spellID": 6524,
+     "icon": "Spell_nature_earthquake",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-19s, then every 20-32s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 16612,
+    "armor": 2999,
+    "damage": "310-400",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Big health, hits hard, clears threat and throws players high into the air for fall damage. Healer and ranged keep their distance.",
+    "tank": "Back to a wall. Kite him if your healer is thrown.",
+    "healer": "Heal people when they land."
+   }
+  },
+  {
+   "id": 5721,
+   "name": "Dreamscythe",
+   "kind": "boss",
+   "level": [
+    53,
+    53
+   ],
+   "displayID": 7553,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Acid Breath",
+     "spellID": 12884,
+     "icon": "Spell_nature_acid_01",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-8s, then every 6-18s"
+    },
+    {
+     "name": "Wing Flap",
+     "spellID": 12882,
+     "icon": "Spell_nature_earthbind",
+     "tags": [],
+     "note": "Knockback in front, keep a wall behind you.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-18s, then every 15-25s"
+    },
+    {
+     "name": "Acid Breath",
+     "spellID": 12533,
+     "icon": "Spell_nature_acid_01",
+     "source": "wowhead-forever-journal",
+     "note": "Cone in front."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 12265,
+    "armor": 3163,
+    "damage": "310-400",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "banish"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Easy drake. Back to a wall, face him away for his cone and knockback.",
+    "tank": "Face away, back to a wall."
+   }
+  },
+  {
+   "id": 5720,
+   "name": "Weaver",
+   "kind": "boss",
+   "level": [
+    51,
+    51
+   ],
+   "displayID": 6375,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Acid Breath",
+     "spellID": 12884,
+     "icon": "Spell_nature_acid_01",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-8s, then every 6-18s"
+    },
+    {
+     "name": "Wing Flap",
+     "spellID": 12882,
+     "icon": "Spell_nature_earthbind",
+     "tags": [],
+     "note": "Knockback in front, keep a wall behind you.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-18s, then every 15-25s"
+    },
+    {
+     "name": "Acid Breath",
+     "spellID": 12533,
+     "icon": "Spell_nature_acid_01",
+     "source": "wowhead-forever-journal",
+     "note": "Cone in front."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 11460,
+    "armor": 3052,
+    "damage": "300-388",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "banish"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Easy drake. Back to a wall, face him away for his cone and knockback.",
+    "tank": "Face away, back to a wall."
+   }
+  },
+  {
+   "id": 5710,
+   "name": "Jammal'an the Prophet",
+   "kind": "boss",
+   "level": [
+    54,
+    54
+   ],
+   "displayID": 6708,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Healing Wave",
+     "spellID": 12492,
+     "icon": "Spell_nature_magicimmunity",
+     "tags": [],
+     "note": "Heal, interrupt.",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 10-20s",
+     "atHealth": 50
+    },
+    {
+     "name": "Hex of Jammal'an",
+     "spellID": 12479,
+     "icon": "Spell_totem_wardofdraining",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-9s, then every 20s"
+    },
+    {
+     "name": "Earthgrab Totem",
+     "spellID": 8376,
+     "icon": "Spell_nature_naturetouchdecay",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-20s, then every 26-37s"
+    },
+    {
+     "name": "Flamestrike",
+     "spellID": 12468,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-24s, then every 20-53s"
+    },
+    {
+     "name": "Hex of Jammal'an",
+     "spellID": 12480,
+     "icon": "Spell_shadow_antishadow",
+     "source": "wowhead-forever-journal",
+     "note": "Turns a player into an enemy warrior for a while. Avoid it, don't kill it."
+    },
+    {
+     "name": "Curse of Weakness",
+     "spellID": 12493,
+     "icon": "Spell_shadow_curseofmannoroth",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12471,
+     "icon": "Spell_shadow_shadowbolt",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 10130,
+    "mana": 2041,
+    "armor": 2610,
+    "damage": "328-421",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "banish",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Separate Ogom from him and kill Ogom first (much less health). Spread out: Hex of Jammal'an turns a player into a hostile berserker. Don't kill the hexed player, just avoid it, then burn Jammal'an.",
+    "dps": "Ogom first."
+   }
+  },
+  {
+   "id": 5719,
+   "name": "Morphaz",
+   "kind": "boss",
+   "level": [
+    52,
+    52
+   ],
+   "displayID": 7975,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Acid Breath",
+     "spellID": 12884,
+     "icon": "Spell_nature_acid_01",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-8s, then every 6-18s"
+    },
+    {
+     "name": "Wing Flap",
+     "spellID": 12882,
+     "icon": "Spell_nature_earthbind",
+     "tags": [],
+     "note": "Knockback in front.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-18s, then every 15-25s"
+    },
+    {
+     "name": "Acid Breath",
+     "spellID": 12533,
+     "icon": "Spell_nature_acid_01",
+     "source": "wowhead-forever-journal",
+     "note": "Cone in front."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 11855,
+    "armor": 3108,
+    "damage": "310-400",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "banish"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Same as the other drakes: back to a wall, face him away. Try not to pull both drakes.",
+    "tank": "Face away, back to a wall."
+   }
+  },
+  {
+   "id": 5722,
+   "name": "Hazzas",
+   "kind": "boss",
+   "level": [
+    53,
+    53
+   ],
+   "displayID": 9584,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Acid Breath",
+     "spellID": 12884,
+     "icon": "Spell_nature_acid_01",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-8s, then every 6-18s"
+    },
+    {
+     "name": "Wing Flap",
+     "spellID": 12882,
+     "icon": "Spell_nature_earthbind",
+     "tags": [],
+     "note": "Knockback in front.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-18s, then every 15-25s"
+    },
+    {
+     "name": "Acid Breath",
+     "spellID": 12533,
+     "icon": "Spell_nature_acid_01",
+     "source": "wowhead-forever-journal",
+     "note": "Cone in front."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 12265,
+    "armor": 3163,
+    "damage": "300-388",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "banish"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Same as the other drakes: back to a wall, face him away. Try not to pull both drakes, avoid nearby trash.",
+    "tank": "Face away, back to a wall."
+   }
+  },
+  {
+   "id": 8443,
+   "name": "Avatar of Hakkar",
+   "kind": "boss",
+   "level": [
+    49,
+    50
+   ],
+   "displayID": 8053,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Curse of Tongues",
+     "spellID": 12889,
+     "icon": "Spell_shadow_curseoftounges",
+     "tags": [],
+     "note": "Curse of Tongues.",
+     "source": "cmangos-classic",
+     "timing": "first after 12-24s, then every 20-30s"
+    },
+    {
+     "name": "Lash",
+     "spellID": 6607,
+     "icon": "Ability_criticalstrike",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-15s, then every 15-20s"
+    },
+    {
+     "name": "Cause Insanity",
+     "spellID": 12888,
+     "icon": "Spell_shadow_shadowworddominate",
+     "tags": [],
+     "note": "Mind control on a random player, control them.",
+     "source": "cmangos-classic",
+     "timing": "first after 5-10s, then every 10-15s"
+    },
+    {
+     "name": "Lash",
+     "spellID": 25852,
+     "icon": "Ability_criticalstrike",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [
+    {
+     "title": "Drop combat before the Avatar",
+     "text": "If everyone stands against a wall before the last brazier goes out, you can leave combat before he arrives.",
+     "kind": "clever-use",
+     "confirmedBuild": null
+    }
+   ],
+   "stats": {
+    "type": "Not specified",
+    "health": 10632,
+    "mana": 1807,
+    "armor": 2432,
+    "damage": "300-388",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Needs someone with the Egg of Hakkar (quest) or the finished quest item. Kill adds until a Bloodkeeper appears, loot its blood and put out one brazier. Repeat for all four. He casts Cause Insanity on a random player, stun or control them until it ends."
+   }
+  },
+  {
+   "id": 5709,
+   "name": "Shade of Eranikus",
+   "kind": "boss",
+   "level": [
+    55,
+    55
+   ],
+   "displayID": 7806,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Deep Slumber",
+     "spellID": 12890,
+     "icon": "Spell_shadow_cripple",
+     "tags": [],
+     "note": "Deep Slumber on the top threat target.",
+     "source": "cmangos-classic",
+     "timing": "first after 7-21s, then every 20-40s"
+    },
+    {
+     "name": "War Stomp",
+     "spellID": 11876,
+     "icon": "Ability_bullrush",
+     "tags": [],
+     "note": "War Stomp, ranged stay back.",
+     "source": "cmangos-classic",
+     "timing": "first after 8-16s, then every 10-30s"
+    },
+    {
+     "name": "Acid Breath",
+     "spellID": 12891,
+     "icon": "Spell_nature_acid_01",
+     "tags": [],
+     "note": "Cone in front.",
+     "source": "cmangos-classic",
+     "timing": "first after 6-12s, then every 15-35s"
+    }
+   ],
+   "tricks": [
+    {
+     "title": "Ground the sleep",
+     "text": "A shaman's Grounding Totem can eat Deep Slumber, which makes the fight much easier.",
+     "kind": "clever-use",
+     "confirmedBuild": null
+    }
+   ],
+   "stats": {
+    "type": "Dragonkin",
+    "health": 33982,
+    "armor": 3271,
+    "damage": "316-408",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "banish"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "He calls every dragonkin still alive in the temple, so clear them all first. Ranged stay out of War Stomp. Deep Slumber hits whoever has the most threat. Melee stay out of his front.",
+    "healer": "A long fight, watch your mana."
+   }
+  },
+  {
+   "id": 5712,
+   "name": "Zolo",
+   "kind": "boss",
+   "level": [
+    51,
+    51
+   ],
+   "displayID": 6699,
+   "abilities": [
+    {
+     "name": "Chain Lightning",
+     "spellID": 12058,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-10s, then every 10-12s"
+    },
+    {
+     "name": "Atal'ai Skeleton Totem",
+     "spellID": 12506,
+     "icon": "Spell_shadow_raisedead",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-12s, then every 25-35s"
+    },
+    {
+     "name": "Chain Lightning",
+     "spellID": 2860,
+     "icon": "Spell_nature_chainlightning",
+     "source": "wowhead-forever-journal",
+     "note": "Chain Lightning."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 9170,
+    "mana": 2796,
+    "armor": 2477,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Atal'ai Defender."
+   }
+  },
+  {
+   "id": 5713,
+   "name": "Gasher",
+   "kind": "boss",
+   "level": [
+    51,
+    51
+   ],
+   "displayID": 6698,
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 15580,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 6-12s"
+    },
+    {
+     "name": "Polymorph",
+     "spellID": 118,
+     "icon": "Spell_nature_polymorph",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 6876,
+    "armor": 3052,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Atal'ai Defender."
+   }
+  },
+  {
+   "id": 5714,
+   "name": "Loro",
+   "kind": "boss",
+   "level": [
+    51,
+    51
+   ],
+   "displayID": 6700,
+   "abilities": [
+    {
+     "name": "Shield Slam",
+     "spellID": 8242,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 8-17s"
+    },
+    {
+     "name": "Improved Blocking",
+     "spellID": 3639,
+     "icon": "Spell_fire_firearmor",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-17s, then every 11-17s"
+    },
+    {
+     "name": "Shield Spike",
+     "spellID": 12782,
+     "icon": "Inv_ammo_arrow_01",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 6876,
+    "armor": 3052,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Atal'ai Defenders: not hard if you are ready. Kill them as they come."
+   }
+  },
+  {
+   "id": 5715,
+   "name": "Hukku",
+   "kind": "boss",
+   "level": [
+    52,
+    52
+   ],
+   "displayID": 6702,
+   "abilities": [
+    {
+     "name": "Curse of Blood",
+     "spellID": 12279,
+     "icon": "Spell_shadow_ritualofsacrifice",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-18s, then every 21-31s"
+    },
+    {
+     "name": "Shadow Bolt Volley",
+     "spellID": 9081,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 16-30s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12471,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0s, then every 3-5s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 8300,
+    "mana": 6975,
+    "armor": 1574,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Atal'ai Defender."
+   }
+  },
+  {
+   "id": 5716,
+   "name": "Zul'Lor",
+   "kind": "boss",
+   "level": [
+    52,
+    52
+   ],
+   "displayID": 6701,
+   "abilities": [
+    {
+     "name": "Cleave",
+     "spellID": 15584,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-14s, then every 8-16s"
+    },
+    {
+     "name": "Frailty",
+     "spellID": 12530,
+     "icon": "Spell_shadow_animatedead",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-2s, then every 6-12s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 5532,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cleave."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 17782,
+    "armor": 3108,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Atal'ai Defender."
+   }
+  },
+  {
+   "id": 5717,
+   "name": "Mijan",
+   "kind": "boss",
+   "level": [
+    52,
+    52
+   ],
+   "displayID": 6707,
+   "abilities": [
+    {
+     "name": "Thorns Aura",
+     "spellID": 8148,
+     "icon": "Spell_nature_thorns",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-3s, then every 64-67s"
+    },
+    {
+     "name": "Healing Ward",
+     "spellID": 11899,
+     "icon": "Spell_holy_layonhands",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-18s, then every 33-46s"
+    },
+    {
+     "name": "Healing Wave",
+     "spellID": 12492,
+     "icon": "Spell_nature_magicimmunity",
+     "tags": [],
+     "note": "Heal, interrupt.",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 9-12s",
+     "atHealth": 50
+    },
+    {
+     "name": "Renew",
+     "spellID": 8362,
+     "icon": "Spell_holy_renew",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 11382,
+    "mana": 4807,
+    "armor": 2522,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Atal'ai Defender, a caster: interrupt heals."
+   }
+  },
+  {
+   "id": 5256,
+   "name": "Atal'ai Warrior",
+   "kind": "trash",
+   "level": [
+    48,
+    49
+   ],
+   "displayID": 7709,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 13446,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-21s, then every 8-16s"
+    },
+    {
+     "name": "Rend",
+     "spellID": 13445,
+     "icon": "Ability_gouge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-20s, then every 15-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 6414,
+    "armor": 2944,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5267,
+   "name": "Unliving Atal'ai",
+   "kind": "trash",
+   "level": [
+    48,
+    49
+   ],
+   "displayID": 4771,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health",
+     "atHealth": 30
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 6414,
+    "armor": 2944,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5270,
+   "name": "Atal'ai Corpse Eater",
+   "kind": "trash",
+   "level": [
+    49,
+    50
+   ],
+   "displayID": 4778,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Atal'ai Corpse Eat",
+     "spellID": 12134,
+     "icon": "Ability_druid_disembowel",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15-30s, then every 15-30s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 6645,
+    "armor": 2999,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5259,
+   "name": "Atal'ai Witch Doctor",
+   "kind": "trash",
+   "level": [
+    49,
+    50
+   ],
+   "displayID": 6670,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Hex",
+     "spellID": 11641,
+     "icon": "Spell_nature_polymorph",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-21s, then every 20-40s"
+    },
+    {
+     "name": "Chain Lightning",
+     "spellID": 12058,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-24s, then every 14-28s"
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5316,
+    "mana": 1807,
+    "armor": 2432,
+    "damage": "292-377",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 5271,
+   "name": "Atal'ai Deathwalker",
+   "kind": "trash",
+   "level": [
+    50,
+    51
+   ],
+   "displayID": 4773,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shadow Word: Pain",
+     "spellID": 11639,
+     "icon": "Spell_shadow_shadowwordpain",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-18s, then every 10-30s"
+    },
+    {
+     "name": "Fear",
+     "spellID": 12096,
+     "icon": "Spell_shadow_possession",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-24s, then every 20-30s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 5502,
+    "mana": 1864,
+    "armor": 2477,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5273,
+   "name": "Atal'ai High Priest",
+   "kind": "trash",
+   "level": [
+    50,
+    51
+   ],
+   "displayID": 6675,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shadow Shield",
+     "spellID": 12040,
+     "icon": "Spell_shadow_antishadow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 20-40s",
+     "atHealth": 30
+    },
+    {
+     "name": "Summon Atal'ai Skeleton",
+     "spellID": 12151,
+     "icon": "Spell_shadow_raisedead",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15-25s, then every 5-10s (40% chance)"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 9613,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5502,
+    "mana": 1864,
+    "armor": 2477,
+    "damage": "335-432",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5708,
+   "name": "Spawn of Hakkar",
+   "kind": "trash",
+   "level": [
+    51,
+    51
+   ],
+   "displayID": 4065,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Acid of Hakkar",
+     "spellID": 12280,
+     "icon": "Spell_nature_acid_01",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-1s, then every 1-3s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 6876,
+    "armor": 3052,
+    "damage": "300-388",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 5711,
+   "name": "Ogom the Wretched",
+   "kind": "trash",
+   "level": [
+    53,
+    53
+   ],
+   "displayID": 6709,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Curse of Weakness",
+     "spellID": 12493,
+     "icon": "Spell_shadow_curseofmannoroth",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-24s, then every 21-26s"
+    },
+    {
+     "name": "Shadow Word: Pain",
+     "spellID": 11639,
+     "icon": "Spell_shadow_shadowwordpain",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-21s, then every 38-58s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 12471,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 5-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 5886,
+    "mana": 3964,
+    "armor": 2566,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "root",
+     "snare",
+     "sleep",
+     "shackle",
+     "banish"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Low health, kill him first, away from Jammal'an.",
+    "dps": "Kill him first."
+   }
+  }
+ ]
+}

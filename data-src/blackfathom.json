@@ -1,0 +1,1250 @@
+{
+ "key": "blackfathom",
+ "name": "Blackfathom Deeps",
+ "instanceID": 48,
+ "levels": [
+  22,
+  28
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 4887,
+   "name": "Ghamoo-ra",
+   "kind": "boss",
+   "level": [
+    25,
+    25
+   ],
+   "displayID": 5027,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Trample",
+     "spellID": 5568,
+     "icon": "Spell_nature_natureswrath",
+     "tags": [],
+     "note": "Hits players around him, spread.",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 9-13s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 4194,
+    "armor": 1026000,
+    "damage": "36-48",
+    "resist": {
+     "holy": 0,
+     "fire": 75,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Huge armor, takes much less damage. Spread out for his main ability."
+   }
+  },
+  {
+   "id": 4831,
+   "name": "Lady Sarevess",
+   "kind": "boss",
+   "level": [
+    25,
+    25
+   ],
+   "displayID": 4979,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Slow",
+     "spellID": 246,
+     "icon": "Spell_nature_slow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-9s, then every 9-13s"
+    },
+    {
+     "name": "Frost Nova",
+     "spellID": 865,
+     "icon": "Spell_frost_frostnova",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 9-13s"
+    },
+    {
+     "name": "Forked Lightning",
+     "spellID": 8435,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "Cone in front of her, don't stand near the tank.",
+     "source": "cmangos-classic",
+     "timing": "first after 9-12s, then every 12-15s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 6660,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4880,
+    "mana": 1965,
+    "armor": 858,
+    "damage": "33-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Patrols with two naga guards. Clear the cave first, control one guard, kill the other, then her. Her cave is hidden to the right of Ghamoo-Ra's room, swim underwater to reach it.",
+    "tank": "Clear the cave first.",
+    "dps": "Guards first."
+   }
+  },
+  {
+   "id": 6243,
+   "name": "Gelihast",
+   "kind": "boss",
+   "level": [
+    26,
+    26
+   ],
+   "displayID": 1773,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Net",
+     "spellID": 6533,
+     "icon": "Ability_ensnare",
+     "tags": [],
+     "note": "Net, roots the target.",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-20 yards away, every 7-10s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4500,
+    "armor": 1061,
+    "damage": "37-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "stun",
+     "fear",
+     "root",
+     "snare",
+     "silence",
+     "sleep",
+     "polymorph",
+     "sap",
+     "shackle",
+     "banish",
+     "daze"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "His room is full of murlocs. Clear them carefully first, his net can leave the tank stuck near more packs. Click the altar behind him after the kill for a small buff.",
+    "tank": "Clear all murlocs first."
+   }
+  },
+  {
+   "id": 12902,
+   "name": "Lorgus Jett",
+   "kind": "boss",
+   "level": [
+    26,
+    26
+   ],
+   "displayID": 12822,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Lightning Bolt",
+     "spellID": 12167,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1953,
+    "mana": 1386,
+    "armor": 887,
+    "damage": "34-46",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4830,
+   "name": "Old Serra'kis",
+   "kind": "boss",
+   "level": [
+    26,
+    26
+   ],
+   "displayID": 1816,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Leech Pulse",
+     "spellID": 8433,
+     "icon": "Spell_holy_sealofsacrifice",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 3750,
+    "armor": 1061,
+    "damage": "37-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Optional loot boss with no real abilities. Watch your breath underwater, Unending Breath helps."
+   }
+  },
+  {
+   "id": 4832,
+   "name": "Twilight Lord Kelris",
+   "kind": "boss",
+   "level": [
+    27,
+    27
+   ],
+   "displayID": 4939,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Mind Blast",
+     "spellID": 15587,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-5s, then every 7-9s"
+    },
+    {
+     "name": "Sleep",
+     "spellID": 8399,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "Sleep.",
+     "source": "cmangos-classic",
+     "timing": "first after 9-12s, then every 15-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5520,
+    "mana": 1830,
+    "armor": 916,
+    "damage": "36-47",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sap",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Not dangerous, but Sleep can catch the healer. Keep the tank high and have hybrids heal during a sleep.",
+    "healer": "Keep the tank high in case you get slept."
+   }
+  },
+  {
+   "id": 4829,
+   "name": "Aku'mai",
+   "kind": "boss",
+   "level": [
+    28,
+    28
+   ],
+   "displayID": 2837,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Poison Cloud",
+     "spellID": 3815,
+     "icon": "Spell_nature_regenerate",
+     "tags": [],
+     "note": "Move out fast.",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 25-50s"
+    },
+    {
+     "name": "Frenzied Rage",
+     "spellID": 3490,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "Big tank damage while up. Use cooldowns, hybrids help heal.",
+     "source": "cmangos-classic",
+     "timing": "at 30% health, repeats every 15-20s",
+     "atHealth": 30
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 8530,
+    "armor": 1130,
+    "damage": "39-52",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Frenzied Rage makes him hit the tank very hard. Stay out of the poison cloud. Underleveled groups can kite him with slows.",
+    "tank": "Save cooldowns and a potion for his frenzy.",
+    "healer": "Big tank damage during Frenzied Rage."
+   }
+  },
+  {
+   "id": 4807,
+   "name": "Blackfathom Myrmidon",
+   "kind": "trash",
+   "level": [
+    22,
+    23
+   ],
+   "displayID": 4762,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Disarm",
+     "spellID": 8379,
+     "icon": "Ability_warrior_disarm",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 16-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2723,
+    "armor": 957,
+    "damage": "32-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4818,
+   "name": "Blindlight Murloc",
+   "kind": "trash",
+   "level": [
+    22,
+    23
+   ],
+   "displayID": 4920,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sunder Armor",
+     "spellID": 7405,
+     "icon": "Ability_warrior_sunder",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-9s"
+    },
+    {
+     "name": "Defensive Stance",
+     "spellID": 7164,
+     "icon": "Ability_warrior_defensivestance",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 180-190s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1815,
+    "armor": 957,
+    "damage": "32-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4815,
+   "name": "Murkshallow Snapclaw",
+   "kind": "trash",
+   "level": [
+    22,
+    23
+   ],
+   "displayID": 2835,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Disarm",
+     "spellID": 8379,
+     "icon": "Ability_warrior_disarm",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 16-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1815,
+    "armor": 957,
+    "damage": "32-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4821,
+   "name": "Skittering Crustacean",
+   "kind": "trash",
+   "level": [
+    22,
+    23
+   ],
+   "displayID": 981,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1815,
+    "armor": 957,
+    "damage": "32-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4824,
+   "name": "Aku'mai Fisher",
+   "kind": "trash",
+   "level": [
+    23,
+    24
+   ],
+   "displayID": 1244,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Bite",
+     "spellID": 17253,
+     "icon": "Ability_racial_cannibalize",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1953,
+    "armor": 1984,
+    "damage": "33-46",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4805,
+   "name": "Blackfathom Sea Witch",
+   "kind": "trash",
+   "level": [
+    23,
+    24
+   ],
+   "displayID": 4982,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Frost Nova",
+     "spellID": 122,
+     "icon": "Spell_frost_frostnova",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-8 yards away, every 16-20s"
+    },
+    {
+     "name": "Frost Ward",
+     "spellID": 6143,
+     "icon": "Spell_frost_frostward",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "once, 3-6s into the fight"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1713,
+    "mana": 1236,
+    "armor": 829,
+    "damage": "31-43",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4798,
+   "name": "Fallenroot Shadowstalker",
+   "kind": "trash",
+   "level": [
+    23,
+    24
+   ],
+   "displayID": 2014,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Curse of Weakness",
+     "spellID": 6205,
+     "icon": "Spell_shadow_curseofmannoroth",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-7s, then every 20-35s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Demon",
+    "health": 1713,
+    "mana": 618,
+    "armor": 829,
+    "damage": "31-43",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4822,
+   "name": "Snapping Crustacean",
+   "kind": "trash",
+   "level": [
+    23,
+    24
+   ],
+   "displayID": 1001,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Quick Snap",
+     "spellID": 4160,
+     "icon": "Ability_racial_cannibalize",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1953,
+    "armor": 992,
+    "damage": "33-46",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4827,
+   "name": "Deep Pool Threshfin",
+   "kind": "trash",
+   "level": [
+    24,
+    25
+   ],
+   "displayID": 2836,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Tendon Rip",
+     "spellID": 3604,
+     "icon": "Ability_criticalstrike",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-6s, then every 20-25s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 2097,
+    "armor": 1026,
+    "damage": "34-48",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4799,
+   "name": "Fallenroot Hellcaller",
+   "kind": "trash",
+   "level": [
+    24,
+    25
+   ],
+   "displayID": 2021,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Mana Burn",
+     "spellID": 8129,
+     "icon": "Spell_shadow_manaburn",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-15s, then every 15-19s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 9613,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Demon",
+    "health": 1830,
+    "mana": 982,
+    "armor": 858,
+    "damage": "32-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4809,
+   "name": "Twilight Acolyte",
+   "kind": "trash",
+   "level": [
+    24,
+    25
+   ],
+   "displayID": 2882,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Renew",
+     "spellID": 8362,
+     "icon": "Spell_holy_renew",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 22-25s",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1830,
+    "mana": 655,
+    "armor": 858,
+    "damage": "32-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4812,
+   "name": "Twilight Loreseeker",
+   "kind": "trash",
+   "level": [
+    24,
+    25
+   ],
+   "displayID": 2894,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Slow",
+     "spellID": 18972,
+     "icon": "Spell_nature_slow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 12-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1830,
+    "mana": 1310,
+    "armor": 858,
+    "damage": "32-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4823,
+   "name": "Barbed Crustacean",
+   "kind": "trash",
+   "level": [
+    25,
+    26
+   ],
+   "displayID": 9565,
+   "subName": "NULL",
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 1725,
+    "armor": 1061,
+    "damage": "36-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4819,
+   "name": "Blindlight Muckdweller",
+   "kind": "trash",
+   "level": [
+    25,
+    25
+   ],
+   "displayID": 11293,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Leech Poison",
+     "spellID": 8382,
+     "icon": "Spell_nature_nullifypoison",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 50-60s",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2097,
+    "armor": 1026,
+    "damage": "36-48",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4820,
+   "name": "Blindlight Oracle",
+   "kind": "trash",
+   "level": [
+    25,
+    25
+   ],
+   "displayID": 3617,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1830,
+    "mana": 1310,
+    "armor": 858,
+    "damage": "33-44",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4811,
+   "name": "Twilight Aquamancer",
+   "kind": "trash",
+   "level": [
+    25,
+    26
+   ],
+   "displayID": 2886,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Frostbolt",
+     "spellID": 9672,
+     "icon": "Spell_frost_frostbolt02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1953,
+    "mana": 1386,
+    "armor": 887,
+    "damage": "33-46",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4810,
+   "name": "Twilight Reaver",
+   "kind": "trash",
+   "level": [
+    25,
+    26
+   ],
+   "displayID": 2898,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Arcing Smash",
+     "spellID": 8374,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 8-12s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 2250,
+    "armor": 1061,
+    "damage": "36-49",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4825,
+   "name": "Aku'mai Snapjaw",
+   "kind": "trash",
+   "level": [
+    26,
+    27
+   ],
+   "displayID": 5026,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Ravage",
+     "spellID": 8391,
+     "icon": "Ability_ghoulfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 9-14s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 2400,
+    "armor": 2194,
+    "damage": "37-51",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4814,
+   "name": "Twilight Elementalist",
+   "kind": "trash",
+   "level": [
+    26,
+    27
+   ],
+   "displayID": 2890,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Earth Shock",
+     "spellID": 13728,
+     "icon": "Spell_nature_earthshock",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-7s, then every 9-12s"
+    },
+    {
+     "name": "Flame Shock",
+     "spellID": 15039,
+     "icon": "Spell_fire_flameshock",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-9s, then every 13-17s"
+    },
+    {
+     "name": "Frost Shock",
+     "spellID": 12548,
+     "icon": "Spell_frost_frostshock",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-2s, then every 11-15s"
+    },
+    {
+     "name": "Shock",
+     "spellID": 11824,
+     "icon": "Spell_nature_wispheal",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 3-6s, then every 7-12s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1899,
+    "mana": 2718,
+    "armor": 596,
+    "damage": "26-38",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4813,
+   "name": "Twilight Shadowmage",
+   "kind": "trash",
+   "level": [
+    26,
+    27
+   ],
+   "displayID": 2876,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Dominate Mind",
+     "spellID": 7645,
+     "icon": "Spell_shadow_shadowworddominate",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 18-26s, then every 24-30s"
+    },
+    {
+     "name": "Shadow Bolt",
+     "spellID": 9613,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 1899,
+    "mana": 3624,
+    "armor": 596,
+    "damage": "26-38",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  }
+ ]
+}

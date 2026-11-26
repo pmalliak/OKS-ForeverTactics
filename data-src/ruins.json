@@ -1,0 +1,511 @@
+{
+ "key": "ruins",
+ "name": "Ruins of Lordaeron",
+ "instanceID": null,
+ "instanceNames": [
+  "Ruins of Lordaeron",
+  "Ruins of Lordaeron"
+ ],
+ "forever": true,
+ "bossesConfirmed": true,
+ "levels": [
+  15,
+  20
+ ],
+ "summary": "The ruined capital above the Undercity in Tirisfal Glades. Easier to reach for the Horde, who also get more quests.",
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 250483,
+   "name": "Witherfang",
+   "kind": "boss",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [
+    {
+     "name": "Leech Poison",
+     "spellID": 3358,
+     "icon": "Spell_nature_nullifypoison",
+     "source": "wowhead-forever-journal",
+     "note": "Damages and heals the caster, remove it if you can."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast"
+   },
+   "tactics": {
+    "general": "Patrols King's Alley with two spiders. Kill the spiders first, use stuns on the boss.",
+    "tank": "Spiders first.",
+    "healer": "Remove Leech Poison from the tank if you can.",
+    "dps": "Spiders first."
+   },
+   "displayID": 734727
+  },
+  {
+   "id": 250660,
+   "name": "The Baron",
+   "kind": "boss",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [
+    {
+     "name": "Knockout",
+     "spellID": 17307,
+     "icon": "Inv_gauntlets_05",
+     "source": "wowhead-forever-journal",
+     "note": "Big hit plus threat drop. Stun him to prevent it."
+    },
+    {
+     "name": "Trample",
+     "spellID": 5568,
+     "icon": "Spell_nature_natureswrath",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Mind Blast",
+     "spellID": 1326990,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   },
+   "tactics": {
+    "general": "Hits very hard. Knockout is a big instant hit that also drops threat.",
+    "tank": "Stay near full health, Knockout can kill you otherwise.",
+    "healer": "Keep the tank high at all times.",
+    "dps": "Save stuns to stop Knockout."
+   }
+  },
+  {
+   "id": 256035,
+   "name": "Viktor the Vile",
+   "kind": "boss",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [
+    {
+     "name": "Leech Poison",
+     "spellID": 3358,
+     "icon": "Spell_nature_nullifypoison",
+     "source": "wowhead-forever-journal",
+     "note": "Damages and heals the caster, remove it if you can."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   },
+   "tactics": {
+    "general": "Light the fire in the chimney of the southwest building in Lordamere Overlook (by the graveyard) to start. Five waves of adds, then Viktor. Just heavy melee and Leech Poison.",
+    "healer": "Remove Leech Poison if you can.",
+    "dps": "Let the tank get threat first."
+   },
+   "displayID": 734731
+  },
+  {
+   "id": 250631,
+   "name": "The Abandoned",
+   "kind": "boss",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [
+    {
+     "name": "Chilled",
+     "spellID": 6136,
+     "icon": "Spell_frost_frostarmor02",
+     "source": "wowhead-forever-journal",
+     "note": "Slows players who hit him in melee."
+    },
+    {
+     "name": "Life Drain",
+     "spellID": 1266011,
+     "icon": "Spell_shadow_lifedrain02",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Frost Nova",
+     "spellID": 1220855,
+     "icon": "Spell_frost_frostnova",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Frost Nova",
+     "spellID": 14907,
+     "icon": "Spell_frost_frostnova",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   },
+   "tactics": {
+    "general": "The statue on Market Street starts three waves of adds before he appears. He novas players in place, chills melee who hit him and drains the tank."
+   },
+   "displayID": 734645
+  },
+  {
+   "id": 256097,
+   "name": "Bjork",
+   "kind": "boss",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [
+    {
+     "name": "Anti-Magic Shield",
+     "spellID": 1301635,
+     "icon": "Spell_shadow_antimagicshell",
+     "source": "wowhead-forever-journal",
+     "note": "Short full magic immunity, don't waste mana into it."
+    },
+    {
+     "name": "Mighty Blow",
+     "spellID": 14099,
+     "icon": "Inv_gauntlets_05",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   },
+   "tactics": {
+    "general": "Quick tank and spank. He briefly shields himself against all magic.",
+    "dps": "Casters pause while the shield is up."
+   }
+  },
+  {
+   "id": 250657,
+   "name": "Rath'mael",
+   "kind": "boss",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [
+    {
+     "name": "Flamestrike",
+     "spellID": 18399,
+     "icon": "Spell_fire_selfdestruct",
+     "source": "wowhead-forever-journal",
+     "note": "Area fire on the spot his target stood at cast start, move out."
+    },
+    {
+     "name": "Fire Shield",
+     "spellID": 13376,
+     "icon": "Spell_fire_immolation",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   },
+   "tactics": {
+    "general": "Only Flamestrike. It lands where the tank stood when he started casting, so step out right away, or stun him to stop it.",
+    "tank": "Move out or stun the cast.",
+    "healer": "Keep your distance.",
+    "dps": "Stun the cast if you can, ranged stay back."
+   }
+  },
+  {
+   "id": 255699,
+   "name": "Lordaeron Captain",
+   "kind": "rare",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [
+    {
+     "name": "Cleave",
+     "spellID": 5532,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Hamstring",
+     "spellID": 9080,
+     "icon": "Ability_shockwave",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Apparition",
+     "spellID": 1266050,
+     "icon": "Spell_magic_lesserinvisibilty",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   },
+   "displayID": 20167
+  },
+  {
+   "id": 250484,
+   "name": "Spider",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 250488,
+   "name": "Tarantula",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 250619,
+   "name": "Broodwidow",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 250620,
+   "name": "Shrieking Banshee",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250622,
+   "name": "Ragged Ghoul",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250623,
+   "name": "Mangled Cadaver",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250624,
+   "name": "Skeletal Mage",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250626,
+   "name": "Skeletal Soldier",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250627,
+   "name": "Ghoul",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250629,
+   "name": "Stone Watcher",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250630,
+   "name": "Plague Ghoul",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250649,
+   "name": "Mindless Undead",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250650,
+   "name": "Wailing Banshee",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250656,
+   "name": "Fallen Berserker",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250689,
+   "name": "Living Monstrosity",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 250735,
+   "name": "Venom Lurker",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": []
+  },
+  {
+   "id": 255109,
+   "name": "Flesh Golem",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 255964,
+   "name": "Fallen Necromancer",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": [],
+   "stats": {
+    "type": "Undead"
+   }
+  },
+  {
+   "id": 256040,
+   "name": "Deep Widow",
+   "kind": "trash",
+   "level": [
+    15,
+    20
+   ],
+   "abilities": [],
+   "tricks": []
+  }
+ ]
+}

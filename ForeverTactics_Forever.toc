@@ -1,0 +1,13 @@
+## Interface: 16001
+## Title: |cffffd100OKS|r Forever Tactics
+## Notes: Boss and trash abilities with short tactics and known tricks. Type /ft
+## Author: Panos (One Knight Stands)
+## Version: @project-version@
+## SavedVariables: ForeverTacticsDB
+## IconTexture: Interface\Icons\INV_Misc_Book_09
+
+Core.lua
+Data\Data.xml
+Diag.lua
+Journal.lua
+TargetButton.lua

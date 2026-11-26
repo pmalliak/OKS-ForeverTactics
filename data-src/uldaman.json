@@ -1,0 +1,1540 @@
+{
+ "key": "uldaman",
+ "name": "Uldaman",
+ "instanceID": 70,
+ "levels": [
+  36,
+  47
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 6910,
+   "name": "Revelosh",
+   "kind": "boss",
+   "level": [
+    40,
+    40
+   ],
+   "displayID": 5945,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Chain Lightning",
+     "spellID": 16006,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-11s, then every 18-25s"
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 15801,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 4-5s"
+    },
+    {
+     "name": "Chain Lightning",
+     "spellID": 16033,
+     "icon": "Spell_nature_chainlightning",
+     "source": "wowhead-forever-journal",
+     "note": "Chain Lightning, spread and interrupt."
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3678,
+    "mana": 2566,
+    "armor": 1619,
+    "damage": "52-69",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Two Stonevault Rockchewers pull with him. Control one if you can and burn him. Interrupt Chain Lightning.",
+    "dps": "Focus Revelosh."
+   }
+  },
+  {
+   "id": 6906,
+   "name": "Baelog",
+   "kind": "boss",
+   "level": [
+    41,
+    41
+   ],
+   "displayID": 5710,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 14516,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-7s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 15620,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    },
+    {
+     "name": "Intercept",
+     "spellID": 20252,
+     "icon": "Ability_rogue_sprint",
+     "source": "wowhead-forever-journal",
+     "note": "Intercept, stuns."
+    },
+    {
+     "name": "Shield Slam",
+     "spellID": 8242,
+     "icon": "Ability_warrior_shieldbash",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4755,
+    "armor": 2731,
+    "damage": "58-77",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15,
+   "tactics": {
+    "general": "The Lost Dwarves (friendly to Alliance, hostile to Horde). Control Baelog, kill Eric first (his Intercept stuns), then Olaf, then Baelog. Clear the room first.",
+    "tank": "Clear the room first.",
+    "dps": "Eric, Olaf, Baelog."
+   }
+  },
+  {
+   "id": 7228,
+   "name": "Ironaya",
+   "kind": "boss",
+   "level": [
+    40,
+    40
+   ],
+   "displayID": 6089,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Arcing Smash",
+     "spellID": 8374,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "Cone in front.",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 3-7s"
+    },
+    {
+     "name": "Knock Away",
+     "spellID": 10101,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 21-31s, then every 29-49s"
+    },
+    {
+     "name": "War Stomp",
+     "spellID": 11876,
+     "icon": "Ability_bullrush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 29-37s, then every 26-43s"
+    },
+    {
+     "name": "War Stomp",
+     "spellID": 45,
+     "icon": "Ability_bullrush",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Knock Away",
+     "spellID": 18670,
+     "icon": "Inv_gauntlets_05",
+     "source": "wowhead-forever-journal",
+     "note": "Knockback."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Giant",
+    "health": 15240,
+    "armor": 1964,
+    "damage": "81-107",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Summon her by joining the two Shaft of Tsol pieces (chest behind the Lost Dwarves plus Revelosh's drop) into the Staff of Prehistoria and using it on the keystone in the next room. High armor and health, immune to damage over time, knocks back. Face her away, ranged spread.",
+    "tank": "Face her away."
+   }
+  },
+  {
+   "id": 7206,
+   "name": "Ancient Stone Keeper",
+   "kind": "boss",
+   "level": [
+    44,
+    44
+   ],
+   "displayID": 10798,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sand Storms",
+     "spellID": 10132,
+     "icon": "Spell_nature_earthbind",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-8s, then every 30-45s"
+    },
+    {
+     "name": "Sand Storms",
+     "spellID": 10094,
+     "icon": "Spell_nature_earthbind",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Harsh Winds",
+     "spellID": 10093,
+     "icon": "Spell_nature_earthbind",
+     "source": "wowhead-forever-journal",
+     "note": "Summons Sand Storms that slow and silence."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 8910,
+    "armor": 5114,
+    "damage": "86-114",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "High armor and health, immune to damage over time. Sand Storms slow and silence, casters stay away from them."
+   }
+  },
+  {
+   "id": 7291,
+   "name": "Galgann Firehammer",
+   "kind": "boss",
+   "level": [
+    45,
+    45
+   ],
+   "displayID": 6059,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Amplify Flames",
+     "spellID": 9482,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 10-34s"
+    },
+    {
+     "name": "Flame Lash",
+     "spellID": 3356,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 14-15s, then every 12-22s"
+    },
+    {
+     "name": "Flame Shock",
+     "spellID": 8053,
+     "icon": "Spell_fire_flameshock",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 10-13s, then every 9-16s"
+    },
+    {
+     "name": "Fire Nova",
+     "spellID": 11969,
+     "icon": "Spell_fire_sealoffire",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 17-18s, then every 8-14s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 13302,
+    "mana": 1534,
+    "armor": 2211,
+    "damage": "70-93",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 50,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Two Geologists with him, lots of fire damage. Tank Galgann apart, facing away. Control one Geologist, kill the other, then the controlled one, then Galgann. Remove his debuffs, they raise fire damage taken.",
+    "healer": "Dispel his magic debuffs.",
+    "dps": "Geologists first."
+   }
+  },
+  {
+   "id": 4854,
+   "name": "Grimlok",
+   "kind": "boss",
+   "level": [
+    45,
+    45
+   ],
+   "displayID": 11165,
+   "subName": "Stonevault Chieftain",
+   "abilities": [
+    {
+     "name": "Shrink",
+     "spellID": 11892,
+     "icon": "Spell_shadow_antishadow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 19-25s, then every 25-35s"
+    },
+    {
+     "name": "Tremor Totem",
+     "spellID": 8143,
+     "icon": "Spell_nature_tremortotem",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "once, 5-7s into the fight"
+    },
+    {
+     "name": "Chain Bolt",
+     "spellID": 8292,
+     "icon": "Spell_nature_chainlightning",
+     "tags": [],
+     "note": "Chain Bolt, spread.",
+     "source": "cmangos-classic",
+     "timing": "first after 4-11s, then every 10-16s"
+    },
+    {
+     "name": "Lightning Bolt",
+     "spellID": 9532,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 4-5s"
+    },
+    {
+     "name": "Shrink",
+     "spellID": 7289,
+     "icon": "Spell_shadow_antishadow",
+     "source": "wowhead-forever-journal",
+     "note": "Shrink."
+    },
+    {
+     "name": "Bloodlust",
+     "spellID": 6742,
+     "icon": "Spell_nature_bloodlust",
+     "source": "wowhead-forever-journal",
+     "note": "Bloodlust."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 7390,
+    "mana": 3068,
+    "armor": 2211,
+    "damage": "70-93",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Comes with three adds. Control one and burn Grimlok, ideally before he shrinks the group. Then Geomancer, then the rest.",
+    "dps": "Grimlok first."
+   }
+  },
+  {
+   "id": 2748,
+   "name": "Archaedas",
+   "kind": "boss",
+   "level": [
+    47,
+    47
+   ],
+   "displayID": 5988,
+   "subName": "Ancient Stone Watcher",
+   "abilities": [
+    {
+     "name": "Ground Tremor",
+     "spellID": 6524,
+     "icon": "Spell_nature_earthquake",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Awaken Earthen Guardians",
+     "spellID": 10252,
+     "icon": "Spell_nature_earthquake",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Awaken Vault Warder",
+     "spellID": 10258,
+     "icon": "Spell_nature_earthquake",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Giant",
+    "health": 29850,
+    "armor": 2835,
+    "damage": "102-135",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Long fight, lots of health. He keeps summoning non-elite adds, kill them. At 20% he calls four elite guardians that die with him: ignore them and burn him. Use everything.",
+    "dps": "Kill the small adds until 20%, then only Archaedas."
+   }
+  },
+  {
+   "id": 6907,
+   "name": "Eric \"The Swift\"",
+   "kind": "boss",
+   "level": [
+    40,
+    40
+   ],
+   "displayID": 5708,
+   "abilities": [
+    {
+     "name": "Intercept",
+     "spellID": 20252,
+     "icon": "Ability_rogue_sprint",
+     "source": "wowhead-forever-journal",
+     "note": "Intercept, stuns."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4572,
+    "armor": 1964,
+    "damage": "56-74",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Part of the Lost Dwarves. Kill Eric first, his Intercept stuns.",
+    "dps": "Kill him first."
+   }
+  },
+  {
+   "id": 6908,
+   "name": "Olaf",
+   "kind": "boss",
+   "level": [
+    40,
+    40
+   ],
+   "displayID": 5709,
+   "abilities": [
+    {
+     "name": "Shield Slam",
+     "spellID": 8242,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 6-16s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5334,
+    "armor": 1964,
+    "damage": "56-74",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Part of the Lost Dwarves. Kill after Eric, while Baelog is controlled."
+   }
+  },
+  {
+   "id": 4851,
+   "name": "Stonevault Rockchewer",
+   "kind": "trash",
+   "level": [
+    36,
+    37
+   ],
+   "displayID": 721,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8599,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 120s",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4008,
+    "armor": 1593,
+    "damage": "62-85",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4852,
+   "name": "Stonevault Oracle",
+   "kind": "trash",
+   "level": [
+    37,
+    38
+   ],
+   "displayID": 160,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Lightning Shield",
+     "spellID": 945,
+     "icon": "Spell_nature_lightningshield",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "once, 1-3s into the fight"
+    },
+    {
+     "name": "Healing Ward",
+     "spellID": 5605,
+     "icon": "Spell_holy_layonhands",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-16s, then every 31-36s"
+    },
+    {
+     "name": "Lava Spout Totem",
+     "spellID": 8264,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15-37s, then every 13-17s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3405,
+    "mana": 1189,
+    "armor": 1418,
+    "damage": "47-64",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4861,
+   "name": "Shrike Bat",
+   "kind": "trash",
+   "level": [
+    38,
+    39
+   ],
+   "displayID": 1954,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sonic Burst",
+     "spellID": 8281,
+     "icon": "Spell_shadow_teleport",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 12-22s, then every 16-25s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 4377,
+    "armor": 1834,
+    "damage": "52-72",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4850,
+   "name": "Stonevault Cave Lurker",
+   "kind": "trash",
+   "level": [
+    38,
+    39
+   ],
+   "displayID": 722,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Backstab",
+     "spellID": 7159,
+     "icon": "Ability_backstab",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 5-17s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4377,
+    "armor": 1834,
+    "damage": "52-72",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4863,
+   "name": "Jadespine Basilisk",
+   "kind": "trash",
+   "level": [
+    39,
+    40
+   ],
+   "displayID": 4486,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Crystalline Slumber",
+     "spellID": 3636,
+     "icon": "Spell_nature_sleep",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 12-18s"
+    },
+    {
+     "name": "Reflection",
+     "spellID": 9906,
+     "icon": "Spell_shadow_teleport",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-8s, then every 13-19s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 4572,
+    "armor": 1964,
+    "damage": "54-74",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4847,
+   "name": "Shadowforge Relic Hunter",
+   "kind": "trash",
+   "level": [
+    39,
+    40
+   ],
+   "displayID": 6054,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Shadow Word: Pain",
+     "spellID": 2767,
+     "icon": "Spell_shadow_shadowwordpain",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 21-26s"
+    },
+    {
+     "name": "Silence",
+     "spellID": 6726,
+     "icon": "Spell_holy_silence",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-10s, then every 20-30s"
+    },
+    {
+     "name": "Heal",
+     "spellID": 6064,
+     "icon": "Spell_holy_heal02",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health, repeats every 17-21s",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3678,
+    "mana": 1283,
+    "armor": 1619,
+    "damage": "50-69",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 7022,
+   "name": "Venomlash Scorpid",
+   "kind": "trash",
+   "level": [
+    39,
+    40
+   ],
+   "displayID": 2488,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Venom Sting",
+     "spellID": 8257,
+     "icon": "Ability_poisonsting",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 13-19s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 4572,
+    "armor": 1964,
+    "damage": "54-74",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7030,
+   "name": "Shadowforge Geologist",
+   "kind": "trash",
+   "level": [
+    40,
+    41
+   ],
+   "displayID": 6056,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Flame Lash",
+     "spellID": 3356,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-14s, then every 22-35s"
+    },
+    {
+     "name": "Flame Spike",
+     "spellID": 8814,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 11-22s, then every 34-54s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3804,
+    "mana": 1332,
+    "armor": 1727,
+    "damage": "52-72",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 7023,
+   "name": "Obsidian Sentinel",
+   "kind": "trash",
+   "level": [
+    42,
+    42
+   ],
+   "displayID": 5285,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Summon Obsidian Shard",
+     "spellID": 10061,
+     "icon": "Spell_shadow_teleport",
+     "tags": [],
+     "note": "Shards at 66% and 33%.",
+     "source": "cmangos-classic",
+     "timing": "at 20% health",
+     "atHealth": 20
+    },
+    {
+     "name": "Splintered Obsidian",
+     "spellID": 10072,
+     "icon": "Spell_shadow_burningspirit",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 20% health",
+     "atHealth": 20
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Mechanical",
+    "health": 8255,
+    "armor": 2246,
+    "damage": "62-82",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "High armor and health, immune to damage over time. At 66% and 33% two Obsidian Shards spawn, kill them, then back to the boss.",
+    "dps": "Kill the Shards."
+   }
+  },
+  {
+   "id": 4849,
+   "name": "Shadowforge Archaeologist",
+   "kind": "trash",
+   "level": [
+    43,
+    44
+   ],
+   "displayID": 6067,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Defensive Stance",
+     "spellID": 7164,
+     "icon": "Ability_warrior_defensivestance",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 1-3s, then every 180-185s"
+    },
+    {
+     "name": "Shield Bash",
+     "spellID": 11972,
+     "icon": "Ability_warrior_shieldbash",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 6-17s"
+    },
+    {
+     "name": "Disarm",
+     "spellID": 6713,
+     "icon": "Ability_warrior_disarm",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 14-18s, then every 24-34s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5346,
+    "armor": 2557,
+    "damage": "66-95",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4848,
+   "name": "Shadowforge Darkcaster",
+   "kind": "trash",
+   "level": [
+    43,
+    44
+   ],
+   "displayID": 6055,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Mana Burn",
+     "spellID": 15800,
+     "icon": "Spell_shadow_manaburn",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 16-20s"
+    },
+    {
+     "name": "Shadow Bolt Volley",
+     "spellID": 9081,
+     "icon": "Spell_shadow_shadowbolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 3-5s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4278,
+    "mana": 1483,
+    "armor": 2082,
+    "damage": "61-88",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 80,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 7290,
+   "name": "Shadowforge Sharpshooter",
+   "kind": "trash",
+   "level": [
+    43,
+    44
+   ],
+   "displayID": 6057,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Piercing Shot",
+     "spellID": 6685,
+     "icon": "Ability_searingarrow",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 14-17s, then every 32-44s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 6660,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5346,
+    "armor": 2557,
+    "damage": "66-95",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4855,
+   "name": "Stonevault Brawler",
+   "kind": "trash",
+   "level": [
+    43,
+    44
+   ],
+   "displayID": 11166,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8599,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5346,
+    "armor": 767,
+    "damage": "66-95",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4853,
+   "name": "Stonevault Geomancer",
+   "kind": "trash",
+   "level": [
+    43,
+    44
+   ],
+   "displayID": 1194,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fireball",
+     "spellID": 9053,
+     "icon": "Spell_fire_flamebolt",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-40 yards away, every 4-5s"
+    },
+    {
+     "name": "Flame Buffet",
+     "spellID": 10452,
+     "icon": "Spell_fire_fireball",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-12s, then every 11-22s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4278,
+    "mana": 1483,
+    "armor": 2082,
+    "damage": "61-88",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 4860,
+   "name": "Stone Steward",
+   "kind": "trash",
+   "level": [
+    44,
+    44
+   ],
+   "displayID": 2234,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Ground Tremor",
+     "spellID": 6524,
+     "icon": "Spell_nature_earthquake",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 13-18s, then every 14-28s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 5346,
+    "armor": 5114,
+    "damage": "66-95",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "snare",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 7321,
+   "name": "Stonevault Flameweaver",
+   "kind": "trash",
+   "level": [
+    44,
+    45
+   ],
+   "displayID": 160,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Immolate",
+     "spellID": 2941,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-21s, then every 12-32s"
+    },
+    {
+     "name": "Fire Shield IV",
+     "spellID": 2602,
+     "icon": "Spell_fire_immolation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 0-10s, then every 29-49s"
+    },
+    {
+     "name": "Inferno Shell",
+     "spellID": 7739,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 16-20s, then every 20-35s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 3882,
+    "mana": 3801,
+    "armor": 1378,
+    "damage": "51-75",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "fleesAt": 15
+  },
+  {
+   "id": 7320,
+   "name": "Stonevault Mauler",
+   "kind": "trash",
+   "level": [
+    44,
+    45
+   ],
+   "displayID": 11166,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Enrage",
+     "spellID": 8269,
+     "icon": "Spell_shadow_unholyfrenzy",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 50% health",
+     "atHealth": 50
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5544,
+    "armor": 818,
+    "damage": "72-100",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 10120,
+   "name": "Vault Warder",
+   "kind": "trash",
+   "level": [
+    45,
+    45
+   ],
+   "displayID": 5989,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Trample",
+     "spellID": 5568,
+     "icon": "Spell_nature_natureswrath",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-10s, then every 13-22s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 7392,
+    "armor": 27250,
+    "damage": "94-125",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 4857,
+   "name": "Stone Keeper",
+   "kind": "trash",
+   "level": [
+    46,
+    46
+   ],
+   "displayID": 10805,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Trample",
+     "spellID": 5568,
+     "icon": "Spell_nature_natureswrath",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-11s, then every 13-23s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 5757,
+    "armor": 5560,
+    "damage": "108-143",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  }
+ ]
+}

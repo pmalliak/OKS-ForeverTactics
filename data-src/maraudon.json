@@ -1,0 +1,1542 @@
+{
+ "key": "maraudon",
+ "name": "Maraudon",
+ "instanceID": 349,
+ "levels": [
+  42,
+  51
+ ],
+ "tricks": [],
+ "npcs": [
+  {
+   "id": 13282,
+   "name": "Noxxion",
+   "kind": "boss",
+   "level": [
+    48,
+    48
+   ],
+   "displayID": 11172,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Uppercut",
+     "spellID": 10966,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "Knockback.",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Toxic Volley",
+     "spellID": 21687,
+     "icon": "Spell_nature_corrosivebreath",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    },
+    {
+     "name": "Summon Noxxion's Spawns",
+     "spellID": 21707,
+     "icon": "Spell_nature_abolishmagic",
+     "tags": [],
+     "note": "Splits into small adds, kill them all before he reforms.",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [
+    {
+     "title": "Pull him out of the pool",
+     "text": "Fighting outside his pool makes the split adds much easier to gather and kill.",
+     "kind": "clever-use",
+     "confirmedBuild": null
+    }
+   ],
+   "stats": {
+    "type": "Elemental",
+    "health": 14434,
+    "armor": 2888,
+    "damage": "276-356",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 144,
+     "frost": 144,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "scripted": true,
+   "tactics": {
+    "general": "Toxic Volley hits the group and Uppercut knocks back. After a while he splits into small copies; kill them all, then he reforms and you finish him. Pulling him out of the pool makes the adds easier."
+   }
+  },
+  {
+   "id": 12258,
+   "name": "Razorlash",
+   "kind": "boss",
+   "level": [
+    48,
+    48
+   ],
+   "displayID": 12389,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Cleave",
+     "spellID": 15584,
+     "icon": "Ability_warrior_cleave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 7-11s"
+    },
+    {
+     "name": "Cleave",
+     "spellID": 11427,
+     "icon": "Ability_warrior_cleave",
+     "source": "wowhead-forever-journal",
+     "note": "Cleave, don't stand near the tank unless you are melee."
+    },
+    {
+     "name": "Puncture",
+     "spellID": 15976,
+     "icon": "Ability_gouge",
+     "source": "wowhead-forever-journal",
+     "note": "Bleed."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 13403,
+    "armor": 2888,
+    "damage": "276-356",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Puncture is a 10 second bleed, and his cleave hits melee. Casters stay at range."
+   }
+  },
+  {
+   "id": 12236,
+   "name": "Lord Vyletongue",
+   "kind": "boss",
+   "level": [
+    47,
+    47
+   ],
+   "displayID": 12334,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Blink",
+     "spellID": 21655,
+     "icon": "Spell_arcane_blink",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 20-30s, then every 20-30s"
+    },
+    {
+     "name": "Smoke Bomb",
+     "spellID": 7964,
+     "icon": "Ability_hibernation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-12s, then every 14-18s"
+    },
+    {
+     "name": "Multi-Shot",
+     "spellID": 21390,
+     "icon": "Ability_upgrademoonglaive",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 7-10s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 16100,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    },
+    {
+     "name": "Multi-Shot",
+     "spellID": 14443,
+     "icon": "Ability_upgrademoonglaive",
+     "source": "wowhead-forever-journal",
+     "note": "Can't be used if everyone stands close to him."
+    },
+    {
+     "name": "Blink",
+     "spellID": 1953,
+     "icon": "Spell_arcane_blink",
+     "source": "wowhead-forever-journal",
+     "note": "Blink."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Demon",
+    "health": 14925,
+    "armor": 2835,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 188
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "If everyone stacks on him he can't use his Auto Shot and Multi-Shot. He blinks away, stack up again each time. Kill him first, then his two guards.",
+    "dps": "Vyletongue first."
+   }
+  },
+  {
+   "id": 12225,
+   "name": "Celebras the Cursed",
+   "kind": "boss",
+   "level": [
+    49,
+    49
+   ],
+   "displayID": 12350,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Wrath",
+     "spellID": 21807,
+     "icon": "Spell_nature_lightning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-5s, then every 7-9s"
+    },
+    {
+     "name": "Entangling Roots",
+     "spellID": 12747,
+     "icon": "Spell_nature_stranglevines",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 7-10s, then every 15-20s"
+    },
+    {
+     "name": "Corrupt Forces of Nature",
+     "spellID": 21968,
+     "icon": "Spell_nature_forceofnature",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 15s, then every 20s"
+    },
+    {
+     "name": "Twisted Tranquility",
+     "spellID": 21793,
+     "icon": "Spell_nature_tranquility",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 50-60s, then every 50-60s"
+    },
+    {
+     "name": "Wrath",
+     "spellID": 9739,
+     "icon": "Spell_nature_lightning",
+     "source": "wowhead-forever-journal",
+     "note": "Interrupt as often as possible."
+    },
+    {
+     "name": "Force of Nature",
+     "spellID": 6913,
+     "icon": "Spell_nature_forceofnature",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 13680,
+    "mana": 7000,
+    "armor": 2389,
+    "damage": "284-366",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Druid-like, summons non-elite Corrupt Forces of Nature and replaces any that die. Interrupt Wrath as much as you can. Kill him first, then the adds. After the kill you can make the Scepter of Celebras for the portal to Earth Song Falls.",
+    "dps": "Ignore the adds until he dies."
+   }
+  },
+  {
+   "id": 12203,
+   "name": "Landslide",
+   "kind": "boss",
+   "level": [
+    50,
+    50
+   ],
+   "displayID": 12293,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Summon Shardlings",
+     "spellID": 21808,
+     "icon": "Spell_nature_earthquake",
+     "tags": [],
+     "note": "Group stun and Shardlings around half health.",
+     "source": "cmangos-classic",
+     "timing": "first after 0-1s, then every 60s"
+    },
+    {
+     "name": "Trample",
+     "spellID": 5568,
+     "icon": "Spell_nature_natureswrath",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-3s, then every 8-9s"
+    },
+    {
+     "name": "Knock Away",
+     "spellID": 18670,
+     "icon": "Inv_gauntlets_05",
+     "tags": [],
+     "note": "Knockback.",
+     "source": "cmangos-classic",
+     "timing": "first after 8-10s, then every 18-20s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Giant",
+    "health": 15505,
+    "armor": 2999,
+    "damage": "292-377",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Tank him where he stands with your back to a wall. Around half health he stuns the group and summons Shardlings, pick them up or AoE them. Ranged stay at max range.",
+    "tank": "Back to a wall."
+   }
+  },
+  {
+   "id": 13601,
+   "name": "Tinkerer Gizlock",
+   "kind": "boss",
+   "level": [
+    50,
+    50
+   ],
+   "displayID": 7125,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Flash Bomb",
+     "spellID": 29419,
+     "icon": "Spell_shadow_darksummoning",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 25s, then every 25s"
+    },
+    {
+     "name": "Bomb",
+     "spellID": 9143,
+     "icon": "Spell_fire_selfdestruct",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 9-12s, then every 14-17s"
+    },
+    {
+     "name": "Goblin Dragon Gun",
+     "spellID": 21833,
+     "icon": "Spell_fire_incinerate",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 6-9s, then every 16-19s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 16100,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    },
+    {
+     "name": "Goblin Dragon Gun",
+     "spellID": 13183,
+     "icon": "Spell_fire_incinerate",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 6660,
+     "icon": "Ability_marksmanship",
+     "source": "wowhead-forever-journal"
+    },
+    {
+     "name": "Bomb",
+     "spellID": 8858,
+     "icon": "Spell_fire_selfdestruct",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 17720,
+    "armor": 2999,
+    "damage": "292-377",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Face him away for his dragon gun. Everyone else stand close in melee, it stops his ranged attacks.",
+    "tank": "Face him away."
+   }
+  },
+  {
+   "id": 13596,
+   "name": "Rotgrip",
+   "kind": "boss",
+   "level": [
+    50,
+    50
+   ],
+   "displayID": 13589,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Fatal Bite",
+     "spellID": 16495,
+     "icon": "Ability_backstab",
+     "tags": [],
+     "note": "Fatal Bite.",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 11-15s"
+    },
+    {
+     "name": "Puncture",
+     "spellID": 15976,
+     "icon": "Ability_gouge",
+     "source": "wowhead-forever-journal",
+     "note": "Bleed."
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 15505,
+    "armor": 2999,
+    "damage": "292-377",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Hits very hard with Puncture and Fatal Bite. Let the tank get threat first.",
+    "tank": "Clear around him first.",
+    "healer": "Keep everyone topped up."
+   }
+  },
+  {
+   "id": 12201,
+   "name": "Princess Theradras",
+   "kind": "boss",
+   "level": [
+    51,
+    51
+   ],
+   "displayID": 12292,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Dust Field",
+     "spellID": 21909,
+     "icon": "Spell_nature_cyclone",
+     "tags": [],
+     "note": "Knockback and damage near her, ranged at max range avoid it.",
+     "source": "cmangos-classic",
+     "timing": "first after 8-13s, then every 20-25s"
+    },
+    {
+     "name": "Boulder",
+     "spellID": 21832,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 2-3s, then every 8-10s"
+    },
+    {
+     "name": "Repulsive Gaze",
+     "spellID": 21869,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "Area fear. Fear Ward and Tremor Totem help.",
+     "source": "cmangos-classic",
+     "timing": "first after 20-25s, then every 20-25s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 22920,
+    "armor": 3052,
+    "damage": "344-444",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Hard fight. Fight her at the back of her cavern for room. Turtles around her are passive but aggro if hit by a spell. Most groups do her after Landslide, then jump down for Rotgrip and Gizlock.",
+    "tank": "Put her at the back of the cave, far from ranged, so you have time to regain threat after a fear.",
+    "healer": "Very high damage, keep the tank high.",
+    "dps": "Watch threat, especially after the tank is feared."
+   }
+  },
+  {
+   "id": 12237,
+   "name": "Meshlok the Harvester",
+   "kind": "rare",
+   "level": [
+    48,
+    48
+   ],
+   "displayID": 9014,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 13446,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 7-10s"
+    },
+    {
+     "name": "War Stomp",
+     "spellID": 15593,
+     "icon": "Ability_bullrush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 11-16s, then every 15-21s"
+    },
+    {
+     "name": "War Stomp",
+     "spellID": 11876,
+     "icon": "Ability_bullrush",
+     "source": "wowhead-forever-journal",
+     "note": "War Stomp."
+    },
+    {
+     "name": "Earth Shock",
+     "spellID": 15501,
+     "icon": "Spell_nature_earthshock",
+     "source": "wowhead-forever-journal"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 6186,
+    "armor": 2888,
+    "damage": "276-357",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 30,
+     "arcane": 0
+    },
+    "immune": [
+     "fear"
+    ],
+    "statsSource": "cmangos-classic"
+   },
+   "tactics": {
+    "general": "Rare, not hard. Tank him away, ranged and healer spread for War Stomp. Earth Shock interrupts casts.",
+    "tank": "Face him away."
+   }
+  },
+  {
+   "id": 11792,
+   "name": "Putridus Shadowstalker",
+   "kind": "trash",
+   "level": [
+    42,
+    44
+   ],
+   "displayID": 2021,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Hamstring",
+     "spellID": 9080,
+     "icon": "Ability_shockwave",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 4-12s, then every 12-24s"
+    },
+    {
+     "name": "Evasion",
+     "spellID": 15087,
+     "icon": "Spell_shadow_shadowward",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-24s, then every 21-30s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Demon",
+    "health": 5148,
+    "armor": 2397,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 13141,
+   "name": "Deeprot Stomper",
+   "kind": "trash",
+   "level": [
+    43,
+    44
+   ],
+   "displayID": 2079,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Strike",
+     "spellID": 13446,
+     "icon": "Ability_rogue_ambush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 7-10s"
+    },
+    {
+     "name": "War Stomp",
+     "spellID": 15593,
+     "icon": "Ability_bullrush",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 11-16s, then every 15-21s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 5346,
+    "armor": 2557,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11790,
+   "name": "Putridus Satyr",
+   "kind": "trash",
+   "level": [
+    43,
+    44
+   ],
+   "displayID": 11345,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Gouge",
+     "spellID": 12540,
+     "icon": "Ability_gouge",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 7-11s"
+    },
+    {
+     "name": "Sinister Strike",
+     "spellID": 15667,
+     "icon": "Spell_shadow_ritualofsacrifice",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-15s, then every 12-15s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Demon",
+    "health": 5346,
+    "armor": 2557,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12219,
+   "name": "Barbed Lasher",
+   "kind": "trash",
+   "level": [
+    44,
+    45
+   ],
+   "displayID": 12347,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Thorn Volley",
+     "spellID": 21749,
+     "icon": "Spell_nature_natureswrath",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 6-11s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 8316,
+    "armor": 2725,
+    "damage": "229-295",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 13142,
+   "name": "Deeprot Tangler",
+   "kind": "trash",
+   "level": [
+    44,
+    45
+   ],
+   "displayID": 13098,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Entangling Roots",
+     "spellID": 21331,
+     "icon": "Spell_nature_stranglevines",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 17-21s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 5544,
+    "armor": 2725,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11791,
+   "name": "Putridus Trickster",
+   "kind": "trash",
+   "level": [
+    44,
+    45
+   ],
+   "displayID": 11338,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Backstab",
+     "spellID": 15657,
+     "icon": "Ability_backstab",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when behind its target, every 5-8s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Demon",
+    "health": 5544,
+    "armor": 2725,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12223,
+   "name": "Cavern Lurker",
+   "kind": "trash",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 3386,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Knockdown",
+     "spellID": 11428,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 6-11s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 5757,
+    "armor": 2780,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11793,
+   "name": "Celebrian Dryad",
+   "kind": "trash",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 11714,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Dispel Magic",
+     "spellID": 17201,
+     "icon": "Spell_holy_dispelmagic",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 8-16s, then every 12-16s"
+    },
+    {
+     "name": "Throw",
+     "spellID": 16000,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 4605,
+    "mana": 2380,
+    "armor": 2255,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 69,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12220,
+   "name": "Constrictor Vine",
+   "kind": "trash",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 12348,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Entangling Roots",
+     "spellID": 11922,
+     "icon": "Spell_nature_stranglevines",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 9-17s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 5757,
+    "armor": 2780,
+    "damage": "236-305",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12222,
+   "name": "Creeping Sludge",
+   "kind": "trash",
+   "level": [
+    45,
+    46
+   ],
+   "displayID": 14350,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Noxious Cloud",
+     "spellID": 21070,
+     "icon": "Spell_nature_abolishmagic",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 22-26s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 5757,
+    "armor": 2780,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12224,
+   "name": "Cavern Shambler",
+   "kind": "trash",
+   "level": [
+    46,
+    47
+   ],
+   "displayID": 9014,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Knockdown",
+     "spellID": 11428,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 6-11s"
+    },
+    {
+     "name": "Wild Regeneration",
+     "spellID": 7948,
+     "icon": "Spell_nature_rejuvenation",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "at 75% health, repeats every 21-26s",
+     "atHealth": 75
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 4776,
+    "mana": 2460,
+    "armor": 2300,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12221,
+   "name": "Noxious Slime",
+   "kind": "trash",
+   "level": [
+    46,
+    47
+   ],
+   "displayID": 1145,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Noxious Cloud",
+     "spellID": 21070,
+     "icon": "Spell_nature_abolishmagic",
+     "tags": [],
+     "note": "",
+     "source": "wowhead-forever"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 4975,
+    "armor": 2835,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11794,
+   "name": "Sister of Celebrian",
+   "kind": "trash",
+   "level": [
+    46,
+    47
+   ],
+   "displayID": 12337,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Dispel Magic",
+     "spellID": 17201,
+     "icon": "Spell_holy_dispelmagic",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 5-9s"
+    },
+    {
+     "name": "Throw",
+     "spellID": 15795,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Humanoid",
+    "health": 5970,
+    "armor": 2835,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 69,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12242,
+   "name": "Spirit of Maraudos",
+   "kind": "trash",
+   "level": [
+    46,
+    46
+   ],
+   "displayID": 12370,
+   "subName": "The Fourth Kahn",
+   "abilities": [
+    {
+     "name": "Net",
+     "spellID": 6533,
+     "icon": "Ability_ensnare",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-20 yards away, every 7-12s"
+    },
+    {
+     "name": "Sinister Strike",
+     "spellID": 15667,
+     "icon": "Spell_shadow_ritualofsacrifice",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 8-13s"
+    },
+    {
+     "name": "Throw",
+     "spellID": 15795,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 5757,
+    "armor": 2780,
+    "damage": "236-305",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 13323,
+   "name": "Subterranean Diemetradon",
+   "kind": "trash",
+   "level": [
+    46,
+    48
+   ],
+   "displayID": 13209,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Sonic Burst",
+     "spellID": 8281,
+     "icon": "Spell_shadow_teleport",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-8 yards away, every 10-14s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Beast",
+    "health": 6186,
+    "armor": 2888,
+    "damage": "251-325",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12207,
+   "name": "Thessala Hydra",
+   "kind": "trash",
+   "level": [
+    46,
+    47
+   ],
+   "displayID": 6737,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Aqua Jet",
+     "spellID": 21790,
+     "icon": "Spell_frost_chillingblast",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 12-18s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Not specified",
+    "health": 10945,
+    "armor": 2835,
+    "damage": "243-313",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12243,
+   "name": "Spirit of Veng",
+   "kind": "trash",
+   "level": [
+    47,
+    47
+   ],
+   "displayID": 12373,
+   "subName": "The Fifth Kahn",
+   "abilities": [
+    {
+     "name": "Hooked Net",
+     "spellID": 14030,
+     "icon": "Ability_ensnare",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-30 yards away, every 13-18s"
+    },
+    {
+     "name": "Multi-Shot",
+     "spellID": 18651,
+     "icon": "Ability_upgrademoonglaive",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "first after 5-8s, then every 9-15s"
+    },
+    {
+     "name": "Shoot",
+     "spellID": 15620,
+     "icon": "Ability_marksmanship",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-30 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Undead",
+    "health": 5970,
+    "armor": 2835,
+    "damage": "243-313",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "fear",
+     "sleep",
+     "charm",
+     "bleed"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 11784,
+   "name": "Theradrim Guardian",
+   "kind": "trash",
+   "level": [
+    47,
+    48
+   ],
+   "displayID": 11712,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Knockdown",
+     "spellID": 16790,
+     "icon": "Ability_golemthunderclap",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is in melee range, every 7-12s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Elemental",
+    "health": 6186,
+    "armor": 2888,
+    "damage": "251-325",
+    "resist": {
+     "holy": 0,
+     "fire": 48,
+     "nature": 240,
+     "frost": 48,
+     "shadow": 48,
+     "arcane": 48
+    },
+    "immune": [
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  },
+  {
+   "id": 12206,
+   "name": "Primordial Behemoth",
+   "kind": "trash",
+   "level": [
+    48,
+    49
+   ],
+   "displayID": 12309,
+   "subName": "NULL",
+   "abilities": [
+    {
+     "name": "Trample",
+     "spellID": 5568,
+     "icon": "Spell_nature_natureswrath",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 0-8 yards away, every 8-13s"
+    },
+    {
+     "name": "Boulder",
+     "spellID": 21071,
+     "icon": "Ability_throw",
+     "tags": [],
+     "note": "",
+     "source": "cmangos-classic",
+     "timing": "when its target is 5-20 yards away, every 2-4s"
+    }
+   ],
+   "tricks": [],
+   "stats": {
+    "type": "Giant",
+    "health": 12828,
+    "armor": 2944,
+    "damage": "269-346",
+    "resist": {
+     "holy": 0,
+     "fire": 0,
+     "nature": 0,
+     "frost": 0,
+     "shadow": 0,
+     "arcane": 0
+    },
+    "immune": [
+     "snare",
+     "charm"
+    ],
+    "statsSource": "cmangos-classic"
+   }
+  }
+ ]
+}
