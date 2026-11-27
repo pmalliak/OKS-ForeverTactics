@@ -1,5 +1,8 @@
 # OKS Forever Tactics
 
+## 0.8.1
+- Loot tooltips in dungeons: the game hides which mob you hover there, so the tooltip now makes a best guess from the dungeon, level and classification. One match shows its loot marked "likely", several matches list each mob with its best drop. During a boss fight, hovering the boss shows its loot.
+
 ## 0.8.0
 - New look matching OKS Writ Shopper: standard window, tabs, striped rows and a summary bar with health, armor, melee hit and more.
 - Easier to read boss pages: tactics first, clear section headers, bigger ability icons and role cards for tank, healer and dps.
