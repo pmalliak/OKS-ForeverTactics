@@ -800,7 +800,7 @@ local function NpcItems(id)
 
   DefenseItems(out, npc)
 
-  local loot = ns.LootFor and ns.LootFor(id)
+  local loot = ns.LootSorted and ns.LootSorted(id)
   out[#out + 1] = { header = "Loot", icon = "Interface\\Icons\\INV_Misc_Bag_10" }
   if loot then
     out[#out + 1] = { loot = loot }
@@ -1050,7 +1050,37 @@ local function BuildOptions()
     function(v) ns.db.lootPrices = v end)
   prices:SetPoint("TOPLEFT", keyNote, "BOTTOMLEFT", -4, -10)
 
-  p:SetScript("OnShow", function() paint(); paintKeys() end)
+  -- Small rows of choice buttons: label, then one button per choice.
+  local function Choice(anchor, label, choices, get, set)
+    local fs = Text(p, "GameFontHighlight")
+    fs:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, -14)
+    fs:SetText(label)
+    local btns = {}
+    local function paintRow()
+      for _, b in ipairs(btns) do
+        if b.key == get() then b:LockHighlight() else b:UnlockHighlight() end
+      end
+    end
+    for i, c in ipairs(choices) do
+      local b = Button(p, c[2], c[3] or 80, function() set(c[1]); paintRow() end)
+      b.key = c[1]
+      if i == 1 then b:SetPoint("LEFT", fs, "LEFT", 190, 0)
+      else b:SetPoint("LEFT", btns[i - 1], "RIGHT", 6, 0) end
+      btns[i] = b
+    end
+    return fs, paintRow
+  end
+  local countRow, paintCount = Choice(prices, "Drops in the tooltip",
+    { { 5, "5" }, { 10, "10" }, { 20, "20" } },
+    function() return ns.db.lootCount or 10 end,
+    function(v) ns.db.lootCount = v end)
+  countRow:SetPoint("TOPLEFT", prices, "BOTTOMLEFT", 4, -12)
+  local _, paintSort = Choice(countRow, "Sort drops by",
+    { { "chance", "Drop chance", 110 }, { "price", "Price", 110 } },
+    function() return ns.db.lootSort or "chance" end,
+    function(v) ns.db.lootSort = v; if J.Refresh then J.Refresh() end end)
+
+  p:SetScript("OnShow", function() paint(); paintKeys(); paintCount(); paintSort() end)
 
   local help = Text(p, "GameFontDisableSmall")
   help:SetPoint("BOTTOMLEFT", 24, 18)

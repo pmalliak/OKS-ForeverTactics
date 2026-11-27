@@ -144,15 +144,38 @@ end
 -- Tooltip ----------------------------------------------------------------------
 
 -- Adds loot lines for npcID to a tooltip. Returns true when it added any.
-function ns.AddLootLines(tt, npcID, max, label)
+-- The loot list in the order picked in Options: by drop chance (default) or
+-- by price, highest first. Items without a price keep chance order after them.
+function ns.LootSorted(npcID)
   local list = ns.LootFor(npcID)
+  if not list or not ns.db or ns.db.lootSort ~= "price" or ns.db.lootPrices == false then return list end
+  local out, price = {}, {}
+  for i, e in ipairs(list) do
+    out[i] = e
+    price[e] = (not e.quest) and ns.ItemPrice(e.id) or 0
+  end
+  local order = {}
+  for i, e in ipairs(list) do order[e] = i end
+  table.sort(out, function(a, b)
+    if price[a] ~= price[b] then return price[a] > price[b] end
+    return order[a] < order[b]
+  end)
+  return out
+end
+
+function ns.LootCount()
+  return (ns.db and ns.db.lootCount) or TOOLTIP_MAX
+end
+
+function ns.AddLootLines(tt, npcID, max, label)
+  local list = ns.LootSorted(npcID)
   tt:AddLine(" ")
   if not list then
     tt:AddLine("|cffffd100Loot|r  |cff888888no loot data for this mob|r")
     return false
   end
-  tt:AddLine("|cffffd100Loot|r  |cff888888" .. (label or "drop chance") .. "|r")
-  max = max or TOOLTIP_MAX
+  tt:AddLine("|cffffd100Loot|r  |cff888888" .. (label or ((ns.db and ns.db.lootSort == "price" and ns.db.lootPrices ~= false) and "sorted by price" or "drop chance")) .. "|r")
+  max = max or ns.LootCount()
   for i = 1, math.min(#list, max) do
     local e = list[i]
     local left = "|T" .. ns.LootItemIcon(e.id) .. ":14:14:0:0:64:64:5:59:5:59|t |c"
@@ -362,7 +385,7 @@ function ns.ShowLootWindow(npcID)
   if not win then BuildWindow() end
   win.npc = npcID
   win.TitleText:SetText("Loot: " .. NameOf(npcID))
-  local list = ns.LootFor(npcID) or {}
+  local list = ns.LootSorted(npcID) or {}
   win.sub:SetText(#list > 0 and (#list .. " items, sorted by drop chance") or "No loot data for this mob.")
   for i, e in ipairs(list) do
     local b = Row(i)
