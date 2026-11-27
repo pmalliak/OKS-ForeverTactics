@@ -21,4 +21,5 @@ read_globals = {
   "UnitIsPlayer", "UnitLevel", "UnitName", "date", "issecretvalue", "strsplit", "strtrim",
   "unpack", "wipe", "GameTooltip", "IsShiftKeyDown", "tinsert",
   "IsControlKeyDown", "IsAltKeyDown", "TooltipDataProcessor", "Enum", "C_Item", "GetItemIcon",
+  "TSM_API", "Auctionator", "GetItemInfo",
 }

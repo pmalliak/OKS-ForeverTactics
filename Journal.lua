@@ -686,7 +686,7 @@ local function Layout(items)
         b.bg:SetColorTexture(1, 1, 1, (math.floor((i - 1) / 2) % 2 == 0) and 0.04 or 0.0)
         b.icon:SetTexture(ns.LootItemIcon(e.id))
         b.text:SetText("|c" .. (ns.QUALITY_HEX[e.quality] or "ffffffff") .. e.name .. "|r")
-        b.right:SetText(e.quest and "|cffffd100quest|r" or ns.LootChanceText(e))
+        b.right:SetText(ns.LootRightText(e))
         b:ClearAllPoints()
         b:SetPoint("TOPLEFT", col * half, -y)
         if col == 1 or i == #it.loot then y = y + 26 end
@@ -1043,6 +1043,12 @@ local function BuildOptions()
   keyNote:SetPoint("TOPLEFT", keyLabel, "BOTTOMLEFT", 0, -12)
   keyNote:SetWidth(600)
   keyNote:SetText("Works on any mob in the open world. In dungeons and in combat the game hides which mob it is, so use the Loot section on its journal page. During a boss fight the book on the target frame shows the boss loot too.")
+
+  local prices = Check(p, "Show auction prices next to drops",
+    "From TSM, Naowh or Auctionator when installed, otherwise the vendor price.",
+    function() return ns.db.lootPrices ~= false end,
+    function(v) ns.db.lootPrices = v end)
+  prices:SetPoint("TOPLEFT", keyNote, "BOTTOMLEFT", -4, -10)
 
   p:SetScript("OnShow", function() paint(); paintKeys() end)
 

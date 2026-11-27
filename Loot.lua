@@ -53,6 +53,60 @@ function ns.LootFor(npcID)
   return list
 end
 
+-- Prices -----------------------------------------------------------------------
+-- Auction price from TSM, Naowh or Auctionator (whichever is installed and
+-- knows the item), else the vendor sell price. Display only.
+
+local function Positive(v)
+  return type(v) == "number" and v > 0 and v or nil
+end
+
+function ns.ItemPrice(id)
+  if TSM_API and TSM_API.GetCustomPriceValue then
+    for _, source in ipairs({ "dbmarket", "dbminbuyout" }) do
+      local ok, v = pcall(TSM_API.GetCustomPriceValue, source, "i:" .. id)
+      if ok and Positive(v) then return v, "TSM" end
+    end
+  end
+  local nf = _G.NaowhForever
+  if type(nf) == "table" and type(nf.AuctionPrice) == "function" then
+    local ok, v = pcall(nf.AuctionPrice, id)
+    if ok and Positive(v) then return v, "Naowh" end
+  end
+  local api = Auctionator and Auctionator.API and Auctionator.API.v1
+  if api and api.GetAuctionPriceByItemID then
+    local ok, v = pcall(api.GetAuctionPriceByItemID, "ForeverTactics", id)
+    if ok and Positive(v) then return v, "Auctionator" end
+  end
+  local get = (C_Item and C_Item.GetItemInfo) or GetItemInfo
+  if get then
+    local ok, sell = pcall(function() return select(11, get(id)) end)
+    if ok and Positive(sell) then return sell, "vendor" end
+  end
+end
+
+-- "12g 30s", "45s 10c", "8c". Drops copper once there is gold.
+function ns.ShortMoney(c)
+  c = math.floor(c + 0.5)
+  local g, si, co = math.floor(c / 10000), math.floor(c / 100) % 100, c % 100
+  local G, S, Cc = "|cffffd700%dg|r", "|cffc7c7cf%ds|r", "|cffeda55f%dc|r"
+  if g >= 100 then return G:format(g) end
+  if g > 0 then return si > 0 and (G:format(g) .. " " .. S:format(si)) or G:format(g) end
+  if si > 0 then return co > 0 and (S:format(si) .. " " .. Cc:format(co)) or S:format(si) end
+  return Cc:format(co)
+end
+
+-- Right side of a loot line: drop chance, then the price when we know one.
+function ns.LootRightText(e)
+  local chance = e.quest and "|cffffd100quest|r" or ns.LootChanceText(e)
+  if ns.db and ns.db.lootPrices == false then return chance end
+  local p, src = ns.ItemPrice(e.id)
+  if not p then return chance end
+  local money = ns.ShortMoney(p)
+  if src == "vendor" then money = "|cff888888vendor|r " .. money end
+  return money .. "   " .. chance
+end
+
 function ns.LootChanceText(e)
   if e.quest then return "quest" end
   local p = e.pct
@@ -103,7 +157,7 @@ function ns.AddLootLines(tt, npcID, max, label)
     local e = list[i]
     local left = "|T" .. ns.LootItemIcon(e.id) .. ":14:14:0:0:64:64:5:59:5:59|t |c"
       .. (QUALITY_HEX[e.quality] or QUALITY_HEX[1]) .. e.name .. "|r"
-    local right = e.quest and "|cffffd100quest|r" or ns.LootChanceText(e)
+    local right = ns.LootRightText(e)
     tt:AddDoubleLine(left, right, 1, 1, 1, 1, 1, 1)
   end
   if #list > max then
@@ -315,7 +369,7 @@ function ns.ShowLootWindow(npcID)
     b.itemID, b.itemName = e.id, e.name
     b.icon:SetTexture(ns.LootItemIcon(e.id))
     b.text:SetText("|c" .. (QUALITY_HEX[e.quality] or QUALITY_HEX[1]) .. e.name .. "|r")
-    b.right:SetText(e.quest and "|cffffd100quest|r" or ns.LootChanceText(e))
+    b.right:SetText(ns.LootRightText(e))
     b:Show()
   end
   for i = #list + 1, #rows do rows[i]:Hide() end
