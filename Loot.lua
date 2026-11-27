@@ -19,6 +19,12 @@ local QUALITY_HEX = {
 ns.QUALITY_HEX = QUALITY_HEX
 
 local cache = {}
+local GuessLoot -- defined below the tooltip helpers
+
+local function NameOf(npcID)
+  local npc = ns.Data.npcs[npcID]
+  return (npc and npc.name) or (ns.Loot and ns.Loot.names and ns.Loot.names[npcID]) or ("NPC " .. npcID)
+end
 
 -- Loot list for an NPC ID: { { id, pct, quest, quality, name }, ... } sorted
 -- by chance, or nil when we have no data for it.
@@ -84,14 +90,14 @@ end
 -- Tooltip ----------------------------------------------------------------------
 
 -- Adds loot lines for npcID to a tooltip. Returns true when it added any.
-function ns.AddLootLines(tt, npcID, max)
+function ns.AddLootLines(tt, npcID, max, label)
   local list = ns.LootFor(npcID)
   tt:AddLine(" ")
   if not list then
     tt:AddLine("|cffffd100Loot|r  |cff888888no loot data for this mob|r")
     return false
   end
-  tt:AddLine("|cffffd100Loot|r  |cff888888drop chance|r")
+  tt:AddLine("|cffffd100Loot|r  |cff888888" .. (label or "drop chance") .. "|r")
   max = max or TOOLTIP_MAX
   for i = 1, math.min(#list, max) do
     local e = list[i]
@@ -118,13 +124,70 @@ local function UnitGUIDFromTooltip(tt, data)
   return guid
 end
 
+local function Readable(v)
+  if IsSecret(v) then return nil end
+  return v
+end
+
+-- Inside dungeons the game hides which mob a unit is. Use what we can read
+-- (the boss fight, the dungeon, level, classification) to make the same best
+-- guess as the target button, and say clearly that it is a guess.
+GuessLoot = function(tt)
+  local ok, _, unit = pcall(tt.GetUnit, tt)
+  if not ok or not unit or IsSecret(unit) then return false end
+  local full = ns.LootFullKeyDown() and 999 or nil
+  local level = Readable(UnitLevel(unit))
+  local class = Readable(UnitClassification(unit))
+  local enc = ns.encounter and ns.encounter.npcID
+  local encNpc = enc and ns.Data.npcs[enc]
+  local bossLike = level == -1 or class == "worldboss"
+    or ((class == "elite" or class == "rareelite") and encNpc and ns.GuessScore
+      and ns.GuessScore(encNpc, { level = level, classification = class }) >= 2)
+  if enc and bossLike then
+    ns.AddLootLines(tt, enc, full, "boss fight: " .. NameOf(enc))
+    return true
+  end
+  local key = ns.CurrentInstanceKey and ns.CurrentInstanceKey()
+  if not key or not ns.GuessScore then return false end
+  local guess = { level = level, classification = class }
+  local best, likely = 0, {}
+  for _, id in ipairs(ns.Data.instances[key].order) do
+    local sc = ns.GuessScore(ns.Data.npcs[id], guess)
+    if sc > best then best, likely = sc, { id } elseif sc == best and sc > 0 then likely[#likely + 1] = id end
+  end
+  if best < 2 then return false end
+  if #likely == 1 then
+    ns.AddLootLines(tt, likely[1], full, "likely " .. NameOf(likely[1]))
+    return true
+  end
+  -- Several mobs fit: show each name with its best drop.
+  tt:AddLine(" ")
+  tt:AddLine("|cffffd100Loot|r  |cff888888the game hides which mob this is, it could be:|r")
+  for i = 1, math.min(#likely, 6) do
+    local id = likely[i]
+    local list = ns.LootFor(id)
+    local top
+    for _, e in ipairs(list or {}) do
+      if e.quality >= 2 then top = e break end
+    end
+    top = top or (list and list[1])
+    local right = top and ("|c" .. (QUALITY_HEX[top.quality] or QUALITY_HEX[1]) .. top.name .. "|r " .. ns.LootChanceText(top)) or "|cff888888no data|r"
+    tt:AddDoubleLine(NameOf(id), right, 1, 1, 1, 1, 1, 1)
+  end
+  if #likely > 6 then tt:AddLine(string.format("|cff888888+%d more|r", #likely - 6)) end
+  tt:AddLine("|cff888888/ft loot <name> shows a whole table|r")
+  return true
+end
+
 local function OnUnitTooltip(tt, data)
   if tt ~= GameTooltip or not ns.LootKeyDown() then return end
   local guid = UnitGUIDFromTooltip(tt, data)
   if guid == nil then return end
   if IsSecret(guid) then
-    tt:AddLine(" ")
-    tt:AddLine("|cffffd100Loot|r  |cff888888the game hides which mob this is right now (dungeons, combat). In a boss fight, hover the book on the target frame, or open /ft|r", 1, 1, 1, true)
+    if not GuessLoot(tt) then
+      tt:AddLine(" ")
+      tt:AddLine("|cffffd100Loot|r  |cff888888the game hides which mob this is right now. Try /ft loot <name>|r", 1, 1, 1, true)
+    end
     return
   end
   local npcID = ns.NpcIDFromGUID(guid)
@@ -168,11 +231,6 @@ end)
 
 local win, rows = nil, {}
 local ROW_H = 24
-
-local function NameOf(npcID)
-  local npc = ns.Data.npcs[npcID]
-  return (npc and npc.name) or (ns.Loot and ns.Loot.names and ns.Loot.names[npcID]) or ("NPC " .. npcID)
-end
 
 local function Row(i)
   local b = rows[i]
